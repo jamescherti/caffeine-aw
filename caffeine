@@ -15,11 +15,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import dbus
 import logging
 import argparse
 import signal
 from ewmh import EWMH
+from subprocess import call
 from gi.repository import GObject, Gtk
 
 # Handle command-line arguments
@@ -53,16 +53,13 @@ class Caffeine(GObject.GObject):
         if self.idlenessInhibited != inhibit:
             self.idlenessInhibited = inhibit
 
-            bus = dbus.SessionBus()
-            self.susuProxy = bus.get_object('org.freedesktop.ScreenSaver', '/org/freedesktop/ScreenSaver')
-            self.iface = dbus.Interface(self.susuProxy, 'org.freedesktop.ScreenSaver')
-
             if inhibit:
-                self.screenSaverCookie = self.iface.Inhibit('net.launchpad.caffeine', "Caffeine is inhibiting desktop idleness")
+                self.screenSaverWindowID = hex(win.id)
+                call(['xdg-screensaver', 'suspend', self.screenSaverWindowID])
                 logging.info("Caffeine is inhibiting desktop idleness")
             else:
-                if self.screenSaverCookie != None:
-                    self.iface.UnInhibit(self.screenSaverCookie)
+                if self.screenSaverWindowID != None:
+                    call(['xdg-screensaver', 'resume', self.screenSaverWindowID])
                 logging.info("Caffeine is no longer inhibiting desktop idleness")
 
         # Return True so timeout is rerun
