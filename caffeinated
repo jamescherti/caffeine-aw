@@ -1,0 +1,24 @@
+#!/bin/sh
+# (c) Reuben Thomas   4th January 2015
+# Released under the GPL version 3, or (at your option) any later version.
+
+if [ $# -lt 1 ]; then
+cat <<EOF
+Usage: caffeinated COMMAND [ARGUMENT...]
+
+Inhibit desktop idleness for the duration of COMMAND
+EOF
+exit 1
+fi
+
+die () {
+    echo $1
+    exit 1
+}
+
+wid=`xwininfo -root|grep "Window id:" | cut -d " " -f 4`
+if [ "$wid" != "" ]; then
+  xdg-screensaver suspend "$wid" || die "could not inhibit desktop idleness"
+  "$@"
+  xdg-screensaver resume "$wid" || die "could not uninhibit desktop idleness"
+fi
