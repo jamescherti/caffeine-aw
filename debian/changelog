@@ -1,3 +1,9 @@
+caffeine (2.8) trusty; urgency=low
+
+  * Use xdg-screensaver to control desktop idleness (LP #1266953).
+
+ -- Reuben Thomas <rrt@sc3d.org>  Mon, 22 Dec 2014 23:07:50 +0000
+
 caffeine (2.7.2) trusty; urgency=low
 
   * Fix a crash when there is no active window (LP# 1322291).
