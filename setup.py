@@ -37,7 +37,7 @@ def main():
         url="https://launchpad.net/caffeine",
         py_modules=["ewmh"],
         data_files=data_files,
-        scripts=["caffeine", "caffeinated"]
+        scripts=["caffeine", "caffeinated", "caffeine-indicator"]
         )
 
 if __name__ == "__main__":

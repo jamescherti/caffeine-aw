@@ -1,0 +1,154 @@
+#!/usr/bin/env python3
+#
+# Copyright © 2009-2014 The Caffeine Developers
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+import os
+from os.path import join, abspath, dirname, pardir, exists
+import gettext
+import locale
+import logging
+import argparse
+import signal
+import builtins
+from subprocess import call
+
+from gi.repository import Gtk, GdkPixbuf, GObject, AppIndicator3
+
+from Xlib import display
+
+PROGRAM_NAME = "caffeine-indicator"
+
+# Register the gettext function for the whole interpreter as "_"
+builtins._ = gettext.gettext
+
+def get_base_path():
+    c = abspath(dirname(__file__))
+    while True:
+        if exists(join(c, "share/" + PROGRAM_NAME)) :
+            return c
+
+        c = join(c, pardir)
+        if not exists(c):
+            raise Exception("Can't determine BASE_PATH")
+
+BASE_PATH = get_base_path()
+GLADE_PATH = join(BASE_PATH, 'share', PROGRAM_NAME, 'glade')
+
+# Set up translations
+LOCALE_PATH = join(BASE_PATH, "share", "locale")
+
+locale.setlocale(locale.LC_ALL, '')
+
+for module in locale, gettext:
+    module.bindtextdomain(PROGRAM_NAME, LOCALE_PATH)
+    module.textdomain(PROGRAM_NAME)
+
+# Handle command line arguments
+parser = argparse.ArgumentParser(prog=PROGRAM_NAME, description='Toggle desktop idleness inhibition')
+parser.add_argument('-V', '--version', action='version', version=PROGRAM_NAME + ' 2.8')
+parser.parse_args()
+
+class GUI(object):
+    def __init__(self):
+        self.Caffeine = Caffeine()
+        self.Caffeine.connect("activation-toggled", self.on_activation_toggled)
+
+        builder = Gtk.Builder()
+        builder.add_from_file(join(GLADE_PATH, "GUI.glade"))
+
+        get = builder.get_object
+
+        self.AppInd = AppIndicator3.Indicator.new("caffeine-cup-empty",
+                                                  "caffeine",
+                                                  AppIndicator3.IndicatorCategory.APPLICATION_STATUS)
+        self.AppInd.set_status(AppIndicator3.IndicatorStatus.ACTIVE)
+
+        self.activate_menuitem = get("activate_menuitem")
+        self.set_icon_is_activated(self.Caffeine.get_activated())
+
+        # Popup menu
+        self.menu = get("popup_menu")
+        self.menu.show()
+        self.AppInd.set_menu(self.menu)
+
+        # About dialog
+        self.about_dialog = get("aboutdialog")
+        self.about_dialog.set_translator_credits(_("translator-credits"))
+
+        builder.connect_signals(self)
+
+    def on_activation_toggled(self, source, active, tooltip):
+        self.set_icon_is_activated(active)
+
+    def set_icon_is_activated(self, activated):
+        # Toggle the icon, indexing with a bool.
+        icon_name = ["caffeine-cup-empty", "caffeine-cup-full"][activated]
+
+        self.AppInd.set_icon(icon_name)
+
+        label = [_("Activate"), _("Deactivate")]
+        self.activate_menuitem.set_label(label[self.Caffeine.get_activated()])
+
+    # Menu callbacks
+    def on_activate_menuitem_activate(self, menuitem, data=None):
+        self.Caffeine.toggle_activated()
+
+        label = [_("Inhibit desktop idleness"), _("Allow desktop idleness")]
+        menuitem.set_label(label[self.Caffeine.get_activated()])
+
+    def on_about_menuitem_activate(self, menuitem, data=None):
+        self.about_dialog.set_position(Gtk.WindowPosition.CENTER_ALWAYS)
+        self.about_dialog.run()
+        self.about_dialog.hide()
+
+    def on_quit_menuitem_activate(self, menuitem, data=None):
+        # Make sure desktop idleness is uninhibited
+        if self.Caffeine.get_activated():
+            self.Caffeine.toggle_activated()
+        Gtk.main_quit()
+
+class Caffeine(GObject.GObject):
+    def __init__(self):
+        GObject.GObject.__init__(self)
+        self.root = display.Display().screen().root
+        self.sleepIsPrevented = False
+
+    def get_activated(self):
+        return self.sleepIsPrevented
+
+    def toggle_activated(self):
+        self.sleepIsPrevented = not self.sleepIsPrevented
+        if self.sleepIsPrevented:
+            self.screenSaverWindowID = hex(self.root.id)
+            status_string = _(PROGRAM_NAME + " is inhibiting desktop idleness")
+            call(['xdg-screensaver', 'suspend', self.screenSaverWindowID])
+        else:
+            if self.screenSaverWindowID != None:
+                call(['xdg-screensaver', 'resume', self.screenSaverWindowID])
+            status_string = PROGRAM_NAME + " is inactive"
+
+        logging.info(status_string)
+        self.emit("activation-toggled", self.get_activated(), status_string)
+
+
+# Set up and run
+logging.basicConfig(level=logging.INFO)
+GObject.signal_new("activation-toggled", Caffeine,
+        GObject.SignalFlags.RUN_FIRST, None, [bool, str])
+signal.signal(signal.SIGINT, signal.SIG_DFL)
+GObject.threads_init()
+GUI()
+Gtk.main()
