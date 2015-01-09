@@ -18,9 +18,11 @@
 import logging
 import argparse
 import signal
-from ewmh import EWMH
 from subprocess import call
+
 from gi.repository import GObject, Gtk
+
+from ewmh import EWMH
 
 # Handle command-line arguments
 parser = argparse.ArgumentParser(prog='caffeine', description='Prevent desktop idleness in full-screen mode')
