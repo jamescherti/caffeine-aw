@@ -12,4 +12,6 @@ Depends:${misc:Depends}, ${python3:Depends},
     gir1.2-glib-2.0, python3-xlib, python3-pkg-resources, xdg-utils
 Description: Prevent the desktop becoming idle in full-screen mode
  Caffeine stops the desktop becoming idle when an application
- is running full-screen.
+ is running full-screen. An indicator, caffeine-indicator, supplies
+ a manual toggle, and the command caffeinated can be used to prevent
+ idleness for the duration of any command.
