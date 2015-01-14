@@ -1,37 +1,34 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from distutils.core import setup
 import os
+from os.path import join, abspath, dirname, exists
 import shutil
 
-
 def main():
+    ROOT_DIR = dirname(abspath(__file__))
+    SHARE_PATH = join(ROOT_DIR, "share")
+    VERSION = open(join(ROOT_DIR, "VERSION")).read().strip()
 
-    SHARE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-            "share")
+    # don't trash the system icons!
+    blacklist = ['index.theme']
 
     data_files = []
-    
-    # don't trash the system icons!
-    black_list = ['index.theme']
-
     for path, dirs, files in os.walk(SHARE_PATH):
-
         data_files.append(tuple((path.replace(SHARE_PATH,"share", 1),
-            [os.path.join(path, file) for file in files if file not in
-                black_list])))
+            [join(path, file) for file in files if file not in blacklist])))
 
     desktop_name = "caffeine.desktop"
-    desktop_file = os.path.join("share", "applications", desktop_name)
-    autostart_dir = os.path.join("etc", "xdg", "autostart")
-    if not os.path.exists(autostart_dir):
+    desktop_file = join("share", "applications", desktop_name)
+    autostart_dir = join("etc", "xdg", "autostart")
+    if not exists(autostart_dir):
         os.makedirs(autostart_dir)
     shutil.copy(desktop_file, autostart_dir)
-    data_files.append(tuple(("/" + autostart_dir, [os.path.join(autostart_dir, desktop_name)])))
+    data_files.append(tuple(("/" + autostart_dir, [join(autostart_dir, desktop_name)])))
 
     setup(name="caffeine",
-        version="2.8",
-        description="""Stop the desktop from becoming idle in full-screen mode.""",
+        version=VERSION,
+        description="Stop the desktop from becoming idle in full-screen mode.",
         author="The Caffeine Developers",
         author_email="rrt@sc3d.org",
         url="https://launchpad.net/caffeine",

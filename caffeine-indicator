@@ -25,6 +25,7 @@ import signal
 import builtins
 from subprocess import call
 
+import pkg_resources
 from gi.repository import Gtk, GdkPixbuf, GObject, AppIndicator3
 
 from Xlib import display
@@ -58,7 +59,7 @@ for module in locale, gettext:
 
 # Handle command line arguments
 parser = argparse.ArgumentParser(prog=PROGRAM_NAME, description='Toggle desktop idleness inhibition')
-parser.add_argument('-V', '--version', action='version', version=PROGRAM_NAME + ' 2.8')
+parser.add_argument('-V', '--version', action='version', version=PROGRAM_NAME + ' ' + pkg_resources.require("caffeine")[0].version)
 parser.parse_args()
 
 class GUI(object):
