@@ -4,11 +4,18 @@ from distutils.core import setup
 import os
 from os.path import join, abspath, dirname, exists
 import shutil
+import subprocess
 
 def main():
     ROOT_DIR = dirname(abspath(__file__))
     SHARE_PATH = join(ROOT_DIR, "share")
+    PO_DIR = 'translations'
     VERSION = open(join(ROOT_DIR, "VERSION")).read().strip()
+
+    # Update the translations
+    subprocess.check_call(["./generate_pot.py", ".", "caffeine", VERSION,
+                           join(PO_DIR, "caffeine.pot")])
+    subprocess.check_call(["./compile_translations.py", "caffeine", PO_DIR])
 
     # don't trash the system icons!
     blacklist = ['index.theme']

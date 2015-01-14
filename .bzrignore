@@ -7,3 +7,4 @@
 ./debian/files
 ./debian/caffeine
 ./etc
+translations/caffeine.pot
