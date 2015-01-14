@@ -7,8 +7,7 @@
     <property name="default_height">200</property>
     <property name="destroy_with_parent">True</property>
     <property name="type_hint">normal</property>
-    <property name="program_name">Caffeine</property>
-    <property name="version">2.6.2 (bzr 560)</property>
+    <property name="program_name">Caffeine Indicator</property>
     <property name="copyright">Copyright &#169; 2009&#8211;2014 Brad Smith, Tommy Brunn, Isaiah Heyer &amp; Reuben Thomas</property>
     <property name="comments" translatable="yes">Manually control the desktop&#8217;s idle state</property>
     <property name="website">http://launchpad.net/caffeine</property>
@@ -94,7 +93,7 @@ Vagner K. Dos Santos
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="use_action_appearance">False</property>
-        <property name="label" translatable="yes">Disable Screensaver</property>
+        <property name="label" translatable="yes">Activate</property>
         <property name="use_underline">True</property>
         <signal handler="on_activate_menuitem_activate" name="activate" swapped="no" />
       </object>
