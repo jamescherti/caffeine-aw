@@ -6,6 +6,10 @@ Caffeine is a small daemon that prevents the desktop from becoming idle (and
 hence the screen saver and/or blanker from activating) when the active
 window is full-screen.
 
+Also provided are an indicator, caffeine-indicator, that gives a manual
+toggle, and caffeinated, which allows desktop idleness to be inhibited for
+the duration of any command. See their man pages for more information.
+
 Caffeine is distributed under the GNU General Public License, either version
 3, or (at your option) any later version. See COPYING.
 
@@ -15,3 +19,16 @@ terms of the GNU Lesser General Public License, either version 3, or (at
 your option) any later version. See COPYING.LESSER.
 
 Caffeine uses pyewmh from http://sf.net/projects/pyewmh
+
+
+Testing translations
+--------------------
+
+If you want to test out a translation without changing the language for the
+whole session, run caffeine as e.g.: LANG=ru_RU.UTF-8 ./caffeine
+
+To compile the translations: ./update_translations.py (this is done
+automatically when building the package, so no need to do it normally).
+
+You will need a language pack for the given language. Be aware that some
+stock items will not be translated unless you log in with a given language.
