@@ -40,7 +40,7 @@ def main():
         url="https://launchpad.net/caffeine",
         py_modules=["ewmh"],
         data_files=data_files,
-        scripts=["caffeine", "caffeinated", "caffeine-indicator", "caffeine-screensaver", "caffeine-screensaver-freedesktop-helper"]
+        scripts=["caffeine", "caffeinate", "caffeine-indicator", "caffeine-screensaver", "caffeine-screensaver-freedesktop-helper"]
         )
 
 if __name__ == "__main__":

@@ -1,8 +1,8 @@
 caffeine (2.8) trusty; urgency=low
 
   * Use xdg-screensaver to control desktop idleness (LP #1266953).
-  * Add caffeinated script to inhibit idleness for the duration of
-    a command, and caffeine-indicator to allow manual toggling
+  * Add caffeinate script to inhibit idleness for the duration of a
+    command, and caffeine-indicator to allow manual toggling
     (LP #1321750).
 
  -- Reuben Thomas <rrt@sc3d.org>  Mon, 22 Dec 2014 23:07:50 +0000

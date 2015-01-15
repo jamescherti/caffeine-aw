@@ -4,7 +4,7 @@
 
 if [ $# -lt 1 ]; then
 cat <<EOF
-Usage: caffeinated COMMAND [ARGUMENT...]
+Usage: caffeinate COMMAND [ARGUMENT...]
 
 Inhibit desktop idleness for the duration of COMMAND
 EOF

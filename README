@@ -7,7 +7,7 @@ hence the screen saver and/or blanker from activating) when the active
 window is full-screen.
 
 Also provided are an indicator, caffeine-indicator, that gives a manual
-toggle, and caffeinated, which allows desktop idleness to be inhibited for
+toggle, and caffeinate, which allows desktop idleness to be inhibited for
 the duration of any command. See their man pages for more information.
 
 Caffeine is distributed under the GNU General Public License, either version
