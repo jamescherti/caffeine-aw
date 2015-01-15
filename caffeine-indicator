@@ -137,10 +137,10 @@ class Caffeine(GObject.GObject):
         if self.sleepIsPrevented:
             self.screenSaverWindowID = hex(self.root.id)
             status_string = _(PROGRAM_NAME + " is inhibiting desktop idleness")
-            call(['xdg-screensaver', 'suspend', self.screenSaverWindowID])
+            call(['caffeine-screensaver', 'suspend', self.screenSaverWindowID])
         else:
             if self.screenSaverWindowID != None:
-                call(['xdg-screensaver', 'resume', self.screenSaverWindowID])
+                call(['caffeine-screensaver', 'resume', self.screenSaverWindowID])
             status_string = PROGRAM_NAME + " is inactive"
 
         logging.info(status_string)

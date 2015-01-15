@@ -60,11 +60,11 @@ class Caffeine(GObject.GObject):
 
             if inhibit:
                 self.screenSaverWindowID = hex(win.id)
-                call(['xdg-screensaver', 'suspend', self.screenSaverWindowID])
+                call(['caffeine-screensaver', 'suspend', self.screenSaverWindowID])
                 logging.info(PROGRAM_NAME + " is inhibiting desktop idleness")
             else:
                 if self.screenSaverWindowID != None:
-                    call(['xdg-screensaver', 'resume', self.screenSaverWindowID])
+                    call(['caffeine-screensaver', 'resume', self.screenSaverWindowID])
                 logging.info(PROGRAM_NAME + " is no longer inhibiting desktop idleness")
 
         # Return True so timeout is rerun

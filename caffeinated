@@ -18,7 +18,7 @@ die () {
 
 wid=`xwininfo -root|grep "Window id:" | cut -d " " -f 4`
 if [ "$wid" != "" ]; then
-  xdg-screensaver suspend "$wid" || die "could not inhibit desktop idleness"
+  caffeine-screensaver suspend "$wid" || die "could not inhibit desktop idleness"
   "$@"
-  xdg-screensaver resume "$wid" || die "could not uninhibit desktop idleness"
+  caffeine-screensaver resume "$wid" || die "could not uninhibit desktop idleness"
 fi
