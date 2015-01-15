@@ -13,8 +13,8 @@ def main():
     VERSION = open(join(ROOT_DIR, "VERSION")).read().strip()
 
     # Update the translations
-    subprocess.check_call(["xgettext", "-o", join(PO_DIR, "caffeine.pot"), "--language=python", "--from-code=UTF-8", "caffeine-indicator"])
-    subprocess.check_call(["./compile_translations.py", "caffeine", PO_DIR])
+    subprocess.check_call(["xgettext", "-o", join(PO_DIR, "caffeine-indicator.pot"), "--language=python", "--from-code=UTF-8", "caffeine-indicator"])
+    subprocess.check_call(["./compile_translations.py", "caffeine-indicator", PO_DIR])
 
     # don't trash the system icons!
     blacklist = ['index.theme']

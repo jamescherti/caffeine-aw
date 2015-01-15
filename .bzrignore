@@ -6,5 +6,6 @@
 ./debian/caffeine.substvars
 ./debian/files
 ./debian/caffeine
+./share/locale
 ./etc
-translations/caffeine.pot
+translations/caffeine-indicator.pot

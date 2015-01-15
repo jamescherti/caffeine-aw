@@ -26,13 +26,8 @@ for po in po_files:
     if not lang:
         continue
 
-    lang_dir = os.path.join('share/locale',lang)
-
-    if not os.path.isdir(lang_dir):
-        os.mkdir(lang_dir)
-    
-    lang_lc_dir = os.path.join(lang_dir,'LC_MESSAGES')
+    lang_lc_dir = os.path.join('share', 'locale', lang, 'LC_MESSAGES')
     if not os.path.isdir(lang_lc_dir):
-        os.mkdir(lang_lc_dir)
+        os.makedirs(lang_lc_dir)
     
-    subprocess.check_call(["msgfmt", po, "-o", os.path.join(lang_lc_dir,"caffeine"+".mo")])
+    subprocess.check_call(["msgfmt", po, "-o", os.path.join(lang_lc_dir,prg_name+".mo")])
