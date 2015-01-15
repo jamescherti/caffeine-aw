@@ -39,7 +39,7 @@ builtins._ = gettext.gettext
 def get_base_path():
     c = abspath(dirname(__file__))
     while True:
-        if exists(join(c, "share/" + PROGRAM_NAME)) :
+        if exists(join(c, "share", PROGRAM_NAME)):
             return c
 
         c = join(c, pardir)
