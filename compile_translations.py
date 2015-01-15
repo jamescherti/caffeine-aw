@@ -5,7 +5,7 @@ import sys
 import subprocess
 
 if len(sys.argv) < 3:
-    print("usage: ./compile_translations <program-name> <po directory>")
+    print("usage: " + sys.argv[0] + " <program-name> <po directory>")
     sys.exit(1)
 
 po_dir = sys.argv[-1]
