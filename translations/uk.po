@@ -6,26 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: caffeine\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2013-12-11 00:10+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-15 22:53+0000\n"
 "PO-Revision-Date: 2013-12-27 15:57+0000\n"
 "Last-Translator: Ostap Fedoryak <osutapu@yahoo.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-12-28 05:23+0000\n"
 "X-Generator: Launchpad (build 16877)\n"
 
-#. file 'caffeine/core.py', line 112
-msgid "Caffeine is dormant; powersaving is enabled"
-msgstr "Caffeine призупинено; енергозбереження активовано"
-
-#. file 'caffeine/core.py', line 117
-msgid "Caffeine is preventing powersaving modes and screensaver activation"
-msgstr "Caffeine вимикає режим збереження енергії та активацію скрінсейвера."
-
-#. file 'caffeine/main.py', line 164
+#: caffeine-indicator:92
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
@@ -34,69 +27,83 @@ msgstr ""
 "  Ostap Fedoryak https://launchpad.net/~osutapu\n"
 "  Stuartlittle1970@gmail.com https://launchpad.net/~stuartlittle1970"
 
-#. file 'caffeine/main.py', line 185
-#. file 'caffeine/main.py', line 227
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "Disable Screensaver"
-msgstr "Вимкнути екранну заставку"
+#: caffeine-indicator:105
+#, fuzzy
+msgid "Activate"
+msgstr "Активовано для "
 
-#. file 'caffeine/main.py', line 185
-#. file 'caffeine/main.py', line 227
-msgid "Enable Screensaver"
-msgstr "Увімкнути екранну заставку"
-
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid ""
-"An application to temporarily prevent the activation of both\n"
-" the screen saver and the \"sleep\" powersaving mode."
+#: caffeine-indicator:105
+msgid "Deactivate"
 msgstr ""
-"Додаток для тимчасового запобігання активації екранної заставки\n"
-"та режиму зниженого енергоспоживання."
 
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "Preferences"
-msgstr "Налаштування"
-
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "Automatic activation"
-msgstr "Автоматичний запуск"
-
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid ""
-"Caffeine can activate automatically\n"
-"whenever certain programs are running."
+#: caffeine-indicator:112
+msgid "Inhibit desktop idleness"
 msgstr ""
-"Caffeine може автоматично вмикатись\n"
-"коли запускаються певні програми"
 
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "List of programs that Caffeine activates for:"
-msgstr "Список програм для яких буде активовано Caffeine:"
-
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid ""
-"When Caffeine detects that one of the processes in this\n"
-"list is running, it will prevent the activation of the screensaver\n"
-"and powersaving modes. This can be useful for applications\n"
-"(particularly full-screen applications) that do not properly\n"
-"prevent the screensaver and powersaving modes on their own."
+#: caffeine-indicator:112
+msgid "Allow desktop idleness"
 msgstr ""
-"Коли Caffeine визначить, що одна з програм цього списку запущена\n"
-"він вимкне енергозбереження та екранну заставку.\n"
-"Це корисно для програм (за звичай повноекранних) які\n"
-"самостійно не вміють цього робити."
 
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "Process Name"
-msgstr "Назва процесу"
+#: caffeine-indicator:139
+msgid " is inhibiting desktop idleness"
+msgstr ""
 
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "    "
-msgstr "    "
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine призупинено; енергозбереження активовано"
 
-#. file 'share/caffeine/glade/proc.glade', line ?
-msgid "Select a process name..."
-msgstr "Вибрати назву процесу..."
+#~ msgid "Caffeine is preventing powersaving modes and screensaver activation"
+#~ msgstr ""
+#~ "Caffeine вимикає режим збереження енергії та активацію скрінсейвера."
+
+#~ msgid "Disable Screensaver"
+#~ msgstr "Вимкнути екранну заставку"
+
+#~ msgid "Enable Screensaver"
+#~ msgstr "Увімкнути екранну заставку"
+
+#~ msgid ""
+#~ "An application to temporarily prevent the activation of both\n"
+#~ " the screen saver and the \"sleep\" powersaving mode."
+#~ msgstr ""
+#~ "Додаток для тимчасового запобігання активації екранної заставки\n"
+#~ "та режиму зниженого енергоспоживання."
+
+#~ msgid "Preferences"
+#~ msgstr "Налаштування"
+
+#~ msgid "Automatic activation"
+#~ msgstr "Автоматичний запуск"
+
+#~ msgid ""
+#~ "Caffeine can activate automatically\n"
+#~ "whenever certain programs are running."
+#~ msgstr ""
+#~ "Caffeine може автоматично вмикатись\n"
+#~ "коли запускаються певні програми"
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Список програм для яких буде активовано Caffeine:"
+
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "Коли Caffeine визначить, що одна з програм цього списку запущена\n"
+#~ "він вимкне енергозбереження та екранну заставку.\n"
+#~ "Це корисно для програм (за звичай повноекранних) які\n"
+#~ "самостійно не вміють цього робити."
+
+#~ msgid "Process Name"
+#~ msgstr "Назва процесу"
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "Select a process name..."
+#~ msgstr "Вибрати назву процесу..."
 
 #~ msgid "Please install"
 #~ msgstr "Будь ласка, встановіть"
@@ -118,9 +125,6 @@ msgstr "Вибрати назву процесу..."
 
 #~ msgid " have elapsed; powersaving is re-enabled"
 #~ msgstr " закінчилась; енергозбереення увімкнено"
-
-#~ msgid "Activated for "
-#~ msgstr "Активовано для "
 
 #~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
 #~ msgstr "Caffeine вимикає енергозбереження та екранну заставку "

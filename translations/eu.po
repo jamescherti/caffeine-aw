@@ -6,26 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: caffeine\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2013-12-11 00:10+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-15 22:53+0000\n"
 "PO-Revision-Date: 2013-12-11 12:38+0000\n"
 "Last-Translator: Caffeine Developers <Unknown>\n"
 "Language-Team: Basque <eu@li.org>\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2013-12-12 05:18+0000\n"
 "X-Generator: Launchpad (build 16869)\n"
 
-#. file 'caffeine/core.py', line 112
-msgid "Caffeine is dormant; powersaving is enabled"
-msgstr "Caffeine lo dago; energia aurreztea gaituta dago"
-
-#. file 'caffeine/core.py', line 117
-msgid "Caffeine is preventing powersaving modes and screensaver activation"
-msgstr ""
-
-#. file 'caffeine/main.py', line 164
+#: caffeine-indicator:92
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
@@ -34,69 +27,72 @@ msgstr ""
 "  Mikel Alzibar https://launchpad.net/~mikelalzibar\n"
 "  Nineu https://launchpad.net/~nineu28"
 
-#. file 'caffeine/main.py', line 185
-#. file 'caffeine/main.py', line 227
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "Disable Screensaver"
-msgstr "Desgaitu pantaila-babeslea"
+#: caffeine-indicator:105
+#, fuzzy
+msgid "Activate"
+msgstr "Aktibatu"
 
-#. file 'caffeine/main.py', line 185
-#. file 'caffeine/main.py', line 227
-msgid "Enable Screensaver"
-msgstr "Gaitu pantaila-babeslea"
+#: caffeine-indicator:105
+#, fuzzy
+msgid "Deactivate"
+msgstr "Aktibatu"
 
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid ""
-"An application to temporarily prevent the activation of both\n"
-" the screen saver and the \"sleep\" powersaving mode."
-msgstr ""
-"Denbora tarte batean pantaila-babeslea eta energia aurrezteko\n"
-"\"lokartu\" modua eragozten duen aplikazioa."
-
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "Preferences"
-msgstr "Hobespenak"
-
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "Automatic activation"
-msgstr "Aktibazio automatikoa"
-
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid ""
-"Caffeine can activate automatically\n"
-"whenever certain programs are running."
+#: caffeine-indicator:112
+msgid "Inhibit desktop idleness"
 msgstr ""
 
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "List of programs that Caffeine activates for:"
-msgstr "Caffeine aktibatzen duten programen zerrenda:"
-
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid ""
-"When Caffeine detects that one of the processes in this\n"
-"list is running, it will prevent the activation of the screensaver\n"
-"and powersaving modes. This can be useful for applications\n"
-"(particularly full-screen applications) that do not properly\n"
-"prevent the screensaver and powersaving modes on their own."
-msgstr ""
-"Caffeinek zerrenda honetako prozesuetariko bat martxan\n"
-"dagoela antzematen duen unean, pantaila-babeslea eta energia\n"
-"aurrezteko moduak aktibatzea eragotziko du. Hau erabilgarria\n"
-"izan daiteke beren kabuz pantaila-babeslea eta energia aurrezteko\n"
-"moduak behar bezala eragozten ez dituzten aplikazioentzat\n"
-"(batez ere pantaila osokoak)."
-
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "Process Name"
+#: caffeine-indicator:112
+msgid "Allow desktop idleness"
 msgstr ""
 
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "    "
-msgstr "    "
+#: caffeine-indicator:139
+msgid " is inhibiting desktop idleness"
+msgstr ""
 
-#. file 'share/caffeine/glade/proc.glade', line ?
-msgid "Select a process name..."
-msgstr "Prozesu izen bat aukera ezazu..."
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine lo dago; energia aurreztea gaituta dago"
+
+#~ msgid "Disable Screensaver"
+#~ msgstr "Desgaitu pantaila-babeslea"
+
+#~ msgid "Enable Screensaver"
+#~ msgstr "Gaitu pantaila-babeslea"
+
+#~ msgid ""
+#~ "An application to temporarily prevent the activation of both\n"
+#~ " the screen saver and the \"sleep\" powersaving mode."
+#~ msgstr ""
+#~ "Denbora tarte batean pantaila-babeslea eta energia aurrezteko\n"
+#~ "\"lokartu\" modua eragozten duen aplikazioa."
+
+#~ msgid "Preferences"
+#~ msgstr "Hobespenak"
+
+#~ msgid "Automatic activation"
+#~ msgstr "Aktibazio automatikoa"
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Caffeine aktibatzen duten programen zerrenda:"
+
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "Caffeinek zerrenda honetako prozesuetariko bat martxan\n"
+#~ "dagoela antzematen duen unean, pantaila-babeslea eta energia\n"
+#~ "aurrezteko moduak aktibatzea eragotziko du. Hau erabilgarria\n"
+#~ "izan daiteke beren kabuz pantaila-babeslea eta energia aurrezteko\n"
+#~ "moduak behar bezala eragozten ez dituzten aplikazioentzat\n"
+#~ "(batez ere pantaila osokoak)."
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "Select a process name..."
+#~ msgstr "Prozesu izen bat aukera ezazu..."
 
 #~ msgid "Please install"
 #~ msgstr "Mesedez instalatu"
@@ -165,11 +161,8 @@ msgstr "Prozesu izen bat aukera ezazu..."
 #~ "An application to temporarily prevent the activation of both the screen "
 #~ "saver and the \"sleep\" powersaving mode."
 #~ msgstr ""
-#~ "Denbora jakin batean pantaila-babeslea eta energia aurreztea indargabetzen "
-#~ "dituen aplikazioa"
-
-#~ msgid "Activate for"
-#~ msgstr "Aktibatu"
+#~ "Denbora jakin batean pantaila-babeslea eta energia aurreztea "
+#~ "indargabetzen dituen aplikazioa"
 
 #~ msgid "Timed activation set; "
 #~ msgstr "Denboraren araberako aktibazioa indarrean; "
@@ -234,8 +227,8 @@ msgstr "Prozesu izen bat aukera ezazu..."
 
 #~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
 #~ msgstr ""
-#~ "Caffeine energia-aurrezpen moduak eta pantaila-babeslea aktibatzea eragozten "
-#~ "ari da "
+#~ "Caffeine energia-aurrezpen moduak eta pantaila-babeslea aktibatzea "
+#~ "eragozten ari da "
 
 #~ msgid ""
 #~ "Enable this option to automatically run Caffeine as soon as\n"

@@ -6,28 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: caffeine\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2013-12-11 00:10+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-15 22:53+0000\n"
 "PO-Revision-Date: 2014-01-30 18:31+0000\n"
 "Last-Translator: Claudio Arseni <claudio.arseni@gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2014-01-31 05:56+0000\n"
 "X-Generator: Launchpad (build 16916)\n"
 
-#. file 'caffeine/core.py', line 112
-msgid "Caffeine is dormant; powersaving is enabled"
-msgstr "Caffeine non è attivo; il risparmio energetico è abilitato"
-
-#. file 'caffeine/core.py', line 117
-msgid "Caffeine is preventing powersaving modes and screensaver activation"
-msgstr ""
-"Caffeine sta impedendo l'attivazione del risparmio energetico e del "
-"salvaschermo"
-
-#. file 'caffeine/main.py', line 164
+#: caffeine-indicator:92
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
@@ -40,70 +31,86 @@ msgstr ""
 "  Nazareno Patania https://launchpad.net/~rainstorm92\n"
 "  ssirio https://launchpad.net/~ssirio"
 
-#. file 'caffeine/main.py', line 185
-#. file 'caffeine/main.py', line 227
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "Disable Screensaver"
-msgstr "Disabilita salvaschermo"
+#: caffeine-indicator:105
+#, fuzzy
+msgid "Activate"
+msgstr "Attiva per"
 
-#. file 'caffeine/main.py', line 185
-#. file 'caffeine/main.py', line 227
-msgid "Enable Screensaver"
-msgstr "Abilita salvaschermo"
+#: caffeine-indicator:105
+#, fuzzy
+msgid "Deactivate"
+msgstr "Attiva per"
 
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid ""
-"An application to temporarily prevent the activation of both\n"
-" the screen saver and the \"sleep\" powersaving mode."
+#: caffeine-indicator:112
+msgid "Inhibit desktop idleness"
 msgstr ""
-"Un'applicazione per prevenire temporaneamente l'attivazione del\n"
-" salvaschermo e del risparmio energetico."
 
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "Preferences"
-msgstr "Preferenze"
-
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "Automatic activation"
-msgstr "Attivazione automatica"
-
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid ""
-"Caffeine can activate automatically\n"
-"whenever certain programs are running."
+#: caffeine-indicator:112
+msgid "Allow desktop idleness"
 msgstr ""
-"Caffeine può essere attivato automaticamente\n"
-"durante l'esecuzione di determinate applicazioni."
 
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "List of programs that Caffeine activates for:"
-msgstr "Elenco dei programmi per i quali avviare Caffeine:"
-
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid ""
-"When Caffeine detects that one of the processes in this\n"
-"list is running, it will prevent the activation of the screensaver\n"
-"and powersaving modes. This can be useful for applications\n"
-"(particularly full-screen applications) that do not properly\n"
-"prevent the screensaver and powersaving modes on their own."
+#: caffeine-indicator:139
+msgid " is inhibiting desktop idleness"
 msgstr ""
-"Quando Caffeine rileva che uno dei processi in questo\n"
-"elenco è in esecuzione, evita l'attivazione del slavaschermo\n"
-"e del risparmio energetico. Questo può essere utile per\n"
-"applicazioni (soprattutto quelle eseguite a schermo intero) che\n"
-"non gestiscono correttamente questa operazione in automatico."
 
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "Process Name"
-msgstr "Nome del processo"
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine non è attivo; il risparmio energetico è abilitato"
 
-#. file 'share/caffeine/glade/GUI.glade', line ?
-msgid "    "
-msgstr "    "
+#~ msgid "Caffeine is preventing powersaving modes and screensaver activation"
+#~ msgstr ""
+#~ "Caffeine sta impedendo l'attivazione del risparmio energetico e del "
+#~ "salvaschermo"
 
-#. file 'share/caffeine/glade/proc.glade', line ?
-msgid "Select a process name..."
-msgstr "Selezione del processo..."
+#~ msgid "Disable Screensaver"
+#~ msgstr "Disabilita salvaschermo"
+
+#~ msgid "Enable Screensaver"
+#~ msgstr "Abilita salvaschermo"
+
+#~ msgid ""
+#~ "An application to temporarily prevent the activation of both\n"
+#~ " the screen saver and the \"sleep\" powersaving mode."
+#~ msgstr ""
+#~ "Un'applicazione per prevenire temporaneamente l'attivazione del\n"
+#~ " salvaschermo e del risparmio energetico."
+
+#~ msgid "Preferences"
+#~ msgstr "Preferenze"
+
+#~ msgid "Automatic activation"
+#~ msgstr "Attivazione automatica"
+
+#~ msgid ""
+#~ "Caffeine can activate automatically\n"
+#~ "whenever certain programs are running."
+#~ msgstr ""
+#~ "Caffeine può essere attivato automaticamente\n"
+#~ "durante l'esecuzione di determinate applicazioni."
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Elenco dei programmi per i quali avviare Caffeine:"
+
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "Quando Caffeine rileva che uno dei processi in questo\n"
+#~ "elenco è in esecuzione, evita l'attivazione del slavaschermo\n"
+#~ "e del risparmio energetico. Questo può essere utile per\n"
+#~ "applicazioni (soprattutto quelle eseguite a schermo intero) che\n"
+#~ "non gestiscono correttamente questa operazione in automatico."
+
+#~ msgid "Process Name"
+#~ msgstr "Nome del processo"
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "Select a process name..."
+#~ msgstr "Selezione del processo..."
 
 #~ msgid "4 hours"
 #~ msgstr "4 ore"
@@ -238,8 +245,8 @@ msgstr "Selezione del processo..."
 #~ "An application to temporarily prevent the activation of both the screen "
 #~ "saver and the \"sleep\" powersaving mode."
 #~ msgstr ""
-#~ "Un'applicazione che disabilita temporaneamente l'avvio dello screen saver e "
-#~ "della sospensione automatica."
+#~ "Un'applicazione che disabilita temporaneamente l'avvio dello screen saver "
+#~ "e della sospensione automatica."
 
 #~ msgid "Configure Caffeine"
 #~ msgstr "Configura Caffeine"
@@ -252,6 +259,3 @@ msgstr "Selezione del processo..."
 
 #~ msgid "Please install"
 #~ msgstr "Installa"
-
-#~ msgid "Activate for"
-#~ msgstr "Attiva per"
