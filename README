@@ -25,7 +25,7 @@ Testing translations
 --------------------
 
 If you want to test out a translation without changing the language for the
-whole session, run caffeine as e.g.: LANG=ru_RU.UTF-8 ./caffeine
+whole session, run caffeine as e.g.: LANGUAGE=ru ./caffeine
 
 To compile the translations: ./update_translations.py (this is done
 automatically when building the package, so no need to do it normally).
