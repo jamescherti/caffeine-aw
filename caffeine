@@ -19,9 +19,10 @@ import logging
 import argparse
 import signal
 from subprocess import call
+import sys
 
 import pkg_resources
-from gi.repository import GObject, Gtk
+from gi.repository import GObject, Gtk, GLib
 
 from ewmh import EWMH
 
@@ -63,17 +64,41 @@ class Caffeine(GObject.GObject):
                 call(['caffeine-screensaver', 'suspend', self.screenSaverWindowID])
                 logging.info(PROGRAM_NAME + " is inhibiting desktop idleness")
             else:
-                if self.screenSaverWindowID != None:
-                    call(['caffeine-screensaver', 'resume', self.screenSaverWindowID])
-                logging.info(PROGRAM_NAME + " is no longer inhibiting desktop idleness")
+                self.release()
 
         # Return True so timeout is rerun
         return True
 
+    def release(self):
+        if self.idlenessInhibited:
+            if self.screenSaverWindowID != None:
+                call(['caffeine-screensaver', 'resume', self.screenSaverWindowID])
+            logging.info(PROGRAM_NAME + " is no longer inhibiting desktop idleness")
+
+# Adapted from http://stackoverflow.com/questions/26388088/python-gtk-signal-handler-not-working
+def InitSignal():
+    def signal_action(signal):
+        caffeine.release()
+        sys.exit(1)
+
+    def idle_handler(*args):
+        GLib.idle_add(signal_action, priority=GLib.PRIORITY_HIGH)
+
+    def handler(*args):
+        signal_action(args[0])
+
+    def install_glib_handler(sig):
+        # GLib.unix_signal_add was added in glib 2.36
+        GLib.unix_signal_add(GLib.PRIORITY_HIGH, sig, handler, sig)
+
+    for sig in [signal.SIGINT, signal.SIGTERM, signal.SIGHUP]:
+        signal.signal(sig, idle_handler)
+        GLib.idle_add(install_glib_handler, sig, priority=GLib.PRIORITY_HIGH)
+
 
 # Set up and run
 logging.basicConfig(level=logging.INFO)
-signal.signal(signal.SIGINT, signal.SIG_DFL)
 GObject.threads_init()
-Caffeine()
+caffeine = Caffeine()
+InitSignal()
 Gtk.main()
