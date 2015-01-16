@@ -572,17 +572,8 @@ screensaver_freedesktop()
         result=$?
         ;;
 
-        activate|lock)
+        activate|lock|reset)
         echo "ERROR: Command '$1' is not implemented in the $DE environment" >&2
-        ;;
-
-        reset)
-        if [ -f "$screensaver_file.pid" ] ; then
-            value=`cat "$screensaver_file.cookie"`
-            kill -HUP `cat "$screensaver_file.pid"`
-            rm -f "$screensaver_file.pid"
-        fi
-        result=$?
         ;;
 
         status)
