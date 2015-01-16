@@ -1,3 +1,11 @@
+caffeine (2.8.1) trusty; urgency=low
+
+  * Add some missing dependencies (LP #1411648).
+  * Fix handling of signals, especially Ctrl+C, which could result in
+    orphan processes inhibiting desktop idleness.
+
+ -- Reuben Thomas <rrt@sc3d.org>  Fri, 16 Jan 2015 23:11:30 +0000
+
 caffeine (2.8) trusty; urgency=low
 
   * Use xdg-screensaver to control desktop idleness (LP #1266953).
