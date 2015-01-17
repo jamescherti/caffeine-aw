@@ -1,3 +1,9 @@
+caffeine (2.8.2) trusty; urgency=low
+
+  * Fix a nasty bug in caffeine-indicator introduced in 2.8.1.
+
+ -- Reuben Thomas <rrt@sc3d.org>  Sat, 17 Jan 2015 00:41:04 +0000
+
 caffeine (2.8.1) trusty; urgency=low
 
   * Add some missing dependencies (LP #1411648).
