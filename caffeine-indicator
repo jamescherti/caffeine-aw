@@ -37,7 +37,17 @@ VERSION = pkg_resources.require("caffeine")[0].version
 # Register the gettext function for the whole interpreter as "_"
 builtins._ = gettext.gettext
 
-BASE_PATH = abspath(dirname(__file__))
+def get_base_path():
+    c = abspath(dirname(__file__))
+    while True:
+        if exists(join(c, "share", PROGRAM_NAME)):
+            return c
+
+        c = join(c, pardir)
+        if not exists(c):
+            raise Exception("Can't determine BASE_PATH")
+
+BASE_PATH = get_base_path()
 GLADE_PATH = join(BASE_PATH, 'share', PROGRAM_NAME, 'glade')
 
 # Set up translations
