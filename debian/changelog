@@ -1,3 +1,14 @@
+caffeine (2.8.3) trusty; urgency=low
+
+  * Fix gir dependency on gtk: should be for gtk3, not gtk2. This didn't
+    actually matter, since the correct dependency was brought in via
+    appindicator, so really this change removes a bogus dependency.
+  * Fix bug introduced in 2.8.1: Caffeine only worked once, and left
+    orphan processes lying around and desktop idleness permanently
+    inhibited (LP #1412083).
+
+ -- Reuben Thomas <rrt@sc3d.org>
+
 caffeine (2.8.2) trusty; urgency=low
 
   * Fix a nasty bug in caffeine-indicator introduced in 2.8.1.

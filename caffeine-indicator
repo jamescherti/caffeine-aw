@@ -123,29 +123,29 @@ class Caffeine(GObject.GObject):
     def __init__(self):
         GObject.GObject.__init__(self)
         self.root = display.Display().screen().root
-        self.sleepIsPrevented = False
-        self.status_string = _(PROGRAM_NAME + " is inactive")
+        self.status_string = None
         self.screenSaverWindowID = None
 
     def get_activated(self):
-        return self.sleepIsPrevented
+        return self.screenSaverWindowID != None
 
     def toggle_activated(self):
-        self.sleepIsPrevented = not self.sleepIsPrevented
-        if self.sleepIsPrevented:
+        if self.screenSaverWindowID == None:
             self.screenSaverWindowID = hex(self.root.id)
             self.status_string = _(PROGRAM_NAME + " is inhibiting desktop idleness")
+            logging.info(self.status_string)
             call(['caffeine-screensaver', 'suspend', self.screenSaverWindowID])
         else:
             self.release()
 
-        logging.info(self.status_string)
         self.emit("activation-toggled", self.get_activated(), self.status_string)
 
     def release(self):
         if self.screenSaverWindowID != None:
             call(['caffeine-screensaver', 'resume', self.screenSaverWindowID])
-        self.status_string = _(PROGRAM_NAME + " is inactive")
+            self.screenSaverWindowID = None
+            self.status_string = _(PROGRAM_NAME + " is inactive")
+            logging.info(self.status_string)
 
 # Adapted from http://stackoverflow.com/questions/26388088/python-gtk-signal-handler-not-working
 def InitSignal(gui):

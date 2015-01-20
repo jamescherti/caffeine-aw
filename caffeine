@@ -36,11 +36,9 @@ parser.parse_args()
 ewmh = EWMH()
 
 class Caffeine(GObject.GObject):
-
     def __init__(self):
         GObject.GObject.__init__(self)
-        self.idlenessInhibited = False
-        self.screenSaverCookie = None
+        self.screenSaverWindowID = None
 
         # Add hook for full-screen check (same interval as mplayer's heartbeat command)
         # FIXME: add capability to xdg-screensaver to report timeout
@@ -56,9 +54,7 @@ class Caffeine(GObject.GObject):
                 pass
 
         # If inhibition state has changed, take action
-        if self.idlenessInhibited != inhibit:
-            self.idlenessInhibited = inhibit
-
+        if (self.screenSaverWindowID != None) != inhibit:
             if inhibit:
                 self.screenSaverWindowID = hex(win.id)
                 call(['caffeine-screensaver', 'suspend', self.screenSaverWindowID])
@@ -70,9 +66,9 @@ class Caffeine(GObject.GObject):
         return True
 
     def release(self):
-        if self.idlenessInhibited:
-            if self.screenSaverWindowID != None:
-                call(['caffeine-screensaver', 'resume', self.screenSaverWindowID])
+        if self.screenSaverWindowID != None:
+            call(['caffeine-screensaver', 'resume', self.screenSaverWindowID])
+            self.screenSaverWindowID = None
             logging.info(PROGRAM_NAME + " is no longer inhibiting desktop idleness")
 
 # Adapted from http://stackoverflow.com/questions/26388088/python-gtk-signal-handler-not-working
