@@ -7,5 +7,4 @@ Terminal=false
 Type=Application
 Categories=Utility;TrayIcon;
 Keywords=Screensaver,Power,Saving,Blank
-OnlyShowIn=GNOME;Unity;
 StartupNotify=false
