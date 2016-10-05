@@ -1,3 +1,13 @@
+caffeine (2.8.4) xenial; urgency=low
+
+  * Ensure correct version of Gtk is loaded, fixing warning.
+  * Fix #1434886: allow caffeine-indicator to show in any desktop
+    environment's menu by removing the OnlyShowIn line. With the
+    proliferation of DEs, this is not feasible to maintain.
+  * Copy fixes and updates from Debian's debian/control file.
+
+ -- Reuben Thomas <rrt@sc3d.org>  Wed, 05 Oct 2016 11:08:00 +0100
+
 caffeine (2.8.3) trusty; urgency=low
 
   * Fix gir dependency on gtk: should be for gtk3, not gtk2. This didn't
