@@ -4,6 +4,7 @@
 ./debian/caffeine.debhelper.log
 ./debian/caffeine.*.debhelper
 ./debian/caffeine.substvars
+./debian/debhelper-build-stamp
 ./debian/files
 ./debian/caffeine
 ./share/locale
