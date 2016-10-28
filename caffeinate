@@ -1,5 +1,5 @@
 #!/bin/sh
-# (c) Reuben Thomas   4th January 2015
+# (c) Reuben Thomas 2015-2016
 # Released under the GPL version 3, or (at your option) any later version.
 
 if [ $# -lt 1 ]; then
@@ -18,7 +18,7 @@ die () {
 
 wid=`xwininfo -root|grep "Window id:" | cut -d " " -f 4`
 if [ "$wid" != "" ]; then
-  caffeine-screensaver suspend "$wid" || die "could not inhibit desktop idleness"
+  xdg-screensaver suspend "$wid" || die "could not inhibit desktop idleness"
   "$@"
-  caffeine-screensaver resume "$wid" || die "could not uninhibit desktop idleness"
+  xdg-screensaver resume "$wid" || die "could not uninhibit desktop idleness"
 fi

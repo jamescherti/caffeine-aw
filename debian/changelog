@@ -1,3 +1,9 @@
+caffeine (2.9.0) unstable; urgency=medium
+
+  * Use xdg-utils for xdg-screensaver instead of caffeine-screensaver.
+
+ -- Reuben Thomas <rrt@sc3d.org>  Fri, 28 Oct 2016 23:39:04 +0100
+
 caffeine (2.8.4) xenial; urgency=low
 
   * Ensure correct version of Gtk is loaded, fixing warning.
