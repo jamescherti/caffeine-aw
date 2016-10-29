@@ -11,7 +11,7 @@ Architecture: all
 Depends:
  ${misc:Depends}, ${python3:Depends}, ${perl:Depends},
  gir1.2-gtk-3.0, gir1.2-appindicator3-0.1,
- python3-xlib, python3-pkg-resources, python3-gi,
+ python3-xlib, python3-pkg-resources, python3-gi, python3-ewmh,
  xdg-utils (>= 1.1.1)
 Description: prevent the desktop becoming idle in full-screen mode
  Caffeine prevents the desktop from becoming idle when an application

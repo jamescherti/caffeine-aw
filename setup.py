@@ -38,7 +38,6 @@ setup(name="caffeine",
     author="The Caffeine Developers",
     author_email="rrt@sc3d.org",
     url="https://launchpad.net/caffeine",
-    py_modules=["ewmh"],
     data_files=data_files,
     scripts=["caffeine", "caffeinate", "caffeine-indicator"]
     )
