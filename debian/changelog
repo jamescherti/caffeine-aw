@@ -1,4 +1,4 @@
-caffeine (2.9.0) unstable; urgency=medium
+caffeine (2.9.0) xenial; urgency=low
 
   * New upstream release.
   * Use xdg-utils for xdg-screensaver instead of caffeine-screensaver.
