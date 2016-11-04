@@ -29,8 +29,8 @@ from subprocess import call
 import pkg_resources
 import gi
 gi.require_version('Gtk', '3.0')
+gi.require_version('AppIndicator3', '0.1')
 from gi.repository import GLib, Gtk, GObject, AppIndicator3
-
 from Xlib import display
 
 PROGRAM_NAME = "caffeine-indicator"
@@ -121,10 +121,17 @@ class GUI(object):
         self.Caffeine.release()
         Gtk.main_quit()
 
+def make_unmapped_window(wm_name):
+    screen = display.Display().screen()
+    window = screen.root.create_window(0, 0, 1, 1, 0, screen.root_depth)
+    window.set_wm_name(wm_name)
+    window.set_wm_protocols([])
+    return window
+
 class Caffeine(GObject.GObject):
     def __init__(self):
         GObject.GObject.__init__(self)
-        self.root = display.Display().screen().root
+        self.window = make_unmapped_window("Caffeine indicator")
         self.status_string = None
         self.screenSaverWindowID = None
 
@@ -133,7 +140,7 @@ class Caffeine(GObject.GObject):
 
     def toggle_activated(self):
         if self.screenSaverWindowID == None:
-            self.screenSaverWindowID = hex(self.root.id)
+            self.screenSaverWindowID = hex(self.window.id)
             self.status_string = _(PROGRAM_NAME + " is inhibiting desktop idleness")
             logging.info(self.status_string)
             call(['xdg-screensaver', 'suspend', self.screenSaverWindowID])
