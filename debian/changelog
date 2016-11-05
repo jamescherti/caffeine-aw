@@ -1,3 +1,9 @@
+caffeine (2.9.2) xenial; urgency=low
+
+  * Add bash-completion script for caffeinate (LP#1638679).
+
+ -- Reuben Thomas <rrt@sc3d.org>  Sat, 05 Nov 2016 19:31:41 +0000
+
 caffeine (2.9.1) xenial; urgency=medium
 
   * Fix caffeinate and caffeine-indicator to work with current
