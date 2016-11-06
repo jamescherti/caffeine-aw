@@ -1,3 +1,10 @@
+caffeine (2.9.3) unstable; urgency=medium
+
+  * Fix installation of bash-completion script for caffeinate
+    (LP#1638679).
+
+ -- Reuben Thomas <rrt@sc3d.org>  Sun, 06 Nov 2016 14:07:20 +0000
+
 caffeine (2.9.2) xenial; urgency=low
 
   * Add bash-completion script for caffeinate (LP#1638679).
