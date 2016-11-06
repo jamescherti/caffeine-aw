@@ -1,4 +1,4 @@
-caffeine (2.9.3) unstable; urgency=medium
+caffeine (2.9.3) xenial; urgency=medium
 
   * Fix installation of bash-completion script for caffeinate
     (LP#1638679).
