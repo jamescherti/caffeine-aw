@@ -33,7 +33,7 @@ def die(err):
 # Handle command line arguments
 parser = argparse.ArgumentParser(prog=PROGRAM_NAME, description='Inhibit desktop idleness for the duration of COMMAND')
 parser.add_argument('COMMAND', help='command to run')
-parser.add_argument('ARGUMENT', nargs='*', help='arguments to COMMAND')
+parser.add_argument('ARGUMENT', nargs='*', help='arguments to COMMAND', default=None)
 parser.add_argument('-V', '--version', action='version', version=PROGRAM_NAME + ' ' + VERSION)
 args = parser.parse_args()
 
