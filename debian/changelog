@@ -1,3 +1,9 @@
+caffeine (2.9.4) xenial; urgency=medium
+
+  * Fix paths of ubuntu-mono-light theme icons (LP#1655079).
+
+ -- Reuben Thomas <rrt@sc3d.org>  Mon, 16 Jan 2017 13:04:21 +0000
+
 caffeine (2.9.3) xenial; urgency=medium
 
   * Fix installation of bash-completion script for caffeinate
