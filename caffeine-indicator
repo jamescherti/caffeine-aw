@@ -95,6 +95,9 @@ class GUI(object):
         self.about_dialog.set_version(VERSION)
         self.about_dialog.set_translator_credits(_("translator-credits"))
 
+        # Activate menu item shortcut
+        self.AppInd.set_secondary_activate_target(self.activate_menuitem)
+
         builder.connect_signals(self)
 
     def on_activation_toggled(self, source, active, tooltip):
