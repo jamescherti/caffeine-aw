@@ -1,7 +1,7 @@
 caffeine (2.9.5) bionic; urgency=low
 
   * Allow toggle of caffeine-indicator with middle mouse key;
-    patch from oumdf10w: https://code.launchpad.net/~oumdf10w/caffeine/allow-toggle-with-middle-mouse-key/+merge/361333
+    patch from oumdf10w.
 
  -- Reuben Thomas <rrt@sc3d.org>  Wed, 02 Jan 2019 17:20:06 +0000
 
