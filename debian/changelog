@@ -1,3 +1,9 @@
+caffeine (2.9.6) bionic; urgency=low
+
+  * Document use of caffeinate with cron(1).
+
+ -- Reuben Thomas <rrt@sc3d.org>  Mon, 05 Aug 2019 09:04:56 +0200
+
 caffeine (2.9.5) bionic; urgency=low
 
   * Allow toggle of caffeine-indicator with middle mouse key;
