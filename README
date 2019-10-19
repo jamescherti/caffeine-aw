@@ -1,6 +1,6 @@
 Caffeine
 
-http://launchpad.net/caffeine/
+https://launchpad.net/caffeine/
 
 Caffeine is a small daemon that prevents the desktop from becoming idle (and
 hence the screen saver and/or blanker from activating) when the active
@@ -18,7 +18,7 @@ The Caffeine SVG icons are Copyright (C) 2009 Tommy Brunn
 terms of the GNU Lesser General Public License, either version 3, or (at
 your option) any later version. See COPYING.LESSER.
 
-Caffeine uses pyewmh from http://sf.net/projects/pyewmh
+Caffeine uses pyewmh from https://sf.net/projects/pyewmh
 
 
 If you think you’ve found a bug
