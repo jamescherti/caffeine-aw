@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright © 2009-2016 The Caffeine Developers
+# Copyright © 2009-2020 The Caffeine Developers
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -44,7 +44,7 @@ class Caffeine(GObject.GObject):
 
         # Add hook for full-screen check (same interval as mplayer's heartbeat command)
         # FIXME: add capability to xdg-screensaver to report timeout
-        GObject.timeout_add(30000, self._check_for_fullscreen)
+        GLib.timeout_add_seconds(30, self._check_for_fullscreen)
 
     def _check_for_fullscreen(self):
         win = ewmh.getActiveWindow()
@@ -96,7 +96,6 @@ def InitSignal():
 
 # Set up and run
 logging.basicConfig(level=logging.INFO)
-GObject.threads_init()
 caffeine = Caffeine()
 InitSignal()
 Gtk.main()

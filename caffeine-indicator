@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright © 2009-2016 The Caffeine Developers
+# Copyright © 2009-2020 The Caffeine Developers
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -106,7 +106,7 @@ class GUI(object):
     def set_icon_is_activated(self, activated):
         # Toggle the icon, indexing with a bool.
         icon_name = ["caffeine-cup-empty", "caffeine-cup-full"][activated]
-        self.AppInd.set_icon(icon_name)
+        self.AppInd.set_icon_full(icon_name, "Caffeine is {}".format("activated" if activated else "deactivated"))
         self.activate_menuitem.set_label(self.labels[self.Caffeine.get_activated()])
 
     # Menu callbacks
@@ -184,7 +184,6 @@ def InitSignal(gui):
 logging.basicConfig(level=logging.INFO)
 GObject.signal_new("activation-toggled", Caffeine,
         GObject.SignalFlags.RUN_FIRST, None, [bool, str])
-GObject.threads_init()
 caffeine = Caffeine()
 gui = GUI(caffeine)
 InitSignal(gui)
