@@ -1,3 +1,9 @@
+caffeine (2.9.7) focal; urgency=low
+
+  * Update use of some deprecated APIs (LP#1886522).
+
+ -- Reuben Thomas <rrt@sc3d.org>  Mon, 06 Jul 2020 22:23:54 +0100
+
 caffeine (2.9.6) bionic; urgency=low
 
   * Document use of caffeinate with cron(1).
