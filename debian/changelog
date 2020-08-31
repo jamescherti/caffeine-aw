@@ -3,7 +3,7 @@ caffeine (2.9.8) focal; urgency=low
   * Update to AyatanaAppIndicator3.
   * Switch to dpkg-source 3.0 (native) format
 
-   --
+ -- Reuben Thomas <rrt@sc3d.org>  Mon, 31 Aug 2020 19:43:57 +0100
 
 caffeine (2.9.7) focal; urgency=low
 
