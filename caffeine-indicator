@@ -29,8 +29,8 @@ from subprocess import call
 import pkg_resources
 import gi
 gi.require_version('Gtk', '3.0')
-gi.require_version('AppIndicator3', '0.1')
-from gi.repository import GLib, Gtk, GObject, AppIndicator3
+gi.require_version('AyatanaAppIndicator3', '0.1')
+from gi.repository import GLib, Gtk, GObject, AyatanaAppIndicator3 as AppIndicator3
 from Xlib import display
 
 PROGRAM_NAME = "caffeine-indicator"
