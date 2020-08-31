@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Maintainer: Reuben Thomas <rrt@sc3d.org>
 Build-Depends: debhelper (>= 9), dh-python, python3-all, python-setuptools, gettext, bash-completion
-Standards-Version: 3.9.7
+Standards-Version: 4.5.0
 Homepage: https://launchpad.net/caffeine
 
 Package: caffeine
