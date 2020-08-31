@@ -1,6 +1,8 @@
+./MANIFEST
 ./.pybuild
 ./__pycache__
 ./build
+./dist/
 ./debian/caffeine.debhelper.log
 ./debian/caffeine.*.debhelper
 ./debian/caffeine.substvars
