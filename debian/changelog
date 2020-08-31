@@ -1,3 +1,9 @@
+caffeine (2.9.8) focal; urgency=low
+
+  * Update to AyatanaAppIndicator3.
+
+ -- Reuben Thomas <rrt@sc3d.org>  Mon, 31 Aug 2020 18:00:48 +0100
+
 caffeine (2.9.7) focal; urgency=low
 
   * Update use of some deprecated APIs (LP#1886522).
