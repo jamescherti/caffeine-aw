@@ -1,0 +1,226 @@
+# Sinhalese translation for caffeine
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the caffeine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: caffeine\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2014-06-15 07:53+0000\n"
+"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"Language-Team: Sinhalese <si@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
+
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Pasadi https://launchpad.net/~pasadi-munasinghe"
+
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr ""
+
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr ""
+
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
+msgstr ""
+
+#~ msgid "30 minutes"
+#~ msgstr "මිනිත්තු 30 ක්"
+
+#~ msgid "5 minutes"
+#~ msgstr "මිනිත්තු 5 ක්"
+
+#~ msgid "10 minutes"
+#~ msgstr "මිනිත්තු 10 ක්"
+
+#~ msgid "15 minutes"
+#~ msgstr "මිනිත්තු 15 ක්"
+
+#~ msgid "1 hour"
+#~ msgstr "පැය 1ක්"
+
+#~ msgid "2 hours"
+#~ msgstr "පැය 2 ක්"
+
+#~ msgid "3 hours"
+#~ msgstr "පැය 3 ක්"
+
+#~ msgid "4 hours"
+#~ msgstr "පැය 4 ක්"
+
+#~ msgid "hour"
+#~ msgstr "පැය"
+
+#~ msgid "minute"
+#~ msgstr "මිනිත්තුව"
+
+#~ msgid "Other..."
+#~ msgstr "වෙනත්..."
+
+#~ msgid "Activated for Flash video"
+#~ msgstr "ෆ්ලෑෂ් වීඩියෝ සඳහා සක්‍රියයි."
+
+#~ msgid "hours"
+#~ msgstr "පැය"
+
+#~ msgid " and "
+#~ msgstr " සහ "
+
+#~ msgid "minutes"
+#~ msgstr "මිනිත්තු"
+
+#~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
+#~ msgstr ""
+#~ "Caffeine මෘදුකාංගය විසින් විදුලිය සුරැකීමේ ප්‍රකාරයන් සහ තිර සුරකනය සක්‍රිය "
+#~ "වීම අත්හිටුවා ඇත. "
+
+#~ msgid "Automatic activation"
+#~ msgstr "ස්වයංක්‍රීය සක්‍රිය කිරීම."
+
+#~ msgid "Autostart"
+#~ msgstr "ස්වයංක්‍රීය ඇරඹුම"
+
+#~ msgid "Preferences"
+#~ msgstr "අභිමත"
+
+#~ msgid "Start Caffeine on login"
+#~ msgstr "ප්‍රවේශ වීමේදී  Caffeine මෘදුකාංගය ක්‍රියාත්මක කරන්න."
+
+#~ msgid " have elapsed; powersaving is re-enabled"
+#~ msgstr " ගතවී ඇත. විදුලිය සුරැකීම නැවත සක්‍රිය යි."
+
+#~ msgid "Activate for Quake Live"
+#~ msgstr "Quake Live සඳහා සක්‍රිය කරන්න"
+
+#~ msgid "Activate for Flash video"
+#~ msgstr "ෆ්ලෑෂ් වීඩියෝ සඳහා සක්‍රිය කිරීම"
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Caffeine මෘදුකාංගය සක්‍රිය කරවන ක්‍රමලේඛ."
+
+#~ msgid "Duration"
+#~ msgstr "කාල පරාසය"
+
+#~ msgid "Configure Caffeine"
+#~ msgstr "Caffeine මෘදුකාංගය වින්‍යාසගත කීරීම"
+
+#~ msgid "Recent Processes"
+#~ msgstr "මෑතකදී පරිශීලනය වූ ක්‍රියාවලි"
+
+#~ msgid "Minutes:"
+#~ msgstr "මිනිත්තු:"
+
+#~ msgid "Select a process name..."
+#~ msgstr "ක්‍රියාවලියෙහි නම තෝරාගන්න"
+
+#~ msgid "Please install"
+#~ msgstr "කරුණාකර ස්ථාපනය කරන්න"
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine මෘදුකාංගය අක්‍රියයි. විදුලිය සුරැකීම සක්‍රියයි."
+
+#~ msgid "Activated for Quake Live"
+#~ msgstr "'Quake Live' සඳහා සක්‍රියයි."
+
+#~ msgid "Caffeine will prevent powersaving for the next "
+#~ msgstr "Caffeine මෘදුකාංගය විසින් මින් මතු විදුලිය සුරැකීම වළක්වනු ඇත. "
+
+#~ msgid ""
+#~ "An application to temporarily prevent the activation of both the screen "
+#~ "saver and the \"sleep\" powersaving mode."
+#~ msgstr ""
+#~ "තිර සුරකනය සහ 'නිද්‍රා ප්‍රකාර' බල සුරැකුම් ප්‍රකාරය සක්‍රිය වීම තාවකාලිකව "
+#~ "වැළකීමේ යෙදුම."
+
+#~ msgid "Hours:"
+#~ msgstr "පැය:"
+
+#~ msgid "Timed activation cancelled (was set for "
+#~ msgstr "කලානුකූල සක්‍රිය කිරීම අත්හිටුවන ලදී.(පෙර අගය "
+
+#~ msgid ""
+#~ "Enable this option to automatically run Caffeine as soon as\n"
+#~ "your computer has finished starting up and you have\n"
+#~ "successfully entered your username and password."
+#~ msgstr ""
+#~ "ඔබගේ පරිගණකය ක්‍රියාත්මක වීමෙන් සහ ඔබ විසින් තම ගිණුමෙහි නම සහ\n"
+#~ "මුර පදය සාර්ථකව ඇතුලත් කිරීමෙන් අනතුරුව Caffeine මෘදුකාංගය\n"
+#~ "ස්වයංක්‍රීයව ක්‍රියාත්මක වීම සඳහා මෙය සක්‍රිය කරන්න."
+
+#~ msgid ""
+#~ "Enable this option to cause Caffeine to automatically prevent\n"
+#~ "the activation of the screensaver and powersaving modes\n"
+#~ "when it detects that you are playing the Quake Live video\n"
+#~ "game. Visit www.quakelive.com to play the game for free."
+#~ msgstr ""
+#~ "ඔබ Quake Live වීඩියෝ ක්‍රීඩා පරිශීලනය කරන බව අනාවරණය\n"
+#~ "කරගත් විට Caffeine මෘදුකාංගය මඟින් ස්වයංක්‍රීයව තිර සුරකනය සහ\n"
+#~ "විදුලි සුරකන ප්‍රකාර සක්‍රිය වීම වැලක්වීම සඳහා මෙම විකල්පය සක්‍රිය කරන්න.\n"
+#~ "නොමිලේ ක්‍රීඩා පරිශීලනය කිරීම සඳහා www.quakelive.com වෙත පිවිසෙන්න."
+
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "Caffeine මෘදුකාංගය, මෙම ලේඛනයෙහි ඇති ක්‍රමලේඛයක්\n"
+#~ "පරිශීලනය වන බව අනාවරණය කරගත්විට එය විසින්\n"
+#~ "තිර සුරකනය සහ විදුලි සුරකන ප්‍රකාර සක්‍රිය වීම වලක්වනු ඇත.\n"
+#~ "මෙය නියමාකාරයෙන් තිර සුරකනය සහ විදුලි සුරකන ප්‍රකාර ස්වකීයව\n"
+#~ "වැළක්විය නොහැකි (විශේෂයෙන් සම්පූර්ණ-තිර යෙදුම්) සඳහා උපකාරී වේ"
+
+#~ msgid ""
+#~ "Caffeine can activate automatically\n"
+#~ "whenever certain programs are runnning."
+#~ msgstr ""
+#~ "ඇතැම් ක්‍රමලේඛ පරිශීලනය වනවිට  Caffeine\n"
+#~ "මෘදුකාංගය ස්‌වයංක්‍රීයව සක්‍රිය විය හැක."
+
+#~ msgid "Activate for"
+#~ msgstr "සඳහා සක්‍රීයයි"
+
+#~ msgid "Activated for "
+#~ msgstr "සඳහා සක්‍රීයයි "
+
+#~ msgid "Timed activation set; "
+#~ msgstr "කාලානුරූප සක්‍රිය කිරීම සකස් කර ඇත; "
+
+#~ msgid ""
+#~ "Some websites, such as www.youtube.com, show videos using\n"
+#~ "a technology known as \"Flash\". Enable this option to cause\n"
+#~ "Caffeine to automatically prevent the activation of the\n"
+#~ "screensaver and powersaving modes when a Flash video is\n"
+#~ "embedded in the web page that you are currently browsing."
+#~ msgstr ""
+#~ "ෆ්ලෑෂ් යනු, www.youtube.com වැනි ඇතැම් වෙබ් අඩවි\n"
+#~ "වීඩියෝ ප්‍රදර්ශනය කිරීම සඳහා යොදාගන්නා එක් තාක්ෂණයකි.\n"
+#~ "මෙම විකල්පය සක්‍රිය කිරීම මඟින්,ඔබ දැනට පිරික්සන වෙබ් පිටු තුල\n"
+#~ "ෆ්ලෑෂ් වීඩියෝ අන්තර්ගතව ඇත්නම් Caffeine මෘදුකාංගය විසින් ස්වයංක්‍රීයව\n"
+#~ "තිර සුරකනය සහ විදුලි සුරකන ප්‍රකාර සක්‍රිය වීම වලක්වනු ඇත."
+
+#~ msgid "Running Processes"
+#~ msgstr "දැනට පරිශීලනය වෙමින් පවතින ක්‍රියාවලිය"

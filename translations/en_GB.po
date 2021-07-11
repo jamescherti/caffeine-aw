@@ -6,95 +6,50 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: caffeine\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-15 22:53+0000\n"
-"PO-Revision-Date: 2013-12-11 12:33+0000\n"
-"Last-Translator: Caffeine Developers <Unknown>\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2021-07-10 08:57+0000\n"
+"Last-Translator: Reuben Thomas <rrt@sc3d.org>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-12-12 05:18+0000\n"
-"X-Generator: Launchpad (build 16869)\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
 
-#: caffeine-indicator:92
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr "Caffeine is dormant"
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr "Caffeine is preventing desktop idleness"
+
+#. file 'caffeine/main.py', line 64
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
+"  Anthony Harrington https://launchpad.net/~linuxchemist\n"
 "  Caffeine Developers https://launchpad.net/~caffeine-developers\n"
 "  Dennis https://launchpad.net/~theradialactive\n"
-"  Helen McCall https://launchpad.net/~wildnfree\n"
-"  Joostkam https://launchpad.net/~joost-kam\n"
-"  Tommy Brunn https://launchpad.net/~tommybrunn\n"
-"  mrx5682 https://launchpad.net/~mrx5682\n"
-"  zzz https://launchpad.net/~oldman-deactivatedaccount"
+"  Joostkam https://launchpad.net/~joost-kam-deactivatedaccount\n"
+"  Reuben Thomas https://launchpad.net/~rrt\n"
+"  Tommy Brunn https://launchpad.net/~tommybrunn"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Activate"
-msgstr "Activate for"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr "Disable Screensaver"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Deactivate"
-msgstr "Activate for"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr "Enable Screensaver"
 
-#: caffeine-indicator:112
-msgid "Inhibit desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:112
-msgid "Allow desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:139
-msgid " is inhibiting desktop idleness"
-msgstr ""
-
-#~ msgid "Caffeine is dormant; powersaving is enabled"
-#~ msgstr "Caffeine is dormant; powersaving is enabled"
-
-#~ msgid "Disable Screensaver"
-#~ msgstr "Disable Screensaver"
-
-#~ msgid "Enable Screensaver"
-#~ msgstr "Enable Screensaver"
-
-#~ msgid ""
-#~ "An application to temporarily prevent the activation of both\n"
-#~ " the screen saver and the \"sleep\" powersaving mode."
-#~ msgstr ""
-#~ "An application to temporarily prevent the activation of both\n"
-#~ " the screen saver and the \"sleep\" powersaving mode."
-
-#~ msgid "Preferences"
-#~ msgstr "Preferences"
-
-#~ msgid "Automatic activation"
-#~ msgstr "Automatic activation"
-
-#~ msgid "List of programs that Caffeine activates for:"
-#~ msgstr "List of applications that Caffeine is activated for:"
-
-#~ msgid ""
-#~ "When Caffeine detects that one of the processes in this\n"
-#~ "list is running, it will prevent the activation of the screensaver\n"
-#~ "and powersaving modes. This can be useful for applications\n"
-#~ "(particularly full-screen applications) that do not properly\n"
-#~ "prevent the screensaver and powersaving modes on their own."
-#~ msgstr ""
-#~ "When Caffeine detects that one of the processes in this\n"
-#~ "list is running, it will prevent the activation of the screensaver\n"
-#~ "and powersaving modes. This can be useful for applications\n"
-#~ "(particularly full-screen applications) that do not properly\n"
-#~ "prevent the screensaver and powersaving modes on their own."
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "Select a process name..."
-#~ msgstr "Select a process name..."
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
+msgstr "Manually and automatically control the desktop’s idle state"
 
 #~ msgid "Please install"
 #~ msgstr "Please install"
@@ -162,8 +117,14 @@ msgstr ""
 #~ msgid "Duration"
 #~ msgstr "Duration"
 
+#~ msgid "Preferences"
+#~ msgstr "Preferences"
+
 #~ msgid "Minutes:"
 #~ msgstr "Minutes:"
+
+#~ msgid "Activate for"
+#~ msgstr "Activate for"
 
 #~ msgid ""
 #~ "An application to temporarily prevent the activation of both the screen "
@@ -172,12 +133,20 @@ msgstr ""
 #~ "An application to temporarily prevent the activation of both the screen "
 #~ "saver and the \"sleep\" powersaving mode."
 
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine is dormant; powersaving is enabled"
+
 #~ msgid "Activated for "
 #~ msgstr "Activated for "
 
 #~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
-#~ msgstr ""
-#~ "Caffeine is preventing powersaving modes and screensaver activation "
+#~ msgstr "Caffeine is preventing powersaving modes and screensaver activation "
+
+#~ msgid "Select a process name..."
+#~ msgstr "Select a process name..."
+
+#~ msgid "Automatic activation"
+#~ msgstr "Automatic activation"
 
 #~ msgid "Autostart"
 #~ msgstr "Autostart"
@@ -187,6 +156,9 @@ msgstr ""
 
 #~ msgid "Recent Processes"
 #~ msgstr "Recent Processes"
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "List of applications that Caffeine is activated for:"
 
 #~ msgid ""
 #~ "Caffeine can activate automatically\n"
@@ -227,6 +199,19 @@ msgstr ""
 
 #~ msgid "Activated for Quake Live"
 #~ msgstr "Activated for Quake Live"
+
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
 
 #~ msgid "Activated for Flash video"
 #~ msgstr "Activated for Flash video"

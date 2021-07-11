@@ -6,111 +6,50 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: caffeine\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-15 22:53+0000\n"
-"PO-Revision-Date: 2013-12-26 11:51+0000\n"
-"Last-Translator: Caffeine Developers <Unknown>\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2021-07-10 08:57+0000\n"
+"Last-Translator: Reuben Thomas <rrt@sc3d.org>\n"
 "Language-Team: Russian <ru@li.org>\n"
-"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-12-27 05:24+0000\n"
-"X-Generator: Launchpad (build 16877)\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
 
-#: caffeine-indicator:92
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr "Caffeine бездействует"
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr "Caffeine не допускает простоя Рабочего стола"
+
+#. file 'caffeine/main.py', line 64
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Andrei B. Borisov https://launchpad.net/~clinri\n"
 "  Caffeine Developers https://launchpad.net/~caffeine-developers\n"
-"  Eugene Marshal https://launchpad.net/~lowrider\n"
+"  ManDrive https://launchpad.net/~roman-romul\n"
 "  Minakov Arthur https://launchpad.net/~spydefender\n"
-"  Pasha. P. Komar https://launchpad.net/~discipulus\n"
-"  Sergey Sedov https://launchpad.net/~serg-sedov\n"
-"  kingdruid https://launchpad.net/~kingdruid\n"
-"  Андрей Калинин https://launchpad.net/~prize2step\n"
-"  Коренберг Марк https://launchpad.net/~socketpair"
+"  Reuben Thomas https://launchpad.net/~rrt\n"
+"  kingdruid https://launchpad.net/~kingdruid"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Activate"
-msgstr "Активация для"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr "Отключить хранитель экрана"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Deactivate"
-msgstr "Активация для"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr "Включить хранитель экрана"
 
-#: caffeine-indicator:112
-msgid "Inhibit desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:112
-msgid "Allow desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:139
-msgid " is inhibiting desktop idleness"
-msgstr ""
-
-#~ msgid "Caffeine is dormant; powersaving is enabled"
-#~ msgstr "Caffeine приостановлен; энергосбережение включено"
-
-#~ msgid "Caffeine is preventing powersaving modes and screensaver activation"
-#~ msgstr "Caffeine отключает режим энергосбережения и запуск скринсейвера."
-
-#~ msgid "Disable Screensaver"
-#~ msgstr "Отключить хранитель экрана"
-
-#~ msgid "Enable Screensaver"
-#~ msgstr "Включить хранитель экрана"
-
-#~ msgid ""
-#~ "An application to temporarily prevent the activation of both\n"
-#~ " the screen saver and the \"sleep\" powersaving mode."
-#~ msgstr ""
-#~ "Приложение для временного предотвращения активации экранной заставки\n"
-#~ " и режима пониженного энергопотребления."
-
-#~ msgid "Preferences"
-#~ msgstr "Параметры"
-
-#~ msgid "Automatic activation"
-#~ msgstr "Автоматический запуск"
-
-#~ msgid ""
-#~ "Caffeine can activate automatically\n"
-#~ "whenever certain programs are running."
-#~ msgstr ""
-#~ "Caffeine может запускаться автоматически всякий раз,\n"
-#~ "когда определенные программы уже работают."
-
-#~ msgid "List of programs that Caffeine activates for:"
-#~ msgstr "Список программ, для которых будет активирован Caffeine:"
-
-#~ msgid ""
-#~ "When Caffeine detects that one of the processes in this\n"
-#~ "list is running, it will prevent the activation of the screensaver\n"
-#~ "and powersaving modes. This can be useful for applications\n"
-#~ "(particularly full-screen applications) that do not properly\n"
-#~ "prevent the screensaver and powersaving modes on their own."
-#~ msgstr ""
-#~ "Когда Caffeine обнаруживает, что один из процессов в этом\n"
-#~ "списке запущен, он предотвратит запуск хранителя экрана\n"
-#~ "и режим энергосбережения. Это полезно для приложений\n"
-#~ "(обычно, полноэкранных) которые самостоятельно не\n"
-#~ "предотвращают запуск хранителя экрана и переход в режим \n"
-#~ "энергосбережения."
-
-#~ msgid "Process Name"
-#~ msgstr "Название процесса"
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "Select a process name..."
-#~ msgstr "Выбрать название процесса..."
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
+msgstr "Ручной и автоматический контроль состояния простоя Рабочего стола"
 
 #~ msgid "Please install"
 #~ msgstr "Установите"
@@ -151,11 +90,17 @@ msgstr ""
 #~ msgid "minutes"
 #~ msgstr "мин."
 
+#~ msgid "Preferences"
+#~ msgstr "Параметры"
+
 #~ msgid "Activate for Quake Live"
 #~ msgstr "Запуск при Quake Live"
 
 #~ msgid "Activate for Flash video"
 #~ msgstr "Запуск при Flash видео"
+
+#~ msgid "Automatic activation"
+#~ msgstr "Автоматический запуск"
 
 #~ msgid "Autostart"
 #~ msgstr "Автозапуск"
@@ -187,6 +132,9 @@ msgstr ""
 #~ "в видео игру Quake Live. На сайте www.quakelive.com можно\n"
 #~ "поиграть бесплатно."
 
+#~ msgid "Select a process name..."
+#~ msgstr "Выбрать название процесса..."
+
 #~ msgid ""
 #~ "Some websites, such as www.youtube.com, show videos using\n"
 #~ "a technology known as \"Flash\". Enable this option to cause\n"
@@ -208,6 +156,20 @@ msgstr ""
 #~ "когда некоторые программы запущены."
 
 #~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "Когда Caffeine обнаруживает, что один из процессов в этом\n"
+#~ "списке запущен, он предотвратит запуск хранителя экрана\n"
+#~ "и режим энергосбережения. Это полезно для приложений\n"
+#~ "(обычно, полноэкранных) которые самостоятельно не\n"
+#~ "предотвращают запуск хранителя экрана и переход в режим \n"
+#~ "энергосбережения."
+
+#~ msgid ""
 #~ "Enable this option to automatically run Caffeine as soon as\n"
 #~ "your computer has finished starting up and you have\n"
 #~ "successfully entered your username and password."
@@ -215,6 +177,9 @@ msgstr ""
 #~ "Включение этого параметра означает автоматический\n"
 #~ "запуск Caffeine как только компьютер загрузится и будет\n"
 #~ "введён логин и пароль."
+
+#~ msgid "Activate for"
+#~ msgstr "Активация для"
 
 #~ msgid ""
 #~ "An application to temporarily prevent the activation of both the screen "
@@ -228,6 +193,9 @@ msgstr ""
 
 #~ msgid "Running Processes"
 #~ msgstr "Запущенные процессы"
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine приостановлен; энергосбережение включено"
 
 #~ msgid "Timed activation set; "
 #~ msgstr "Установлена активация по времени; "
@@ -259,3 +227,6 @@ msgstr ""
 
 #~ msgid "hours"
 #~ msgstr "ч."
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Список программ, для которых будет активирован Caffeine:"

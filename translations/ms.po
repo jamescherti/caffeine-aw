@@ -6,96 +6,56 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: caffeine\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-15 22:53+0000\n"
-"PO-Revision-Date: 2011-11-04 06:46+0000\n"
-"Last-Translator: Caffeine Developers <Unknown>\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2021-07-10 08:57+0000\n"
+"Last-Translator: Reuben Thomas <rrt@sc3d.org>\n"
 "Language-Team: Malay <ms@li.org>\n"
-"Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-12-12 05:18+0000\n"
-"X-Generator: Launchpad (build 16869)\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
 
-#: caffeine-indicator:92
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Caffeine Developers https://launchpad.net/~caffeine-developers\n"
+"  Reuben Thomas https://launchpad.net/~rrt\n"
 "  abuyop https://launchpad.net/~abuyop"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Activate"
-msgstr "Diaktifkan untuk"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr "Lummpuhkan Penyelamat Skrin"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Deactivate"
-msgstr "Diaktifkan untuk"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr "Benarkan Penyelamat Skrin"
 
-#: caffeine-indicator:112
-msgid "Inhibit desktop idleness"
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
 msgstr ""
-
-#: caffeine-indicator:112
-msgid "Allow desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:139
-msgid " is inhibiting desktop idleness"
-msgstr ""
-
-#~ msgid "Caffeine is dormant; powersaving is enabled"
-#~ msgstr "Caffeine terpendam; penjimatan kuasa dibenarkan"
-
-#~ msgid "Disable Screensaver"
-#~ msgstr "Lummpuhkan Penyelamat Skrin"
-
-#~ msgid "Enable Screensaver"
-#~ msgstr "Benarkan Penyelamat Skrin"
-
-#~ msgid ""
-#~ "An application to temporarily prevent the activation of both\n"
-#~ " the screen saver and the \"sleep\" powersaving mode."
-#~ msgstr ""
-#~ "Aplikasi untuk halang buat sementara pengaktifan kedua-dua\n"
-#~ " penyelamat skrin dan mod penjimatan kuasa \"tidur\"."
-
-#~ msgid "Preferences"
-#~ msgstr "Keutamaan"
-
-#~ msgid "Automatic activation"
-#~ msgstr "Pengaktifan Automatik"
-
-#~ msgid "List of programs that Caffeine activates for:"
-#~ msgstr "Senarai program yang mana Caffeine aktifkan:"
-
-#~ msgid ""
-#~ "When Caffeine detects that one of the processes in this\n"
-#~ "list is running, it will prevent the activation of the screensaver\n"
-#~ "and powersaving modes. This can be useful for applications\n"
-#~ "(particularly full-screen applications) that do not properly\n"
-#~ "prevent the screensaver and powersaving modes on their own."
-#~ msgstr ""
-#~ "Bila Caffeine mengesan salah satu proses didalam senarai\n"
-#~ "ini dijalankan, ia akan menghalang pengaktifan penyelamat\n"
-#~ "skrin dan mod penjimatan kuasa. Ini berguna untuk \n"
-#~ "aplikasi yang tidak boleh menghalang penyelamat skrin dan\n"
-#~ "mod penjimatan kuasa dengan sendiri."
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "Select a process name..."
-#~ msgstr "Pilih nama proses..."
 
 #~ msgid "Activated for Quake Live"
 #~ msgstr "Diaktifkan untuk Quake Live"
 
 #~ msgid "Please install"
 #~ msgstr "Sila pasang"
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine terpendam; penjimatan kuasa dibenarkan"
 
 #~ msgid "minute"
 #~ msgstr "minit"
@@ -131,8 +91,8 @@ msgstr ""
 #~ "An application to temporarily prevent the activation of both the screen "
 #~ "saver and the \"sleep\" powersaving mode."
 #~ msgstr ""
-#~ "Satu aplikasi untuk menghalang sementara pengkatifan kedua-dua "
-#~ "penyelamatan skrin dan mod penjimatan kuasa \"tidur\"."
+#~ "Satu aplikasi untuk menghalang sementara pengkatifan kedua-dua penyelamatan "
+#~ "skrin dan mod penjimatan kuasa \"tidur\"."
 
 #~ msgid " have elapsed; powersaving is re-enabled"
 #~ msgstr " telah berlalu; penjimatan kuasa dibenarkan-semula"
@@ -143,6 +103,12 @@ msgstr ""
 #~ msgid "minutes"
 #~ msgstr "minit"
 
+#~ msgid "Automatic activation"
+#~ msgstr "Pengaktifan Automatik"
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Senarai program yang mana Caffeine aktifkan:"
+
 #~ msgid ""
 #~ "Caffeine can activate automatically\n"
 #~ "whenever certain programs are runnning."
@@ -152,6 +118,9 @@ msgstr ""
 
 #~ msgid "Autostart"
 #~ msgstr "Mula Sendiri"
+
+#~ msgid "Preferences"
+#~ msgstr "Keutamaan"
 
 #~ msgid "Start Caffeine on login"
 #~ msgstr "Mulakan Caffiene semasa mendaftar masuk"
@@ -207,6 +176,22 @@ msgstr ""
 #~ msgid "Activate for Flash video"
 #~ msgstr "Aktifkan video Flash"
 
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "Bila Caffeine mengesan salah satu proses didalam senarai\n"
+#~ "ini dijalankan, ia akan menghalang pengaktifan penyelamat\n"
+#~ "skrin dan mod penjimatan kuasa. Ini berguna untuk \n"
+#~ "aplikasi yang tidak boleh menghalang penyelamat skrin dan\n"
+#~ "mod penjimatan kuasa dengan sendiri."
+
+#~ msgid "Select a process name..."
+#~ msgstr "Pilih nama proses..."
+
 #~ msgid "Recent Processes"
 #~ msgstr "Proses Baru-baru Ini"
 
@@ -242,3 +227,6 @@ msgstr ""
 
 #~ msgid "Configure Caffeine"
 #~ msgstr "Konfigur Caffeine"
+
+#~ msgid "Activate for"
+#~ msgstr "Diaktifkan untuk"

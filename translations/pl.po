@@ -6,19 +6,26 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: caffeine\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-15 22:53+0000\n"
-"PO-Revision-Date: 2013-12-12 12:51+0000\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2021-07-10 08:57+0000\n"
 "Last-Translator: Stanisław Michalski <9stas.pl4@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
-"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-12-13 05:54+0000\n"
-"X-Generator: Launchpad (build 16869)\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
 
-#: caffeine-indicator:92
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
@@ -28,90 +35,26 @@ msgstr ""
 "  Mateusz Tybura https://launchpad.net/~wujciol\n"
 "  Stanisław Michalski https://launchpad.net/~stachu"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Activate"
-msgstr "Uruchom przez"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr "Dezaktywuj wygaszacz ekranu"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Deactivate"
-msgstr "Uruchom przez"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr "Włącz wygaszacz ekranu"
 
-#: caffeine-indicator:112
-msgid "Inhibit desktop idleness"
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
 msgstr ""
-
-#: caffeine-indicator:112
-msgid "Allow desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:139
-msgid " is inhibiting desktop idleness"
-msgstr ""
-
-#~ msgid "Caffeine is dormant; powersaving is enabled"
-#~ msgstr "Caffeine jest w spoczynku; oszczędzanie energii jest włączone"
-
-#~ msgid "Caffeine is preventing powersaving modes and screensaver activation"
-#~ msgstr ""
-#~ "Caffeine zapobiega trybowi oszczędzania energii i aktywowaniu wygaszacza "
-#~ "ekranu"
-
-#~ msgid "Disable Screensaver"
-#~ msgstr "Dezaktywuj wygaszacz ekranu"
-
-#~ msgid "Enable Screensaver"
-#~ msgstr "Włącz wygaszacz ekranu"
-
-#~ msgid ""
-#~ "An application to temporarily prevent the activation of both\n"
-#~ " the screen saver and the \"sleep\" powersaving mode."
-#~ msgstr ""
-#~ "Aplikacja tymczasowo uniemożliwiająca aktywację\n"
-#~ " wygaszacza ekranu i \"uśpienia\""
-
-#~ msgid "Preferences"
-#~ msgstr "Ustawienia"
-
-#~ msgid "Automatic activation"
-#~ msgstr "Automatyczna aktywacja Caffeine"
-
-#~ msgid ""
-#~ "Caffeine can activate automatically\n"
-#~ "whenever certain programs are running."
-#~ msgstr ""
-#~ "Caffeine może być aktywowana automatycznie\n"
-#~ "gdy pewne programy są uruchomione."
-
-#~ msgid "List of programs that Caffeine activates for:"
-#~ msgstr "Lista programów, które aktywują Caffeine:"
-
-#~ msgid ""
-#~ "When Caffeine detects that one of the processes in this\n"
-#~ "list is running, it will prevent the activation of the screensaver\n"
-#~ "and powersaving modes. This can be useful for applications\n"
-#~ "(particularly full-screen applications) that do not properly\n"
-#~ "prevent the screensaver and powersaving modes on their own."
-#~ msgstr ""
-#~ "Kiedy Caffeine wykryje, że jeden z procesów obecnych na liście jest "
-#~ "uruchomiony,\n"
-#~ "będzie zapobiegać aktywacji wygaszacza ekranu lub trybu uśpienia.\n"
-#~ "To może być przydatne programom, które nie potrafią same zapobiegać\n"
-#~ "uruchomieniu wygaszacza ekranu i trybu oszczędzania energii\n"
-#~ "(szczególnie aplikacje działające w trybie pełnego ekranu)."
-
-#~ msgid "Process Name"
-#~ msgstr "Nazwa procesu"
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "Select a process name..."
-#~ msgstr "Wybierz nazwę procesu..."
 
 #~ msgid "Please install"
 #~ msgstr "Proszę zainstalować"
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine jest w spoczynku; oszczędzanie energii jest włączone"
 
 #~ msgid "5 minutes"
 #~ msgstr "5 minut"
@@ -169,6 +112,9 @@ msgstr ""
 #~ "Caffeine zapobiega trybowi oszczędzania energii i aktywacji wygaszacza "
 #~ "ekranu "
 
+#~ msgid "Select a process name..."
+#~ msgstr "Wybierz nazwę procesu..."
+
 #~ msgid "Timed activation cancelled (was set for "
 #~ msgstr "Uruchomienie czasowe anulowane (ustawiono dla "
 
@@ -180,6 +126,9 @@ msgstr ""
 
 #~ msgid "Recent Processes"
 #~ msgstr "Ostatnio uruchomione procesy"
+
+#~ msgid "Preferences"
+#~ msgstr "Ustawienia"
 
 #~ msgid " have elapsed; powersaving is re-enabled"
 #~ msgstr " upłynęło; oszczędzanie energii ponownie włączone"
@@ -203,11 +152,25 @@ msgstr ""
 #~ msgstr ""
 #~ "Niektóre strony w sieci, takie jak www.youtube.com, oferują oglądanie "
 #~ "materiałów video,\n"
-#~ "korzystając z technologii znanej jako 'Flash'. Włącz tę opcję, aby "
-#~ "Caffeine automatycznie\n"
+#~ "korzystając z technologii znanej jako 'Flash'. Włącz tę opcję, aby Caffeine "
+#~ "automatycznie\n"
 #~ "zapobiegało aktywacji wygaszacza ekranu i trybu oszczędzania energii,\n"
 #~ "kiedy materiały Flash są osadzone na stronie,\n"
 #~ "którą aktualnie oglądasz w przeglądarce internetowej."
+
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "Kiedy Caffeine wykryje, że jeden z procesów obecnych na liście jest "
+#~ "uruchomiony,\n"
+#~ "będzie zapobiegać aktywacji wygaszacza ekranu lub trybu uśpienia.\n"
+#~ "To może być przydatne programom, które nie potrafią same zapobiegać\n"
+#~ "uruchomieniu wygaszacza ekranu i trybu oszczędzania energii\n"
+#~ "(szczególnie aplikacje działające w trybie pełnego ekranu)."
 
 #~ msgid ""
 #~ "Enable this option to cause Caffeine to automatically prevent\n"
@@ -219,6 +182,12 @@ msgstr ""
 #~ "aktywacji wygaszacza ekranu i trybowi uśpienia,\n"
 #~ "kiedy wykryje, że grasz w grę video Quake Live.\n"
 #~ "Odwiedź www.quakelive.com, aby grać w tę darmową grę."
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Lista programów, które aktywują Caffeine:"
+
+#~ msgid "Automatic activation"
+#~ msgstr "Automatyczna aktywacja Caffeine"
 
 #~ msgid "Start Caffeine on login"
 #~ msgstr "Uruchom Caffeine po zalogowaniu"
@@ -250,6 +219,9 @@ msgstr ""
 
 #~ msgid "Hours:"
 #~ msgstr "Godziny:"
+
+#~ msgid "Activate for"
+#~ msgstr "Uruchom przez"
 
 #~ msgid "Activated for Flash video"
 #~ msgstr "Aktywuj dla filmów Flash"

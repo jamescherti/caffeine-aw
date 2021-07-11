@@ -7,61 +7,50 @@ msgid ""
 msgstr ""
 "Project-Id-Version: caffeine\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-15 22:53+0000\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
 "PO-Revision-Date: 2011-11-04 06:44+0000\n"
 "Last-Translator: Caffeine Developers <Unknown>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-12-12 05:18+0000\n"
-"X-Generator: Launchpad (build 16869)\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
+"Language: \n"
 
-#: caffeine-indicator:92
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Caffeine Developers https://launchpad.net/~caffeine-developers\n"
-"  Liu, Shu-yuan https://launchpad.net/~victorangus"
+"  Liu, Shu-yuan https://launchpad.net/~victorangus\n"
+"  StoneLin https://launchpad.net/~jason840708"
 
-#: caffeine-indicator:105
-msgid "Activate"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr "關閉螢幕保護程式"
+
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr "開啓螢幕保護程式"
+
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
 msgstr ""
-
-#: caffeine-indicator:105
-msgid "Deactivate"
-msgstr ""
-
-#: caffeine-indicator:112
-msgid "Inhibit desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:112
-msgid "Allow desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:139
-msgid " is inhibiting desktop idleness"
-msgstr ""
-
-#~ msgid "Disable Screensaver"
-#~ msgstr "關閉螢幕保護程式"
-
-#~ msgid "Enable Screensaver"
-#~ msgstr "開啓螢幕保護程式"
-
-#~ msgid "Preferences"
-#~ msgstr "偏好設定"
-
-#~ msgid "Activated for Quake Live"
-#~ msgstr "執行雷神之槌 Live (Quake Live)時啓動"
 
 #~ msgid "Please install"
 #~ msgstr "請安裝"
-
-#~ msgid "Activated for Flash video"
-#~ msgstr "播放Flash影片時啓動"
 
 #~ msgid " and "
 #~ msgstr " 和 "
@@ -81,17 +70,142 @@ msgstr ""
 #~ msgid "Autostart"
 #~ msgstr "自動啟動"
 
+#~ msgid "Preferences"
+#~ msgstr "偏好設定"
+
 #~ msgid "Start Caffeine on login"
 #~ msgstr "登入後啓動Caffeine"
-
-#~ msgid ""
-#~ "Enable this option to automatically run Caffeine as soon as\n"
-#~ "your computer has finished starting up and you have\n"
-#~ "successfully entered your username and password."
-#~ msgstr "Caffeine將在電腦完成開機並登入後自動啓動。"
 
 #~ msgid "Minutes:"
 #~ msgstr "分鐘："
 
 #~ msgid "Hours:"
 #~ msgstr "小時："
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine 休眠中; 省電已啟用"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 分鐘"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 分鐘"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 分鐘"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 分鐘"
+
+#~ msgid "1 hour"
+#~ msgstr "1 小時"
+
+#~ msgid "2 hours"
+#~ msgstr "2 小時"
+
+#~ msgid "3 hours"
+#~ msgstr "3 小時"
+
+#~ msgid "4 hours"
+#~ msgstr "4 小時"
+
+#~ msgid "Activated for Quake Live"
+#~ msgstr "啟動於雷神之垂 Live"
+
+#~ msgid "Activated for "
+#~ msgstr "啟動於 "
+
+#~ msgid "Timed activation set; "
+#~ msgstr "已設定定時啟用 "
+
+#~ msgid "Other..."
+#~ msgstr "其他..."
+
+#~ msgid "Activated for Flash video"
+#~ msgstr "啟動於播放Flash影片"
+
+#~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
+#~ msgstr "Caffeine 停用省電以及螢幕省電 "
+
+#~ msgid "Timed activation cancelled (was set for "
+#~ msgstr "已取消定時啟動 (取消設定 "
+
+#~ msgid "Caffeine will prevent powersaving for the next "
+#~ msgstr "Caffeine 會停用省電 "
+
+#~ msgid "Automatic activation"
+#~ msgstr "自動啟用"
+
+#~ msgid ""
+#~ "Enable this option to automatically run Caffeine as soon as\n"
+#~ "your computer has finished starting up and you have\n"
+#~ "successfully entered your username and password."
+#~ msgstr ""
+#~ "啟用這個選項Caffeine會盡快的\n"
+#~ "在電腦完成開機以及你\n"
+#~ "成功的登入使用者時啟動"
+
+#~ msgid " have elapsed; powersaving is re-enabled"
+#~ msgstr " 到達設定時間; 啟用省電"
+
+#~ msgid ""
+#~ "An application to temporarily prevent the activation of both the screen "
+#~ "saver and the \"sleep\" powersaving mode."
+#~ msgstr "用於暫時停用螢幕省電以及休眠模式的程式"
+
+#~ msgid "Activate for Quake Live"
+#~ msgstr "啟動於 Quake Live"
+
+#~ msgid ""
+#~ "Some websites, such as www.youtube.com, show videos using\n"
+#~ "a technology known as \"Flash\". Enable this option to cause\n"
+#~ "Caffeine to automatically prevent the activation of the\n"
+#~ "screensaver and powersaving modes when a Flash video is\n"
+#~ "embedded in the web page that you are currently browsing."
+#~ msgstr ""
+#~ "某些網站,如www.youtube.com, 用\"Flash\"播放影片\n"
+#~ "啟用這個選項,能讓Caffeine在你正在使用瀏覽器\n"
+#~ "播放Flash影片時,自動停用螢幕省電和省電模式"
+
+#~ msgid "Activate for Flash video"
+#~ msgstr "啟動於Flash影片"
+
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "當Caffeine偵測到清單內的程序正在執行\n"
+#~ "時,會停止螢幕省電以及省電模式. \n"
+#~ "這在程式不自己停用螢幕省電以及省電模\n"
+#~ "式時相當有用（尤其是全螢幕程式）"
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Caffeine啟用清單："
+
+#~ msgid ""
+#~ "Caffeine can activate automatically\n"
+#~ "whenever certain programs are runnning."
+#~ msgstr ""
+#~ "Caffeine 可以自動啟用\n"
+#~ "無論現在正在執行什麼程式"
+
+#~ msgid "Duration"
+#~ msgstr "期間"
+
+#~ msgid "Configure Caffeine"
+#~ msgstr "Caffeine 設定值"
+
+#~ msgid "Recent Processes"
+#~ msgstr "最近使用的程式"
+
+#~ msgid "Running Processes"
+#~ msgstr "正在執行的程序"
+
+#~ msgid "Activate for"
+#~ msgstr "啟動於"
+
+#~ msgid "Select a process name..."
+#~ msgstr "選擇一個程序名稱"

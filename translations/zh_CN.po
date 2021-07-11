@@ -1,0 +1,217 @@
+# Chinese (Simplified) translation for caffeine
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the caffeine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: caffeine\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2016-08-05 02:39+0000\n"
+"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
+
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  小三 https://launchpad.net/~yanzilisan183"
+
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr ""
+
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr ""
+
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
+msgstr ""
+
+#~ msgid "Please install"
+#~ msgstr "请安装"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 分钟"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 分钟"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 分钟"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 分钟"
+
+#~ msgid "1 hour"
+#~ msgstr "1 小时"
+
+#~ msgid "2 hours"
+#~ msgstr "2 小时"
+
+#~ msgid "3 hours"
+#~ msgstr "3 小时"
+
+#~ msgid "4 hours"
+#~ msgstr "4 小时"
+
+#~ msgid "Activated for Quake Live"
+#~ msgstr "为 Quake Live 激活"
+
+#~ msgid "Activated for "
+#~ msgstr "激活 "
+
+#~ msgid "Timed activation set; "
+#~ msgstr "定时激活设置 "
+
+#~ msgid "hour"
+#~ msgstr "小时"
+
+#~ msgid "minute"
+#~ msgstr "分钟"
+
+#~ msgid "Other..."
+#~ msgstr "其它..."
+
+#~ msgid "Activated for Flash video"
+#~ msgstr "为 Flash 视频激活"
+
+#~ msgid "hours"
+#~ msgstr "小时"
+
+#~ msgid " and "
+#~ msgstr " 和 "
+
+#~ msgid "minutes"
+#~ msgstr "分钟"
+
+#~ msgid "Automatic activation"
+#~ msgstr "自动激活"
+
+#~ msgid "Autostart"
+#~ msgstr "自动启动"
+
+#~ msgid "Preferences"
+#~ msgstr "首选项"
+
+#~ msgid "Start Caffeine on login"
+#~ msgstr "在登录后启动 Caffeine"
+
+#~ msgid "Activate for Quake Live"
+#~ msgstr "为 Quake Leve 激活"
+
+#~ msgid "Activate for Flash video"
+#~ msgstr "为 Flash 视频激活"
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "激活 Caffeine 的程序列表:"
+
+#~ msgid ""
+#~ "Caffeine can activate automatically\n"
+#~ "whenever certain programs are runnning."
+#~ msgstr ""
+#~ "当某些程序运行时,\n"
+#~ "Caffeine 可以自动激活."
+
+#~ msgid "Duration"
+#~ msgstr "持续时间"
+
+#~ msgid "Hours:"
+#~ msgstr "小时："
+
+#~ msgid "Configure Caffeine"
+#~ msgstr "配置 Caffeine"
+
+#~ msgid "Recent Processes"
+#~ msgstr "最近运行的进程"
+
+#~ msgid "Running Processes"
+#~ msgstr "正在运行的进程"
+
+#~ msgid "Minutes:"
+#~ msgstr "分钟："
+
+#~ msgid "Activate for"
+#~ msgstr "激活"
+
+#~ msgid "Select a process name..."
+#~ msgstr "选择一个进程名称..."
+
+#~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
+#~ msgstr "Caffeine 可以阻止进入省电模式和屏幕保护的运行 "
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "省电模式启用, Caffeine 停止工作."
+
+#~ msgid "Caffeine will prevent powersaving for the next "
+#~ msgstr "接下来 Caffeine 将阻止进入省电模式. "
+
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "当 Caffeine 检测到该进程列表中存在的进程运行时, \n"
+#~ "将阻止屏幕保护运行和进入省电模式.\n"
+#~ "这将对不能自己阻止屏幕保护运行和进入省电模式的应用程序\n"
+#~ "(特别是全屏运行的应用程序)有帮助."
+
+#~ msgid ""
+#~ "Enable this option to automatically run Caffeine as soon as\n"
+#~ "your computer has finished starting up and you have\n"
+#~ "successfully entered your username and password."
+#~ msgstr ""
+#~ "启用此选项可以在系统启动并且输入用户名和密码成功登录后\n"
+#~ "立即自动运行 Caffeine."
+
+#~ msgid ""
+#~ "Enable this option to cause Caffeine to automatically prevent\n"
+#~ "the activation of the screensaver and powersaving modes\n"
+#~ "when it detects that you are playing the Quake Live video\n"
+#~ "game. Visit www.quakelive.com to play the game for free."
+#~ msgstr ""
+#~ "启用此选项，当 Caffeine 检测到 Quake Live 视频游戏运行时, \n"
+#~ "自动阻止屏幕保护程序运行和进入省电模式。\n"
+#~ "访问 www.quakelive.com 免费玩游戏。"
+
+#~ msgid ""
+#~ "Some websites, such as www.youtube.com, show videos using\n"
+#~ "a technology known as \"Flash\". Enable this option to cause\n"
+#~ "Caffeine to automatically prevent the activation of the\n"
+#~ "screensaver and powersaving modes when a Flash video is\n"
+#~ "embedded in the web page that you are currently browsing."
+#~ msgstr ""
+#~ "一些网站，如 www.youtube.com，是通过 Flash 控件播放视频。\n"
+#~ "启用此选项，当你浏览的网页中嵌入有 Flash 视频时,\n"
+#~ "Caffeine 将自动阻止屏幕保护程序运行和进入省电模式。"
+
+#~ msgid "Timed activation cancelled (was set for "
+#~ msgstr "取消激活定时(设置为 "
+
+#~ msgid " have elapsed; powersaving is re-enabled"
+#~ msgstr " 取消激活; 省电模式重新启用"
+
+#~ msgid ""
+#~ "An application to temporarily prevent the activation of both the screen "
+#~ "saver and the \"sleep\" powersaving mode."
+#~ msgstr "一个应用程序临时阻止屏幕保护程序运行和进入“睡眠”省电模式"

@@ -6,107 +6,54 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: caffeine\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-15 22:53+0000\n"
-"PO-Revision-Date: 2013-12-27 15:57+0000\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2021-07-10 08:57+0000\n"
 "Last-Translator: Ostap Fedoryak <osutapu@yahoo.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-12-28 05:23+0000\n"
-"X-Generator: Launchpad (build 16877)\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
 
-#: caffeine-indicator:92
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Caffeine Developers https://launchpad.net/~caffeine-developers\n"
 "  Fedik https://launchpad.net/~fedikw\n"
-"  Ostap Fedoryak https://launchpad.net/~osutapu\n"
-"  Stuartlittle1970@gmail.com https://launchpad.net/~stuartlittle1970"
+"  Mykola Tkach https://launchpad.net/~stuartlittle1970\n"
+"  Ostap Fedoryak https://launchpad.net/~osutapu"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Activate"
-msgstr "Активовано для "
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr "Вимкнути екранну заставку"
 
-#: caffeine-indicator:105
-msgid "Deactivate"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr "Увімкнути екранну заставку"
+
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
 msgstr ""
-
-#: caffeine-indicator:112
-msgid "Inhibit desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:112
-msgid "Allow desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:139
-msgid " is inhibiting desktop idleness"
-msgstr ""
-
-#~ msgid "Caffeine is dormant; powersaving is enabled"
-#~ msgstr "Caffeine призупинено; енергозбереження активовано"
-
-#~ msgid "Caffeine is preventing powersaving modes and screensaver activation"
-#~ msgstr ""
-#~ "Caffeine вимикає режим збереження енергії та активацію скрінсейвера."
-
-#~ msgid "Disable Screensaver"
-#~ msgstr "Вимкнути екранну заставку"
-
-#~ msgid "Enable Screensaver"
-#~ msgstr "Увімкнути екранну заставку"
-
-#~ msgid ""
-#~ "An application to temporarily prevent the activation of both\n"
-#~ " the screen saver and the \"sleep\" powersaving mode."
-#~ msgstr ""
-#~ "Додаток для тимчасового запобігання активації екранної заставки\n"
-#~ "та режиму зниженого енергоспоживання."
-
-#~ msgid "Preferences"
-#~ msgstr "Налаштування"
-
-#~ msgid "Automatic activation"
-#~ msgstr "Автоматичний запуск"
-
-#~ msgid ""
-#~ "Caffeine can activate automatically\n"
-#~ "whenever certain programs are running."
-#~ msgstr ""
-#~ "Caffeine може автоматично вмикатись\n"
-#~ "коли запускаються певні програми"
-
-#~ msgid "List of programs that Caffeine activates for:"
-#~ msgstr "Список програм для яких буде активовано Caffeine:"
-
-#~ msgid ""
-#~ "When Caffeine detects that one of the processes in this\n"
-#~ "list is running, it will prevent the activation of the screensaver\n"
-#~ "and powersaving modes. This can be useful for applications\n"
-#~ "(particularly full-screen applications) that do not properly\n"
-#~ "prevent the screensaver and powersaving modes on their own."
-#~ msgstr ""
-#~ "Коли Caffeine визначить, що одна з програм цього списку запущена\n"
-#~ "він вимкне енергозбереження та екранну заставку.\n"
-#~ "Це корисно для програм (за звичай повноекранних) які\n"
-#~ "самостійно не вміють цього робити."
-
-#~ msgid "Process Name"
-#~ msgstr "Назва процесу"
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "Select a process name..."
-#~ msgstr "Вибрати назву процесу..."
 
 #~ msgid "Please install"
 #~ msgstr "Будь ласка, встановіть"
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine призупинено; енергозбереження активовано"
 
 #~ msgid "Activated for Quake Live"
 #~ msgstr "Активувати для Quake Live"
@@ -117,14 +64,11 @@ msgstr ""
 #~ msgid "minute"
 #~ msgstr "хвилина"
 
-#~ msgid "Activated for Flash video"
-#~ msgstr "Активувати для Flash відео"
-
 #~ msgid " and "
 #~ msgstr " та "
 
-#~ msgid " have elapsed; powersaving is re-enabled"
-#~ msgstr " закінчилась; енергозбереення увімкнено"
+#~ msgid "Activated for "
+#~ msgstr "Активовано для "
 
 #~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
 #~ msgstr "Caffeine вимикає енергозбереження та екранну заставку "
@@ -137,6 +81,9 @@ msgstr ""
 
 #~ msgid "Timed activation set; "
 #~ msgstr "Встановлення активації за часом; "
+
+#~ msgid "Preferences"
+#~ msgstr "Налаштування"
 
 #~ msgid ""
 #~ "An application to temporarily prevent the activation of both the screen "
@@ -154,28 +101,8 @@ msgstr ""
 #~ msgid "Activate for Quake Live"
 #~ msgstr "Активувати для Quake Live"
 
-#~ msgid ""
-#~ "Some websites, such as www.youtube.com, show videos using\n"
-#~ "a technology known as \"Flash\". Enable this option to cause\n"
-#~ "Caffeine to automatically prevent the activation of the\n"
-#~ "screensaver and powersaving modes when a Flash video is\n"
-#~ "embedded in the web page that you are currently browsing."
-#~ msgstr ""
-#~ "Деякі сайти такі як www.youtube.com, показують відео\n"
-#~ "використовуючи технологію відому як \"Flash\". Увімкнення цього\n"
-#~ "параметру дозволяє Caffeine автоматично вимикати енергозбереження\n"
-#~ "та екранну заставку коли відбувається перегляд  Flash відео\n"
-#~ "на веб сторінці яку Ви переглядаєте."
-
-#~ msgid "Activate for Flash video"
-#~ msgstr "Активувати для Flash відео"
-
-#~ msgid ""
-#~ "Caffeine can activate automatically\n"
-#~ "whenever certain programs are runnning."
-#~ msgstr ""
-#~ "Caffeine може запускати автоматично\n"
-#~ "коли запущено визначену програму."
+#~ msgid "Automatic activation"
+#~ msgstr "Автоматичний запуск"
 
 #~ msgid "Autostart"
 #~ msgstr "Автозапуск"
@@ -209,6 +136,9 @@ msgstr ""
 #~ msgid "Configure Caffeine"
 #~ msgstr "Налатування Caffeine"
 
+#~ msgid "Select a process name..."
+#~ msgstr "Вибрати назву процесу..."
+
 #~ msgid "Minutes:"
 #~ msgstr "Хвилин:"
 
@@ -220,3 +150,77 @@ msgstr ""
 
 #~ msgid "Recent Processes"
 #~ msgstr "Нещодавні процеси"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 хвилин"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 хвилин"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 хвилин"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 хвилин"
+
+#~ msgid "1 hour"
+#~ msgstr "1 година"
+
+#~ msgid "2 hours"
+#~ msgstr "2 години"
+
+#~ msgid "3 hours"
+#~ msgstr "3 години"
+
+#~ msgid "4 hours"
+#~ msgstr "4 години"
+
+#~ msgid "Other..."
+#~ msgstr "Інше…"
+
+#~ msgid "Activate for"
+#~ msgstr "Активація для"
+
+#~ msgid " have elapsed; powersaving is re-enabled"
+#~ msgstr " закінчилась; енергозбереження увімкнено"
+
+#~ msgid ""
+#~ "Some websites, such as www.youtube.com, show videos using\n"
+#~ "a technology known as \"Flash\". Enable this option to cause\n"
+#~ "Caffeine to automatically prevent the activation of the\n"
+#~ "screensaver and powersaving modes when a Flash video is\n"
+#~ "embedded in the web page that you are currently browsing."
+#~ msgstr ""
+#~ "Деякі сайти такі як www.youtube.com, показують видиво\n"
+#~ "використовуючи технологію відому як \"Flash\". Увімкнення цього\n"
+#~ "параметру дозволяє Caffeine автоматично вимикати енергозбереження\n"
+#~ "та екранну заставку коли відбувається перегляд  Flash видива\n"
+#~ "на сторінці тенет яку Ви переглядаєте."
+
+#~ msgid "Activate for Flash video"
+#~ msgstr "Активувати для Flash видива"
+
+#~ msgid "Activated for Flash video"
+#~ msgstr "Активувати для Flash видива"
+
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "Коли Caffeine визначить, що одна з проґрам цього переліку запущена\n"
+#~ "він вимкне енергозбереження та екранну заставку.\n"
+#~ "Це корисно для проґрам (зазвичай повноекранних) які\n"
+#~ "самостійно не вміють цього робити."
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Перелік проґрам для яких буде активовано Caffeine:"
+
+#~ msgid ""
+#~ "Caffeine can activate automatically\n"
+#~ "whenever certain programs are runnning."
+#~ msgstr ""
+#~ "Caffeine може запускатися автоматично\n"
+#~ "коли запущено визначену проґраму."

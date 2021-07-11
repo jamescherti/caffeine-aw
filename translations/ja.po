@@ -7,47 +7,48 @@ msgid ""
 msgstr ""
 "Project-Id-Version: caffeine\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-15 22:53+0000\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
 "PO-Revision-Date: 2013-12-11 12:42+0000\n"
 "Last-Translator: Akira Nakagawa <matyapiro31@gmail.com>\n"
 "Language-Team: Japanese <ja@li.org>\n"
-"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-12-12 05:18+0000\n"
-"X-Generator: Launchpad (build 16869)\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
+"Language: ja\n"
 
-#: caffeine-indicator:92
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Akira Nakagawa https://launchpad.net/~matyapiro31\n"
-"  Caffeine Developers https://launchpad.net/~caffeine-developers"
+"  Caffeine Developers https://launchpad.net/~caffeine-developers\n"
+"  frederyk https://launchpad.net/~frederyk\n"
+"  ub https://launchpad.net/~xenolith0bytetestcomgreen"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Activate"
-msgstr "アクティベート対象: "
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr "スクリーンセーバーの無効化"
 
-#: caffeine-indicator:105
-msgid "Deactivate"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
 msgstr ""
 
-#: caffeine-indicator:112
-msgid "Inhibit desktop idleness"
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
 msgstr ""
-
-#: caffeine-indicator:112
-msgid "Allow desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:139
-msgid " is inhibiting desktop idleness"
-msgstr ""
-
-#~ msgid "Disable Screensaver"
-#~ msgstr "スクリーンセーバーの無効化"
 
 #~ msgid "1 hour"
 #~ msgstr "1時間"
@@ -93,3 +94,81 @@ msgstr ""
 
 #~ msgid "minutes"
 #~ msgstr "分間"
+
+#~ msgid "Activated for "
+#~ msgstr "アクティベート対象: "
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine休止中; パワーセーブが有効"
+
+#~ msgid "Activated for Quake Live"
+#~ msgstr "Quake Liveで作動"
+
+#~ msgid "Activated for Flash video"
+#~ msgstr "Flashで作動"
+
+#~ msgid "Automatic activation"
+#~ msgstr "自動アクティベーション"
+
+#~ msgid "Autostart"
+#~ msgstr "自動起動"
+
+#~ msgid "Preferences"
+#~ msgstr "設定"
+
+#~ msgid "Start Caffeine on login"
+#~ msgstr "ログインでCaffeineをスタート"
+
+#~ msgid "Activate for Quake Live"
+#~ msgstr "Quake Liveで作動"
+
+#~ msgid "Activate for Flash video"
+#~ msgstr "Flashで作動"
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Caffeineが作動するプログラムのリスト:"
+
+#~ msgid "Running Processes"
+#~ msgstr "実行中のプロセス"
+
+#~ msgid "Recent Processes"
+#~ msgstr "最近のプロセス"
+
+#~ msgid "Minutes:"
+#~ msgstr "分:"
+
+#~ msgid "Select a process name..."
+#~ msgstr "プロセスを選択..."
+
+#~ msgid "Hours:"
+#~ msgstr "時:"
+
+#~ msgid ""
+#~ "Caffeine can activate automatically\n"
+#~ "whenever certain programs are runnning."
+#~ msgstr ""
+#~ "指定したプログラムが実行されているときに\n"
+#~ "Caffeineを自動的に作動させます。"
+
+#~ msgid ""
+#~ "Enable this option to automatically run Caffeine as soon as\n"
+#~ "your computer has finished starting up and you have\n"
+#~ "successfully entered your username and password."
+#~ msgstr ""
+#~ "このオプションを有効にするとコンピューターが起動して\n"
+#~ "あなたがログインするとすぐに Caffeineを自動的に実行します。"
+
+#~ msgid ""
+#~ "Some websites, such as www.youtube.com, show videos using\n"
+#~ "a technology known as \"Flash\". Enable this option to cause\n"
+#~ "Caffeine to automatically prevent the activation of the\n"
+#~ "screensaver and powersaving modes when a Flash video is\n"
+#~ "embedded in the web page that you are currently browsing."
+#~ msgstr ""
+#~ "www.youtube.comのようなウェブサイトではビデオの再生に\n"
+#~ "\"Flash\"として知られる技術を使います。このオプションを有効に\n"
+#~ "すると Caffeine は flash が埋め込まれているページをブラウズする\n"
+#~ "時に自動的にスクリーンセイバーとパワーセーブモードを防止します。"
+
+#~ msgid "Caffeine will prevent powersaving for the next "
+#~ msgstr "次回からCaffeineはパワーセーブを防止します "

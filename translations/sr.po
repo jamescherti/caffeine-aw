@@ -1,0 +1,224 @@
+# Serbian translation for caffeine
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the caffeine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: caffeine\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2015-06-05 08:01+0000\n"
+"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"Language-Team: Serbian <sr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
+
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Slobodan Simić https://launchpad.net/~slsimic\n"
+"  Мирослав Николић https://launchpad.net/~lipek"
+
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr ""
+
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr ""
+
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
+msgstr ""
+
+#~ msgid "3 hours"
+#~ msgstr "3 сата"
+
+#~ msgid "4 hours"
+#~ msgstr "4 сата"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 минута"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 минута"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 минута"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 минута"
+
+#~ msgid "1 hour"
+#~ msgstr "1 сат"
+
+#~ msgid "2 hours"
+#~ msgstr "2 сата"
+
+#~ msgid "Activated for "
+#~ msgstr "Активан за "
+
+#~ msgid "hour"
+#~ msgstr "сат"
+
+#~ msgid "minute"
+#~ msgstr "минут"
+
+#~ msgid "Other..."
+#~ msgstr "Остало..."
+
+#~ msgid "Activated for Flash video"
+#~ msgstr "Активан за флеш видео"
+
+#~ msgid "hours"
+#~ msgstr "сата"
+
+#~ msgid " and "
+#~ msgstr " и "
+
+#~ msgid "minutes"
+#~ msgstr "минута"
+
+#~ msgid "Autostart"
+#~ msgstr "Самопокретање"
+
+#~ msgid ""
+#~ "An application to temporarily prevent the activation of both the screen "
+#~ "saver and the \"sleep\" powersaving mode."
+#~ msgstr ""
+#~ "Апликација која привремено искључује чувара екрана и режим „спавања“."
+
+#~ msgid "Activate for Flash video"
+#~ msgstr "Активирај за флеш видео"
+
+#~ msgid "Duration"
+#~ msgstr "Трајање"
+
+#~ msgid "Hours:"
+#~ msgstr "Часова:"
+
+#~ msgid "Recent Processes"
+#~ msgstr "Недавни процеси"
+
+#~ msgid "Minutes:"
+#~ msgstr "Минута:"
+
+#~ msgid "Activate for"
+#~ msgstr "Активирај за"
+
+#~ msgid "Select a process name..."
+#~ msgstr "Изаберите назив процеса..."
+
+#~ msgid "Please install"
+#~ msgstr "Инсталирајте"
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Кафеин је успаван; уштеда енергије је укључена"
+
+#~ msgid "Activated for Quake Live"
+#~ msgstr "Активан за Квејк Лајв"
+
+#~ msgid "Timed activation set; "
+#~ msgstr "Временско активирање је постављено; "
+
+#~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
+#~ msgstr "Кафеин спречава режим уштеде енергије и покретање чувара екрана "
+
+#~ msgid "Timed activation cancelled (was set for "
+#~ msgstr "Временско покретање је отказано (било је на "
+
+#~ msgid "Caffeine will prevent powersaving for the next "
+#~ msgstr "Кафеин ће спречити уштеду енергије за следећих "
+
+#~ msgid "Automatic activation"
+#~ msgstr "Самостално покретање"
+
+#~ msgid "Preferences"
+#~ msgstr "Поставке"
+
+#~ msgid "Start Caffeine on login"
+#~ msgstr "Покрени Кафеин при пријављивању"
+
+#~ msgid ""
+#~ "Enable this option to automatically run Caffeine as soon as\n"
+#~ "your computer has finished starting up and you have\n"
+#~ "successfully entered your username and password."
+#~ msgstr ""
+#~ "Укључите ову опцију да покренете Кафеин чим\n"
+#~ "рачунар заврши подизање система и \n"
+#~ "успешно унесете корисничко име и лозинку."
+
+#~ msgid " have elapsed; powersaving is re-enabled"
+#~ msgstr " је протекло; уштеда енергије је поново покренута"
+
+#~ msgid ""
+#~ "Enable this option to cause Caffeine to automatically prevent\n"
+#~ "the activation of the screensaver and powersaving modes\n"
+#~ "when it detects that you are playing the Quake Live video\n"
+#~ "game. Visit www.quakelive.com to play the game for free."
+#~ msgstr ""
+#~ "Укључите ову опцију да Кафеин сам спречи\n"
+#~ "покретање чувара екрана и режима уштеде енергије\n"
+#~ "кад открије да пуштате Квејк Лајв видео игру.\n"
+#~ "Посетите „www.quakelive.com“ за бесплатно играње."
+
+#~ msgid "Activate for Quake Live"
+#~ msgstr "Активирај за Квејк Лајв"
+
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "Када Кафеин открије да неки од процеса са списка ради\n"
+#~ "спречиће активирање чувара екрана и режим уштеде\n"
+#~ "енергије. Ово може бити корисно за апликације\n"
+#~ "(најчешће у пуном екрану) које саме не спречавају\n"
+#~ "чувара екрана или режим уштеде енергије."
+
+#~ msgid ""
+#~ "Some websites, such as www.youtube.com, show videos using\n"
+#~ "a technology known as \"Flash\". Enable this option to cause\n"
+#~ "Caffeine to automatically prevent the activation of the\n"
+#~ "screensaver and powersaving modes when a Flash video is\n"
+#~ "embedded in the web page that you are currently browsing."
+#~ msgstr ""
+#~ "Неки веб сајтови, попут „www.youtube.com“, приказују видео\n"
+#~ "помоћу технологије познате као „Флеш“. Укључите ову\n"
+#~ "опцију да Кафеин аутоматски спречи покретање\n"
+#~ "чувара екрана и режим уштеде енергије кад год открије\n"
+#~ "уграђени флеш видео на страници коју гледате."
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Списак програма за које се Кафеин покреће:"
+
+#~ msgid ""
+#~ "Caffeine can activate automatically\n"
+#~ "whenever certain programs are runnning."
+#~ msgstr ""
+#~ "Кафеин се може сам покренути\n"
+#~ "кад год се одређени програм покрене."
+
+#~ msgid "Configure Caffeine"
+#~ msgstr "Подесите Кафеин"
+
+#~ msgid "Running Processes"
+#~ msgstr "Покренути процеси"

@@ -6,74 +6,45 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: caffeine\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-15 22:53+0000\n"
-"PO-Revision-Date: 2013-12-12 12:51+0000\n"
-"Last-Translator: Caffeine Developers <Unknown>\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2021-07-10 08:57+0000\n"
+"Last-Translator: Reuben Thomas <rrt@sc3d.org>\n"
 "Language-Team: Swedish <sv@li.org>\n"
-"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-12-13 05:54+0000\n"
-"X-Generator: Launchpad (build 16869)\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
 
-#: caffeine-indicator:92
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
-"  Caffeine Developers https://launchpad.net/~caffeine-developers\n"
-"  Tommy Brunn https://launchpad.net/~tommybrunn"
+"  Caffeine Developers https://launchpad.net/~caffeine-developers"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Activate"
-msgstr "Aktivera i"
-
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Deactivate"
-msgstr "Aktivera i"
-
-#: caffeine-indicator:112
-msgid "Inhibit desktop idleness"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
 msgstr ""
 
-#: caffeine-indicator:112
-msgid "Allow desktop idleness"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
 msgstr ""
 
-#: caffeine-indicator:139
-msgid " is inhibiting desktop idleness"
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
 msgstr ""
-
-#~ msgid "Caffeine is dormant; powersaving is enabled"
-#~ msgstr "Caffeine inaktivt; strömsparläge åter tillgängligt."
-
-#~ msgid "Preferences"
-#~ msgstr "Inställningar"
-
-#~ msgid "Automatic activation"
-#~ msgstr "Automatiskt aktivering"
-
-#~ msgid "List of programs that Caffeine activates for:"
-#~ msgstr "Lista över program som Caffeine aktiveras automatiskt för:"
-
-#~ msgid ""
-#~ "When Caffeine detects that one of the processes in this\n"
-#~ "list is running, it will prevent the activation of the screensaver\n"
-#~ "and powersaving modes. This can be useful for applications\n"
-#~ "(particularly full-screen applications) that do not properly\n"
-#~ "prevent the screensaver and powersaving modes on their own."
-#~ msgstr ""
-#~ "När Caffeine upptäcker att en av processerna i\n"
-#~ "listan körs så förhindras skärmsläckaren automatiskt\n"
-#~ "från att aktiveras. Detta kan vara praktiskt för applikationer\n"
-#~ "(speciellt fullskärmsapplikationer) som inte själv\n"
-#~ "förhindrar att skärmsläckaren aktiveras."
-
-#~ msgid "Select a process name..."
-#~ msgstr "Välj process..."
 
 #~ msgid "30 minutes"
 #~ msgstr "30 minuter"
@@ -112,8 +83,8 @@ msgstr ""
 #~ "An application to temporarily prevent the activation of both the screen "
 #~ "saver and the \"sleep\" powersaving mode."
 #~ msgstr ""
-#~ "En applikation för att tillfälligt hindra aktivering av såväl "
-#~ "skärmsläckare som viloläge."
+#~ "En applikation för att tillfälligt hindra aktivering av såväl skärmsläckare "
+#~ "som viloläge."
 
 #~ msgid " have elapsed; powersaving is re-enabled"
 #~ msgstr " har gått; strömsparläge och skärmsläckare återställda"
@@ -142,11 +113,17 @@ msgstr ""
 #~ msgid "Timed activation set; "
 #~ msgstr "Tidsbestämd aktivering inställd; "
 
+#~ msgid "Activate for"
+#~ msgstr "Aktivera i"
+
 #~ msgid "Duration"
 #~ msgstr "Varaktighet"
 
 #~ msgid "Other..."
 #~ msgstr "Annan..."
+
+#~ msgid "Preferences"
+#~ msgstr "Inställningar"
 
 #~ msgid " and "
 #~ msgstr " och "
@@ -156,6 +133,15 @@ msgstr ""
 
 #~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
 #~ msgstr "Caffeine förhindrar strömsparulägen och skärmsläckaraktivering "
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine inaktivt; strömsparläge åter tillgängligt."
+
+#~ msgid "Select a process name..."
+#~ msgstr "Välj process..."
+
+#~ msgid "Automatic activation"
+#~ msgstr "Automatiskt aktivering"
 
 #~ msgid ""
 #~ "Caffeine can activate automatically\n"
@@ -172,6 +158,9 @@ msgstr ""
 
 #~ msgid "Recent Processes"
 #~ msgstr "Nyligen Aktiva Processer"
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Lista över program som Caffeine aktiveras automatiskt för:"
 
 #~ msgid "Activated for Quake Live"
 #~ msgstr "Aktiverad p.g.a. Quake Live"
@@ -205,6 +194,19 @@ msgstr ""
 
 #~ msgid "Activate for Flash video"
 #~ msgstr "Aktivera vid Flash-video"
+
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "När Caffeine upptäcker att en av processerna i\n"
+#~ "listan körs så förhindras skärmsläckaren automatiskt\n"
+#~ "från att aktiveras. Detta kan vara praktiskt för applikationer\n"
+#~ "(speciellt fullskärmsapplikationer) som inte själv\n"
+#~ "förhindrar att skärmsläckaren aktiveras."
 
 #~ msgid "Activated for Flash video"
 #~ msgstr "Aktiverad p.g.a. Flash-video."

@@ -6,93 +6,54 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: caffeine\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-15 22:53+0000\n"
-"PO-Revision-Date: 2011-12-30 07:27+0000\n"
-"Last-Translator: Caffeine Developers <Unknown>\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2021-07-10 08:57+0000\n"
+"Last-Translator: Reuben Thomas <rrt@sc3d.org>\n"
 "Language-Team: Lithuanian <lt@li.org>\n"
-"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-12-12 05:18+0000\n"
-"X-Generator: Launchpad (build 16869)\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
 
-#: caffeine-indicator:92
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Caffeine Developers https://launchpad.net/~caffeine-developers\n"
-"  Craftaz https://launchpad.net/~thecloudmaker"
+"  Craftaz https://launchpad.net/~thecloudmaker\n"
+"  Moo https://launchpad.net/~mooo\n"
+"  Reuben Thomas https://launchpad.net/~rrt"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Activate"
-msgstr "Įjungta "
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr "Išjungti ekrano užsklandą"
 
-#: caffeine-indicator:105
-msgid "Deactivate"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr "Įjungti ekrano užsklandą"
+
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
 msgstr ""
-
-#: caffeine-indicator:112
-msgid "Inhibit desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:112
-msgid "Allow desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:139
-msgid " is inhibiting desktop idleness"
-msgstr ""
-
-#~ msgid "Caffeine is dormant; powersaving is enabled"
-#~ msgstr "Caffeine neveikia; energijos taupymas yra įjungtas"
-
-#~ msgid "Disable Screensaver"
-#~ msgstr "Išjungti ekrano užsklandą"
-
-#~ msgid "Enable Screensaver"
-#~ msgstr "Įjungti ekrano užsklandą"
-
-#~ msgid ""
-#~ "An application to temporarily prevent the activation of both\n"
-#~ " the screen saver and the \"sleep\" powersaving mode."
-#~ msgstr ""
-#~ "Programa nustatyta laikinai neleisti kompiuteriui\n"
-#~ "įjungti ekrano užsklandos ar užmigti"
-
-#~ msgid "Preferences"
-#~ msgstr "Nustatymai"
-
-#~ msgid "Automatic activation"
-#~ msgstr "Automatinis aktyvavimas"
-
-#~ msgid "List of programs that Caffeine activates for:"
-#~ msgstr "Programų sąrašas"
-
-#~ msgid ""
-#~ "When Caffeine detects that one of the processes in this\n"
-#~ "list is running, it will prevent the activation of the screensaver\n"
-#~ "and powersaving modes. This can be useful for applications\n"
-#~ "(particularly full-screen applications) that do not properly\n"
-#~ "prevent the screensaver and powersaving modes on their own."
-#~ msgstr ""
-#~ "Veikiant šiame saraše esančioms programoms,\n"
-#~ "Caffeine neleis kompiuteriui užmigti ar įjungti\n"
-#~ "ekrano užsklandos."
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "Select a process name..."
-#~ msgstr "Pasirinkite užduočių pavadinimą..."
 
 #~ msgid "Activated for Quake Live"
 #~ msgstr "Įjungti Quake puslapiui"
 
-#~ msgid "Timed activation set; "
-#~ msgstr "Aktyvuotas riboto laiko režimas "
+#~ msgid "Activated for "
+#~ msgstr "Įjungta "
 
 #~ msgid "Caffeine will prevent powersaving for the next "
 #~ msgstr "Caffeine, veikiant šioms programoms, neleis kompiuteriui užmigti "
@@ -115,41 +76,20 @@ msgstr ""
 #~ msgid "minutes"
 #~ msgstr "minučių"
 
-#~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
-#~ msgstr ""
-#~ "Caffeine neleidžia kompiuteriui pereiti į  miego rėžimą ar įjungti ekrano "
-#~ "užsklandą kol veikia sąraše esančios programos. "
-
-#~ msgid "Please install"
-#~ msgstr "Instaliuokite"
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine neveikia; energijos taupymas yra įjungtas"
 
 #~ msgid "Timed activation cancelled (was set for "
 #~ msgstr "Riboto laiko veikimas išjungtas (buvo nustatytas "
 
-#~ msgid " have elapsed; powersaving is re-enabled"
-#~ msgstr " praėjo; įjungtas energijos taupymo rėžimas"
-
-#~ msgid ""
-#~ "Caffeine can activate automatically\n"
-#~ "whenever certain programs are runnning."
-#~ msgstr ""
-#~ "Caffeine bus automatiškai paleista \n"
-#~ "veikiant tam tikroms programoms"
-
-#~ msgid "Autostart"
-#~ msgstr "Automatinis pasileidimas"
+#~ msgid "Automatic activation"
+#~ msgstr "Automatinis aktyvavimas"
 
 #~ msgid "Duration"
 #~ msgstr "Trukmė"
 
 #~ msgid "Start Caffeine on login"
 #~ msgstr "Paleisti Caffeine prisijungiant"
-
-#~ msgid ""
-#~ "Enable this option to automatically run Caffeine as soon as\n"
-#~ "your computer has finished starting up and you have\n"
-#~ "successfully entered your username and password."
-#~ msgstr "Caffeine automatiškai bus paleista įjungiant kompiuterį"
 
 #~ msgid "Minutes:"
 #~ msgstr "Minutės:"
@@ -170,16 +110,116 @@ msgstr ""
 #~ msgstr "Įjungti Quake Live puslapiui"
 
 #~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "Veikiant šiame saraše esančioms programoms,\n"
+#~ "Caffeine neleis kompiuteriui užmigti ar įjungti\n"
+#~ "ekrano užsklandos."
+
+#~ msgid "Please install"
+#~ msgstr "Prašome įdiegti"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 minutės"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 minučių"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 minučių"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 minučių"
+
+#~ msgid "1 hour"
+#~ msgstr "1 valanda"
+
+#~ msgid "2 hours"
+#~ msgstr "2 valandos"
+
+#~ msgid "3 hours"
+#~ msgstr "3 valandos"
+
+#~ msgid "4 hours"
+#~ msgstr "4 valandos"
+
+#~ msgid "Timed activation set; "
+#~ msgstr "Aktyvuota riboto laiko veiksena "
+
+#~ msgid "Other..."
+#~ msgstr "Kita..."
+
+#~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
+#~ msgstr ""
+#~ "Caffeine neleidžia kompiuteriui pereiti į  miego veikseną ar įjungti ekrano "
+#~ "užsklandą tol, kol veikia sąraše esančios programos. "
+
+#~ msgid "Autostart"
+#~ msgstr "Automatinis paleidimas"
+
+#~ msgid "Preferences"
+#~ msgstr "Nuostatos"
+
+#~ msgid ""
+#~ "Enable this option to automatically run Caffeine as soon as\n"
+#~ "your computer has finished starting up and you have\n"
+#~ "successfully entered your username and password."
+#~ msgstr ""
+#~ "Įjunkite šį parametrą, norėdami, kad Caffeine būtų\n"
+#~ "paleista iš karto, kai pasileis kompiuteris ir kai įvesite\n"
+#~ "savo naudotojo vardą ir slaptažodį."
+
+#~ msgid " have elapsed; powersaving is re-enabled"
+#~ msgstr " praėjo; įjungta energijos taupymo veiksena"
+
+#~ msgid ""
+#~ "An application to temporarily prevent the activation of both the screen "
+#~ "saver and the \"sleep\" powersaving mode."
+#~ msgstr ""
+#~ "Programa, kuri laikinai neleis ekrano užsklandos ir kompiuterio miego "
+#~ "veiksenos aktyvavimo."
+
+#~ msgid ""
 #~ "Some websites, such as www.youtube.com, show videos using\n"
 #~ "a technology known as \"Flash\". Enable this option to cause\n"
 #~ "Caffeine to automatically prevent the activation of the\n"
 #~ "screensaver and powersaving modes when a Flash video is\n"
 #~ "embedded in the web page that you are currently browsing."
 #~ msgstr ""
-#~ "www.youtube.com vaizdo pergrojimui naudoja įskiepį pavadinimu\n"
-#~ "\"Flash\". Įjunkite šį pasirinkimą noredami, kad kompiuteris neužmigtų\n"
-#~ "ir neįjungtų ekrano užsklandos žiurint vaizdo įrašus ar naudojantis\n"
-#~ "kitomis programomis sukurtomis \"Flash\"."
+#~ "Kai kurios svetainės, tokios kaip www.youtube.com vaizdo įrašų\n"
+#~ "atkūrimui naudoja įskiepį pavadinimu \"Flash\". Įjunkite šį parametrą,\n"
+#~ "noredami, kad, žiurint vaizdo įrašus ar naudojantis kitomis \"Flash\" \n"
+#~ "pagrindu sukurtomis programomis, kompiuteris neužmigtų ir \n"
+#~ "neįjungtų ekrano užsklandos ."
 
 #~ msgid "Activate for Flash video"
-#~ msgstr "Įjungti Flash įskiepiui"
+#~ msgstr "Įjungti peržiūrimiems Flash vaizdo įrašams"
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Programų, kurioms bus aktyvuojama Caffeine, sąrašas:"
+
+#~ msgid ""
+#~ "Caffeine can activate automatically\n"
+#~ "whenever certain programs are runnning."
+#~ msgstr ""
+#~ "Caffeine bus automatiškai aktyvuota\n"
+#~ "veikiant tam tikroms programoms."
+
+#~ msgid "Configure Caffeine"
+#~ msgstr "Konfigūruoti Caffeine"
+
+#~ msgid "Running Processes"
+#~ msgstr "Vykdomi procesai"
+
+#~ msgid "Recent Processes"
+#~ msgstr "Paskiausiai naudoti procesai"
+
+#~ msgid "Activate for"
+#~ msgstr "Aktyvuoti"
+
+#~ msgid "Select a process name..."
+#~ msgstr "Pasirinkite proceso pavadinimą..."

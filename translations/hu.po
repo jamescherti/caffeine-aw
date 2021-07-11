@@ -6,92 +6,46 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: caffeine\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-15 22:53+0000\n"
-"PO-Revision-Date: 2011-11-09 14:04+0000\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2021-07-10 08:57+0000\n"
 "Last-Translator: Richard Somlói <ricsipontaz@gmail.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
-"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-12-12 05:18+0000\n"
-"X-Generator: Launchpad (build 16869)\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
 
-#: caffeine-indicator:92
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Caffeine Developers https://launchpad.net/~caffeine-developers\n"
-"  Gabor Kelemen https://launchpad.net/~kelemeng\n"
-"  Muszela Balázs https://launchpad.net/~bazsi86-deactivatedaccount\n"
 "  Richard Somlói https://launchpad.net/~ricsipontaz"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Activate"
-msgstr "Aktiválás"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr "Képernyővédő tiltása"
 
-#: caffeine-indicator:105
-#, fuzzy
-msgid "Deactivate"
-msgstr "Aktiválás"
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr "Képernyővédő engedélyezése"
 
-#: caffeine-indicator:112
-msgid "Inhibit desktop idleness"
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
 msgstr ""
-
-#: caffeine-indicator:112
-msgid "Allow desktop idleness"
-msgstr ""
-
-#: caffeine-indicator:139
-msgid " is inhibiting desktop idleness"
-msgstr ""
-
-#~ msgid "Caffeine is dormant; powersaving is enabled"
-#~ msgstr "A Caffeine leállt, az energiakezelés újra aktív"
-
-#~ msgid "Disable Screensaver"
-#~ msgstr "Képernyővédő tiltása"
-
-#~ msgid "Enable Screensaver"
-#~ msgstr "Képernyővédő engedélyezése"
-
-#~ msgid ""
-#~ "An application to temporarily prevent the activation of both\n"
-#~ " the screen saver and the \"sleep\" powersaving mode."
-#~ msgstr ""
-#~ "Egy alkalmazás amely ideiglenesen megakadályozza, hogy életbe lépjen \n"
-#~ " a monitor energiatakarékossági módja vagy a képernyőkímélő"
-
-#~ msgid "Preferences"
-#~ msgstr "Beállítások"
-
-#~ msgid "Automatic activation"
-#~ msgstr "Automatikus aktiválás"
-
-#~ msgid "List of programs that Caffeine activates for:"
-#~ msgstr "A Caffeine az alábbi alkalmazásoknál aktiválódjon:"
-
-#~ msgid ""
-#~ "When Caffeine detects that one of the processes in this\n"
-#~ "list is running, it will prevent the activation of the screensaver\n"
-#~ "and powersaving modes. This can be useful for applications\n"
-#~ "(particularly full-screen applications) that do not properly\n"
-#~ "prevent the screensaver and powersaving modes on their own."
-#~ msgstr ""
-#~ "A Caffeine automatikusan letiltja a képernyővédőt\n"
-#~ "és az energiakezelést, ha érzékeli, hogy valamelyik\n"
-#~ "alkalmazás elindul a megadott listából. Hasznos lehet\n"
-#~ "olyan teljes képernyős alkalmazásoknál, amelyekben\n"
-#~ "nem található ilyen funkció."
-
-#~ msgid "    "
-#~ msgstr "    "
-
-#~ msgid "Select a process name..."
-#~ msgstr "Válasszon egy folyamatot..."
 
 #~ msgid "hour"
 #~ msgstr "óra"
@@ -114,6 +68,9 @@ msgstr ""
 #~ msgid "Autostart"
 #~ msgstr "Automatikus indítás"
 
+#~ msgid "Preferences"
+#~ msgstr "Beállítások"
+
 #~ msgid "Duration"
 #~ msgstr "Időtartam"
 
@@ -129,6 +86,9 @@ msgstr ""
 #~ msgid "Activated for "
 #~ msgstr "Aktiválás időtartama: "
 
+#~ msgid "Select a process name..."
+#~ msgstr "Válasszon egy folyamatot..."
+
 #~ msgid "Timed activation cancelled (was set for "
 #~ msgstr "Az aktiválás leállítva (beállított időtartam: "
 
@@ -137,6 +97,9 @@ msgstr ""
 
 #~ msgid "Recent Processes"
 #~ msgstr "Jelenlegi folyamatok"
+
+#~ msgid "Automatic activation"
+#~ msgstr "Automatikus aktiválás"
 
 #~ msgid "Activated for Quake Live"
 #~ msgstr "Aktiválva Quake Live közben"
@@ -206,6 +169,9 @@ msgstr ""
 #~ msgid "Timed activation set; "
 #~ msgstr "Letiltás aktiválva. "
 
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "A Caffeine az alábbi alkalmazásoknál aktiválódjon:"
+
 #~ msgid ""
 #~ "An application to temporarily prevent the activation of both the screen "
 #~ "saver and the \"sleep\" powersaving mode."
@@ -224,6 +190,19 @@ msgstr ""
 #~ "futását érzékeli. Látogasson el a www.quakelive.com honlapra,\n"
 #~ "és próbálja ki a játékot ingyen."
 
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "A Caffeine automatikusan letiltja a képernyővédőt\n"
+#~ "és az energiakezelést, ha érzékeli, hogy valamelyik\n"
+#~ "alkalmazás elindul a megadott listából. Hasznos lehet\n"
+#~ "olyan teljes képernyős alkalmazásoknál, amelyekben\n"
+#~ "nem található ilyen funkció."
+
 #~ msgid "Start Caffeine on login"
 #~ msgstr "A Caffeine indítása bejelentkezéskor"
 
@@ -233,8 +212,13 @@ msgstr ""
 #~ "successfully entered your username and password."
 #~ msgstr ""
 #~ "Az opció engedélyezésével a Caffeine automatikusan elindul a\n"
-#~ "rendszerrel együtt, ha helyesen adta meg felhasználónevét, illetve "
-#~ "jelszavát."
+#~ "rendszerrel együtt, ha helyesen adta meg felhasználónevét, illetve jelszavát."
+
+#~ msgid "Activate for"
+#~ msgstr "Aktiválás"
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "A Caffeine leállt, az energiakezelés újra aktív"
 
 #~ msgid " have elapsed; powersaving is re-enabled"
 #~ msgstr " letelt, az energiakezelés újra aktív"

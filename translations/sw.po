@@ -1,0 +1,125 @@
+# Swahili translation for caffeine
+# Copyright (c) 2019 Rosetta Contributors and Canonical Ltd 2019
+# This file is distributed under the same license as the caffeine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: caffeine\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2019-11-14 13:09+0000\n"
+"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"Language-Team: Swahili <sw@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
+
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Swahilinux Administration https://launchpad.net/~swahilinux"
+
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr ""
+
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr ""
+
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
+msgstr ""
+
+#~ msgid "Please install"
+#~ msgstr "Tafadhali sakinisha"
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine imenyamaa; uhifadhi wa umeme umewezeshwa"
+
+#~ msgid "2 hours"
+#~ msgstr "masaa 2"
+
+#~ msgid "5 minutes"
+#~ msgstr "Dakika 5"
+
+#~ msgid "10 minutes"
+#~ msgstr "Dakika 10"
+
+#~ msgid "15 minutes"
+#~ msgstr "Dakika 15"
+
+#~ msgid "30 minutes"
+#~ msgstr "Dakika 30"
+
+#~ msgid "1 hour"
+#~ msgstr "Saa 1"
+
+#~ msgid "3 hours"
+#~ msgstr "masaa 3"
+
+#~ msgid "4 hours"
+#~ msgstr "masaa 4"
+
+#~ msgid "Activated for Quake Live"
+#~ msgstr "Imewezeshewa Quake Live"
+
+#~ msgid "Activated for "
+#~ msgstr "Imezeshewa "
+
+#~ msgid "Timed activation set; "
+#~ msgstr "Muda amilisho liliwekwa; "
+
+#~ msgid "hour"
+#~ msgstr "saa"
+
+#~ msgid "minute"
+#~ msgstr "dakika"
+
+#~ msgid "Other..."
+#~ msgstr "Mengine..."
+
+#~ msgid "Activated for Flash video"
+#~ msgstr "Imewezeshewa video aina ya Flash"
+
+#~ msgid "hours"
+#~ msgstr "masaa"
+
+#~ msgid " and "
+#~ msgstr " na "
+
+#~ msgid "minutes"
+#~ msgstr "dakika"
+
+#~ msgid "Timed activation cancelled (was set for "
+#~ msgstr "Amilisho la muda limeghairiwa "
+
+#~ msgid "Caffeine will prevent powersaving for the next "
+#~ msgstr "Caffein itazuia hifadhi ya umeme kwa muda unaofuata wa "
+
+#~ msgid "Preferences"
+#~ msgstr "Mapendeleo"
+
+#~ msgid " have elapsed; powersaving is re-enabled"
+#~ msgstr " umeisha; uhifadhi wa umeme umewezeshwa tena"
+
+#~ msgid "Autostart"
+#~ msgstr "Anza kiotomatiki"
+
+#~ msgid "Start Caffeine on login"
+#~ msgstr "Anzisha Caffein ukishaingia"

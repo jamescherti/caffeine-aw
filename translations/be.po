@@ -1,0 +1,225 @@
+# Belarusian translation for caffeine
+# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# This file is distributed under the same license as the caffeine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: caffeine\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2017-03-23 20:55+0000\n"
+"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"Language-Team: Belarusian <be@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
+
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Źmicier Turok https://launchpad.net/~antikruk"
+
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr ""
+
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr ""
+
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
+msgstr ""
+
+#~ msgid "5 minutes"
+#~ msgstr "5 хвілін"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 хвілін"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 хвілін"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 хвілін"
+
+#~ msgid "1 hour"
+#~ msgstr "1 гадзіна"
+
+#~ msgid "2 hours"
+#~ msgstr "2 гадзіны"
+
+#~ msgid "3 hours"
+#~ msgstr "3 гадзіны"
+
+#~ msgid "4 hours"
+#~ msgstr "4 гадзіны"
+
+#~ msgid "Other..."
+#~ msgstr "Іншыя..."
+
+#~ msgid "Activated for Flash video"
+#~ msgstr "Задзейнічаць для Flash відэа"
+
+#~ msgid "Activated for Quake Live"
+#~ msgstr "Задзейнічаць для Quake Live"
+
+#~ msgid "Activated for "
+#~ msgstr "Задзейнічаць для "
+
+#~ msgid " and "
+#~ msgstr " і "
+
+#~ msgid "hour"
+#~ msgstr "гадзіна"
+
+#~ msgid "minute"
+#~ msgstr "хвіліна"
+
+#~ msgid "hours"
+#~ msgstr "гадзін"
+
+#~ msgid "minutes"
+#~ msgstr "хвіліны"
+
+#~ msgid "Preferences"
+#~ msgstr "Налады"
+
+#~ msgid "Autostart"
+#~ msgstr "Аўтазапуск"
+
+#~ msgid "Start Caffeine on login"
+#~ msgstr "Запускаць Caffeine аўтаматычна падчас ўключэння"
+
+#~ msgid ""
+#~ "Enable this option to automatically run Caffeine as soon as\n"
+#~ "your computer has finished starting up and you have\n"
+#~ "successfully entered your username and password."
+#~ msgstr ""
+#~ "Уключыце гэты параметр для аўтаматычнага запуску Caffeine, як толькі\n"
+#~ "ваш кампутар завяршыў запуск і былі\n"
+#~ "паспяхова ўведзены імя карыстальніка і пароль."
+
+#~ msgid "Automatic activation"
+#~ msgstr "Аўтаматычная актывацыя"
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Спіс праграм, для якіх Caffeine будзе дзейнічаць"
+
+#~ msgid "Activate for Flash video"
+#~ msgstr "Задзейнічаць для Flash відэа"
+
+#~ msgid "Activate for Quake Live"
+#~ msgstr "Задзейнічаць для Quake Live"
+
+#~ msgid "Configure Caffeine"
+#~ msgstr "Наладзіць Caffeine"
+
+#~ msgid "Duration"
+#~ msgstr "Час"
+
+#~ msgid "Hours:"
+#~ msgstr "Гадзіны:"
+
+#~ msgid "Minutes:"
+#~ msgstr "Хвіліны:"
+
+#~ msgid "Activate for"
+#~ msgstr "Задзейнічаць для"
+
+#~ msgid "Running Processes"
+#~ msgstr "Выконваемыя працэсы"
+
+#~ msgid "Recent Processes"
+#~ msgstr "Апошнія працэсы"
+
+#~ msgid "Timed activation set; "
+#~ msgstr "Часовая актывацыя; "
+
+#~ msgid "Timed activation cancelled (was set for "
+#~ msgstr "Часовая актывацыя скасавана (была задзейнічана для "
+
+#~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
+#~ msgstr ""
+#~ "Caffeine перашкаджае рэжыму захавання энергіі і актывацыі ахоўніка экрана "
+
+#~ msgid "Caffeine will prevent powersaving for the next "
+#~ msgstr ""
+#~ "Caffeine будзе перашкаджаць рэжыму захавання энергіі  для наступнага "
+
+#~ msgid " have elapsed; powersaving is re-enabled"
+#~ msgstr " завершана; даступны рэжым захавання энергіі"
+
+#~ msgid ""
+#~ "An application to temporarily prevent the activation of both the screen "
+#~ "saver and the \"sleep\" powersaving mode."
+#~ msgstr ""
+#~ "Праграма часова прадухіліць актывацыю ахоўніка экрана і \"спячы\" рэжым "
+#~ "захавання энергіі."
+
+#~ msgid ""
+#~ "Enable this option to cause Caffeine to automatically prevent\n"
+#~ "the activation of the screensaver and powersaving modes\n"
+#~ "when it detects that you are playing the Quake Live video\n"
+#~ "game. Visit www.quakelive.com to play the game for free."
+#~ msgstr ""
+#~ "Адзначце гэты параметр, каб Caffeine аўтаматычна прадухіляў\n"
+#~ "актывацыю ахоўніка экрана і рэжыма захавання энергіі\n"
+#~ "калі ён выяўляе, што вы гуляеце ў Quake Live\n"
+#~ "Наведайце www.quakelive.com, каб гуляць бясплатна."
+
+#~ msgid ""
+#~ "Some websites, such as www.youtube.com, show videos using\n"
+#~ "a technology known as \"Flash\". Enable this option to cause\n"
+#~ "Caffeine to automatically prevent the activation of the\n"
+#~ "screensaver and powersaving modes when a Flash video is\n"
+#~ "embedded in the web page that you are currently browsing."
+#~ msgstr ""
+#~ "Некаторыя вэб-сайты, такія як www.youtube.com, паказваюць відэа з дапамогай\n"
+#~ "тэхналогіі, вядомай як \"Flash\". Адзначце гэты параметр, каб\n"
+#~ "Caffeine аўтаматычна прадухіляў актывацыю\n"
+#~ "ахоўніка экрана і рэжым захавання энергіі, калі вы\n"
+#~ "глядзіце Флэш відэа на вэб-старонцы."
+
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "Калі Caffeine выявіць, што адзін з працэсаў у гэтым\n"
+#~ "спісе запушчаны, ён пачне перашкаджаць актывацыі ахоўніка экрана\n"
+#~ "і рэжыму захавання энергіі. Гэта можа быць карысна для праграм\n"
+#~ "(у прыватнасці, у поўнаэкранным рэжыме ), якія самастойна некарэктна\n"
+#~ "прадухіляюць актывацыю ахоўніка экрана і рэжым захавання энергіі."
+
+#~ msgid ""
+#~ "Caffeine can activate automatically\n"
+#~ "whenever certain programs are runnning."
+#~ msgstr ""
+#~ "Caffeine можна аўтаматычна задзейнічаць, калі мэтавыя праграмы працуюць."
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine знаходзіцца ў стане спакою;даступны рэжым захавання энергіі"
+
+#~ msgid "Please install"
+#~ msgstr "Усталюйце, калі ласка"
+
+#~ msgid "Select a process name..."
+#~ msgstr "Абярыце назву працэсу..."

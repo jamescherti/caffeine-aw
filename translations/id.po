@@ -1,0 +1,226 @@
+# Indonesian translation for caffeine
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the caffeine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: caffeine\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-02-25 21:00+0000\n"
+"PO-Revision-Date: 2015-05-22 09:55+0000\n"
+"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"Language-Team: Indonesian <id@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
+
+#. file 'caffeine/core.py', line 123
+msgid "Caffeine is dormant"
+msgstr ""
+
+#. file 'caffeine/core.py', line 128
+msgid "Caffeine is preventing desktop idleness"
+msgstr ""
+
+#. file 'caffeine/main.py', line 64
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  zmni https://launchpad.net/~zmni-deactivatedaccount"
+
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Disable Screensaver"
+msgstr ""
+
+#. file 'caffeine/main.py', line 85
+#. file 'caffeine/main.py', line 100
+msgid "Enable Screensaver"
+msgstr ""
+
+#. file 'share/caffeine/glade/GUI.glade', line ?
+msgid "Manually and automatically control the desktop’s idle state"
+msgstr ""
+
+#~ msgid "Please install"
+#~ msgstr "Mohon pasang"
+
+#~ msgid "Caffeine is dormant; powersaving is enabled"
+#~ msgstr "Caffeine diabaikan, penghematan energi difungsikan"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 menit"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 menit"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 menit"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 menit"
+
+#~ msgid "1 hour"
+#~ msgstr "1 jam"
+
+#~ msgid "2 hours"
+#~ msgstr "2 jam"
+
+#~ msgid "3 hours"
+#~ msgstr "3 jam"
+
+#~ msgid "4 hours"
+#~ msgstr "4 jam"
+
+#~ msgid "Other..."
+#~ msgstr "Lainnya..."
+
+#~ msgid "Activated for Flash video"
+#~ msgstr "Diaktifkan untuk video Flash"
+
+#~ msgid "Activated for Quake Live"
+#~ msgstr "Diaktifkan untuk Quake Live"
+
+#~ msgid "Activated for "
+#~ msgstr "Diaktifkan untuk "
+
+#~ msgid " and "
+#~ msgstr " dan "
+
+#~ msgid "hour"
+#~ msgstr "jam"
+
+#~ msgid "minute"
+#~ msgstr "menit"
+
+#~ msgid "hours"
+#~ msgstr "jam"
+
+#~ msgid "minutes"
+#~ msgstr "menit"
+
+#~ msgid "Timed activation set; "
+#~ msgstr "Setelan rentang waktu pengaktifan; "
+
+#~ msgid "Caffeine will prevent powersaving for the next "
+#~ msgstr "Caffeine akan mencegah penghematan energi selama "
+
+#~ msgid "Timed activation cancelled (was set for "
+#~ msgstr "Rentang waktu pengaktifan dibatalkan (sebelumnya disetel selama "
+
+#~ msgid " have elapsed; powersaving is re-enabled"
+#~ msgstr " telah berakhir; penghematan energi difungsikan kembali."
+
+#~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
+#~ msgstr ""
+#~ "Caffeine mencegah mode penghematan energi dan pengaktifan penghemat layar "
+
+#~ msgid ""
+#~ "An application to temporarily prevent the activation of both the screen "
+#~ "saver and the \"sleep\" powersaving mode."
+#~ msgstr ""
+#~ "Aplikasi yang secara sementara mencegah pengaktifan baik penghemat layar dan "
+#~ "mode penghematan energi \"tidur\"."
+
+#~ msgid "Preferences"
+#~ msgstr "Preferensi"
+
+#~ msgid "Autostart"
+#~ msgstr "Otomulai"
+
+#~ msgid "Start Caffeine on login"
+#~ msgstr "Mulai Caffeine pada saat masuk"
+
+#~ msgid ""
+#~ "Enable this option to automatically run Caffeine as soon as\n"
+#~ "your computer has finished starting up and you have\n"
+#~ "successfully entered your username and password."
+#~ msgstr ""
+#~ "Fungsikan opsi ini untuk secara otomatis menjalankan Caffeine segera "
+#~ "setelah\n"
+#~ "komputer anda selesai memulai dan anda telah dengan sukses\n"
+#~ "memasukkan nama pengguna dan kata sandi anda."
+
+#~ msgid "Automatic activation"
+#~ msgstr "Pengaktifan otomatis"
+
+#~ msgid ""
+#~ "Caffeine can activate automatically\n"
+#~ "whenever certain programs are runnning."
+#~ msgstr ""
+#~ "Caffeine dapat secara otomatis aktif\n"
+#~ "kapanpun program tertentu dijalankan."
+
+#~ msgid "List of programs that Caffeine activates for:"
+#~ msgstr "Senarai program yang membuat Caffeine otomatis diaktifkan:"
+
+#~ msgid ""
+#~ "When Caffeine detects that one of the processes in this\n"
+#~ "list is running, it will prevent the activation of the screensaver\n"
+#~ "and powersaving modes. This can be useful for applications\n"
+#~ "(particularly full-screen applications) that do not properly\n"
+#~ "prevent the screensaver and powersaving modes on their own."
+#~ msgstr ""
+#~ "Ketika Caffeine mendeteksi salah satu proses dalam senarai\n"
+#~ "ini berjalan, Caffeine akan mencegah pengaktifan penghemat layar\n"
+#~ "dan mode penghematan energi. Hal ini sangat berguna untuk aplikasi\n"
+#~ "(khususnya aplikasi layar penuh) yang tidak dapat benar-benar\n"
+#~ "mencegah penghemat layar dan mode penghematan energi."
+
+#~ msgid "Activate for Flash video"
+#~ msgstr "Aktifkan untuk video Flash"
+
+#~ msgid ""
+#~ "Some websites, such as www.youtube.com, show videos using\n"
+#~ "a technology known as \"Flash\". Enable this option to cause\n"
+#~ "Caffeine to automatically prevent the activation of the\n"
+#~ "screensaver and powersaving modes when a Flash video is\n"
+#~ "embedded in the web page that you are currently browsing."
+#~ msgstr ""
+#~ "Beberapa situs web, seperti www.youtube.com, menampilkan video menggunakan\n"
+#~ "teknologi yang dikenal sebagai \"Flash\". Memfungsikan opsi ini menyebabkan\n"
+#~ "Caffeine secara otomatis mencegah pengaktifan\n"
+#~ "penghemat layar dan mode penghematan energi ketika video Flash\n"
+#~ "tertanam di halaman web yang sedang anda ramban."
+
+#~ msgid "Activate for Quake Live"
+#~ msgstr "Aktifkan untuk Quake Live"
+
+#~ msgid ""
+#~ "Enable this option to cause Caffeine to automatically prevent\n"
+#~ "the activation of the screensaver and powersaving modes\n"
+#~ "when it detects that you are playing the Quake Live video\n"
+#~ "game. Visit www.quakelive.com to play the game for free."
+#~ msgstr ""
+#~ "Memfungsikan opsi ini menyebabkan Caffeine secara otomatis mencegah\n"
+#~ "pengaktifan penghemat layar dan mode penghematan energi\n"
+#~ "ketika Caffeine mendeteksi anda sedang memainkan permainan Quake Live.\n"
+#~ "Kunjungi www.quakelive.com untuk memainkannya dengan gratis."
+
+#~ msgid "Configure Caffeine"
+#~ msgstr "Konfigurasi Caffeine"
+
+#~ msgid "Duration"
+#~ msgstr "Durasi"
+
+#~ msgid "Hours:"
+#~ msgstr "Jam:"
+
+#~ msgid "Minutes:"
+#~ msgstr "Menit:"
+
+#~ msgid "Activate for"
+#~ msgstr "Aktifkan untuk"
+
+#~ msgid "Select a process name..."
+#~ msgstr "Pilih nama proses..."
+
+#~ msgid "Running Processes"
+#~ msgstr "Proses Berjalan"
+
+#~ msgid "Recent Processes"
+#~ msgstr "Proses Baru-Baru Ini"
