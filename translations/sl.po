@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: caffeine\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-02-25 21:00+0000\n"
-"PO-Revision-Date: 2018-02-14 12:11+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"PO-Revision-Date: 2021-07-11 08:31+0000\n"
+"Last-Translator: Caffeine Developers <Unknown>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2021-07-11 06:19+0000\n"
+"X-Launchpad-Export-Date: 2021-07-12 06:04+0000\n"
 "X-Generator: Launchpad (build 1b66c075b8638845e61f40eb9036fabeaa01f591)\n"
 
 #. file 'caffeine/core.py', line 123
@@ -29,7 +29,7 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
-"  Matic Gradišer https://launchpad.net/~0micky"
+"  Caffeine Developers https://launchpad.net/~caffeine-developers"
 
 #. file 'caffeine/main.py', line 85
 #. file 'caffeine/main.py', line 100
