@@ -2,7 +2,8 @@
 ./.pybuild
 ./__pycache__
 ./build
-./dist/
+./caffeine.egg-info
+./dist
 ./debian/caffeine.debhelper.log
 ./debian/caffeine.*.debhelper
 ./debian/caffeine.substvars
