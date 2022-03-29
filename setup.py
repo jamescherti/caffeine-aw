@@ -48,7 +48,7 @@ shutil.copy(desktop_file, autostart_dir)
 data_files.append(tuple(("/" + autostart_dir, [join(autostart_dir, desktop_name)])))
 
 setup(name="caffeine",
-    version="2.9.8",
+    version="2.9.9",
     description="Stop the desktop from becoming idle in full-screen mode.",
     license="GPLv3",
     author="The Caffeine Developers",
