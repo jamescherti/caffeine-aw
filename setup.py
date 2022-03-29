@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from distutils.core import setup
+from setuptools import setup
 import os
 from os.path import join, abspath, dirname, exists
 import sys
