@@ -3,9 +3,14 @@
 from setuptools import setup
 import os
 from os.path import join, abspath, dirname, exists
+from pathlib import Path
 import sys
 import shutil
 import subprocess
+
+# Read README.md
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 # Update the translations
 PO_DIR = 'translations'
@@ -50,11 +55,12 @@ data_files.append(tuple(("/" + autostart_dir, [join(autostart_dir, desktop_name)
 setup(name="cups-of-caffeine",
     version="2.9.9",
     description="Keep your computer awake.",
-    long_description="file: README.md",
     license="GPLv3",
     author="Reuben Thomas",
     author_email="rrt@sc3d.org",
     url="https://launchpad.net/caffeine",
+    long_description=long_description,
+    long_description_content_type = "text/markdown",
     data_files=data_files,
     scripts=["caffeine", "caffeinate", "caffeine-indicator"],
     )
