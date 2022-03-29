@@ -44,6 +44,10 @@ compile_catalog(PO_DIR, "caffeine-indicator")
 
 # Add extra data files
 data_files = []
+for path, _, files in os.walk("share"):
+    if len(files) > 0:
+        data_files.append(tuple((path,
+            [join(path, file) for file in files])))
 desktop_name = "caffeine.desktop"
 desktop_file = join("share", "applications", desktop_name)
 autostart_dir = join("etc", "xdg", "autostart")
@@ -53,7 +57,7 @@ shutil.copy(desktop_file, autostart_dir)
 data_files.append(tuple(("/" + autostart_dir, [join(autostart_dir, desktop_name)])))
 
 setup(name="cups-of-caffeine",
-    version="2.9.9",
+    version="2.9.10",
     description="Keep your computer awake.",
     license="GPLv3",
     author="Reuben Thomas",
@@ -62,5 +66,6 @@ setup(name="cups-of-caffeine",
     long_description=long_description,
     long_description_content_type = "text/markdown",
     data_files=data_files,
+
     scripts=["caffeine", "caffeinate", "caffeine-indicator"],
     )

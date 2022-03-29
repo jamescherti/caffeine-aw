@@ -1,1 +1,3 @@
+recursive-include translations *.po
 recursive-include share *
+recursive-exclude share *.mo
