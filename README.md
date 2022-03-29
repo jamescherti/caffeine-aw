@@ -1,4 +1,4 @@
-Caffeine
+# Caffeine
 
 https://launchpad.net/caffeine/
 
@@ -21,25 +21,27 @@ your option) any later version. See COPYING.LESSER.
 Caffeine uses pyewmh from https://sf.net/projects/pyewmh
 
 
-If you think you’ve found a bug
--------------------------------
+## If you think you’ve found a bug
 
 Try running, in a terminal:
 
+```
 window_id=`xwininfo | grep "Window id" | cut -d " " -f 4`
+```
 
 Now click on the terminal window, and then run:
 
+```
 xdg-screensaver suspend $window_id
 xdg-screensaver resume $window_id
+```
 
 This performs the same steps at a lower level as turning Caffeine on then
 off again manually. If this gives the same problem as using Caffeine, then
 the bug is definitely not in Caffeine.
 
 
-Testing translations
---------------------
+## Testing translations
 
 If you want to test out a translation without changing the language for the
 whole session, run caffeine as e.g.: LANGUAGE=ru ./caffeine

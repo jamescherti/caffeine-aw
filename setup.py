@@ -47,11 +47,12 @@ if not exists(autostart_dir):
 shutil.copy(desktop_file, autostart_dir)
 data_files.append(tuple(("/" + autostart_dir, [join(autostart_dir, desktop_name)])))
 
-setup(name="caffeine",
+setup(name="cups-of-caffeine",
     version="2.9.9",
-    description="Stop the desktop from becoming idle in full-screen mode.",
+    description="Keep your computer awake.",
+    long_description="file: README.md",
     license="GPLv3",
-    author="The Caffeine Developers",
+    author="Reuben Thomas",
     author_email="rrt@sc3d.org",
     url="https://launchpad.net/caffeine",
     data_files=data_files,

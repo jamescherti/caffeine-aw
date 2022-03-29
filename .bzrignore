@@ -2,14 +2,8 @@
 ./.pybuild
 ./__pycache__
 ./build
-./caffeine.egg-info
+./*.egg-info
 ./dist
-./debian/caffeine.debhelper.log
-./debian/caffeine.*.debhelper
-./debian/caffeine.substvars
-./debian/debhelper-build-stamp
-./debian/files
-./debian/caffeine
 ./share/locale
 ./etc
 translations/caffeine-indicator.pot
