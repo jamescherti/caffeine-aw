@@ -34,7 +34,7 @@ from gi.repository import GLib, Gtk, GObject, AyatanaAppIndicator3 as AppIndicat
 from Xlib import display
 
 PROGRAM_NAME = "caffeine-indicator"
-VERSION = pkg_resources.require("caffeine")[0].version
+VERSION = pkg_resources.require("cups-of-caffeine")[0].version
 
 # Register the gettext function for the whole interpreter as "_"
 builtins._ = gettext.gettext

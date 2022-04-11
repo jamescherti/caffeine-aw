@@ -56,8 +56,8 @@ if not exists(autostart_dir):
 shutil.copy(desktop_file, autostart_dir)
 data_files.append(tuple(("/" + autostart_dir, [join(autostart_dir, desktop_name)])))
 
-setup(name="cups-of-caffeine",
-    version="2.9.10",
+setup(name="caffeine",
+    version="2.9.11",
     description="Keep your computer awake.",
     license="GPLv3",
     author="Reuben Thomas",
