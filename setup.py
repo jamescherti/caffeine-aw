@@ -57,7 +57,7 @@ shutil.copy(desktop_file, autostart_dir)
 data_files.append(tuple(("/" + autostart_dir, [join(autostart_dir, desktop_name)])))
 
 setup(name="cups-of-caffeine",
-    version="2.9.11",
+    version="2.9.12",
     description="Keep your computer awake.",
     license="GPLv3",
     author="Reuben Thomas",
