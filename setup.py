@@ -68,4 +68,5 @@ setup(name="cups-of-caffeine",
     data_files=data_files,
 
     scripts=["caffeine", "caffeinate", "caffeine-indicator"],
+    py_modules=[], # Workaround for setuptools >= 61.0; see https://bugs.launchpad.net/caffeine/+bug/1981419
     )
