@@ -1,0 +1,9 @@
+./MANIFEST
+./.pybuild
+./__pycache__
+./build
+./*.egg-info
+./dist
+./share/locale
+./etc
+translations/caffeine-indicator.pot
