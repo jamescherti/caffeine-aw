@@ -25,7 +25,7 @@ from Xlib import display
 
 sys.tracebacklimit = None
 PROGRAM_NAME = "caffeinate"
-VERSION = pkg_resources.require("cups-of-caffeine")[0].version
+VERSION = pkg_resources.require("caffeine-aw")[0].version
 
 def die(err):
     sys.exit(PROGRAM_NAME + ': ' + err)

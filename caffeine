@@ -32,7 +32,7 @@ PROGRAM_NAME = 'caffeine'
 
 # Handle command-line arguments
 parser = argparse.ArgumentParser(prog=PROGRAM_NAME, description='Prevent desktop idleness in full-screen mode')
-parser.add_argument('-V', '--version', action='version', version=PROGRAM_NAME + ' ' + pkg_resources.require("cups-of-caffeine")[0].version)
+parser.add_argument('-V', '--version', action='version', version=PROGRAM_NAME + ' ' + pkg_resources.require("caffeine-aw")[0].version)
 parser.parse_args()
 
 ewmh = EWMH()
