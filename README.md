@@ -19,6 +19,14 @@ Also provided are an indicator, caffeine-indicator, that gives a manual
 toggle, and caffeinate, which allows desktop idleness to be inhibited for
 the duration of any command. See their man pages for more information.
 
+## Installation
+
+```sh
+sudo pip install git+https://github.com/jamescherti/caffeine-aw
+```
+
+## License
+
 Caffeine is distributed under the GNU General Public License, either version
 3, or (at your option) any later version. See COPYING.
 
