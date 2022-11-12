@@ -56,13 +56,12 @@ if not exists(autostart_dir):
 shutil.copy(desktop_file, autostart_dir)
 data_files.append(tuple(("/" + autostart_dir, [join(autostart_dir, desktop_name)])))
 
-setup(name="cups-of-caffeine",
+setup(name="caffeine-aw",
     version="2.9.12",
-    description="Keep your computer awake.",
+    description="Keep your computer awake, even when the full-screen window is not focused!",
     license="GPLv3",
-    author="Reuben Thomas",
-    author_email="rrt@sc3d.org",
-    url="https://launchpad.net/caffeine",
+    author="Caffeine-aw authors",
+    url="https://github.com/jamescherti/caffeine-aw",
     long_description=long_description,
     long_description_content_type = "text/markdown",
     data_files=data_files,
