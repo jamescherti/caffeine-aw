@@ -22,9 +22,11 @@ from subprocess import run
 
 import pkg_resources
 from Xlib import display
+from setproctitle import setproctitle
 
 sys.tracebacklimit = None
 PROGRAM_NAME = "caffeinate"
+setproctitle(PROGRAM_NAME)
 VERSION = pkg_resources.require("caffeine-aw")[0].version
 
 def die(err):

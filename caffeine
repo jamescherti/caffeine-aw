@@ -27,6 +27,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import GObject, Gtk, GLib
 
 from ewmh import EWMH
+from setproctitle import setproctitle
 
 
 PROGRAM_NAME = 'caffeine'
@@ -135,6 +136,7 @@ logging.basicConfig(level=logging.INFO, stream=sys.stdout,
                     format="%(asctime)s %(name)s: %(message)s")
 
 # Handle command-line arguments
+setproctitle(PROGRAM_NAME)
 parser = argparse.ArgumentParser(prog=PROGRAM_NAME, description='Prevent desktop idleness in full-screen mode')
 parser.add_argument('-V', '--version', action='version', version=PROGRAM_NAME + ' ' + pkg_resources.require("caffeine-aw")[0].version)
 parser.parse_args()

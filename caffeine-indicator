@@ -32,6 +32,7 @@ gi.require_version('Gtk', '3.0')
 gi.require_version('AyatanaAppIndicator3', '0.1')
 from gi.repository import GLib, Gtk, GObject, AyatanaAppIndicator3 as AppIndicator3
 from Xlib import display
+from setproctitle import setproctitle
 
 PROGRAM_NAME = "caffeine-indicator"
 VERSION = pkg_resources.require("caffeine-aw")[0].version
@@ -182,6 +183,7 @@ def InitSignal(gui):
 
 # Set up and run
 logging.basicConfig(level=logging.INFO)
+setproctitle(PROGRAM_NAME)
 GObject.signal_new("activation-toggled", Caffeine,
         GObject.SignalFlags.RUN_FIRST, None, [bool, str])
 caffeine = Caffeine()
