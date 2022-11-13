@@ -6,10 +6,12 @@ Caffeine-aw URL: https://github.com/jamescherti/caffeine-aw
 
 ## What is the difference between caffeine-aw and caffeine?
 
-* **Caffeine-aw** (this fork) prevents the desktop from becoming idle **when one of the windows is in full-screen mode**, even if the fullscreen window is not focused.
-* **Caffeine** only prevents the desktop from becoming idle if the focused window is in full-screen mode.
+Here are some of the enhancements in **Caffeine-aw**:
+* **Caffeine-aw** prevents the desktop from becoming idle **when one of the windows is in full-screen mode**, even if the fullscreen window is not focused. On the other hand, **Caffeine** only prevents the desktop from becoming idle if the focused window is in full-screen mode.
+* The process name is set to 'caffeine', 'caffeine-indicator', and 'caffeinate'.
+* **Caffeine-aw** no longer inhibits desktop idleness when it is closed or terminated.
 
-## What is caffeine-aw?
+## What is Caffeine-aw?
 
 Caffeine-aw is a small daemon that prevents the desktop from becoming idle (and
 hence the screen saver and/or blanker from activating) when one of the windows

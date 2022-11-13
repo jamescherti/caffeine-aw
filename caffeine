@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright © 2009-2020 The Caffeine Developers
+# Copyright © 2009-2022 The Caffeine-aw Developers
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,37 +15,38 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import logging
 import argparse
+import gc
+import logging
+import shutil
 import signal
-from subprocess import call
 import sys
+import time
+from subprocess import call
 
-import pkg_resources
-import gi
-gi.require_version('Gtk', '3.0')
-from gi.repository import GObject, Gtk, GLib
-
+import pkg_resources  # type: ignore
 from ewmh import EWMH
 from setproctitle import setproctitle
 
+PROGRAM_NAME = "caffeine"
+XDG_SCREENSAVER_CMD = "xdg-screensaver"
 
-PROGRAM_NAME = 'caffeine'
 
-
-class Caffeine(GObject.GObject):
+class Caffeine:
     def __init__(self):
-        GObject.GObject.__init__(self)
+        self.ewmh = EWMH()
         self.windows_inhibited = set()
         self.windows_normal = {}
         self.windows_fullscreen = {}
 
-        # Add hook for full-screen check (same interval as mplayer's heartbeat command)
-        # FIXME: add capability to xdg-screensaver to report timeout
-        GLib.timeout_add_seconds(30, self._check_for_fullscreen_all_windows)
+    def main(self):
+        while True:
+            self._check_for_fullscreen_all_windows()
+            # 30s: same interval as mplayer's heartbeat command
+            time.sleep(30)
 
     def _check_for_fullscreen_all_windows(self):
-        list_win = ewmh.getClientList()
+        list_win = self.ewmh.getClientList()
 
         # Find full-screen windows
         self.windows_fullscreen = {}
@@ -54,7 +55,7 @@ class Caffeine(GObject.GObject):
             hex_win_id = hex(win.id)
 
             try:
-                wm_state = ewmh.getWmState(win, str=True)
+                wm_state = self.ewmh.getWmState(win, str=True)
                 if '_NET_WM_STATE_FULLSCREEN' in wm_state:
                     self.windows_fullscreen[hex_win_id] = (win, wm_state)
                 else:
@@ -69,13 +70,13 @@ class Caffeine(GObject.GObject):
             if hex_win_id in self.windows_inhibited:
                 continue
 
-            call(['xdg-screensaver', 'suspend', hex_win_id])
+            call([XDG_SCREENSAVER_CMD, 'suspend', hex_win_id])
             inhibited_win.add(hex_win_id)
 
-        if inhibited_win:
+        for hex_win_id in inhibited_win:
             logging.info(
-                "%s is inhibiting desktop idleness (win id: %s)",
-                PROGRAM_NAME, ', '.join(sorted(inhibited_win))
+                "The window %s is now inhibiting desktop idleness",
+                hex_win_id,
             )
 
         # Resume
@@ -85,7 +86,7 @@ class Caffeine(GObject.GObject):
         # Return True so timeout is rerun
         return True
 
-    def release(self):
+    def release(self, force=False):
         if not self.windows_inhibited:
             return
 
@@ -93,55 +94,72 @@ class Caffeine(GObject.GObject):
 
         resumed_win_id = set()
         for hex_win_id in self.windows_inhibited:
-            if hex_win_id in all_windows and \
+            if not force and hex_win_id in all_windows and \
                     hex_win_id not in self.windows_normal:
                 continue
 
             if hex_win_id in all_windows:
-                call(['xdg-screensaver', 'resume', hex_win_id])
+                call([XDG_SCREENSAVER_CMD, 'resume', hex_win_id])
 
             resumed_win_id.add(hex_win_id)
 
         self.windows_inhibited -= resumed_win_id
 
         if resumed_win_id:
-            logging.info(
-                "%s is no longer inhibiting desktop idleness (win id: %s)",
-                PROGRAM_NAME, ', '.join(sorted(resumed_win_id))
-            )
+            for hex_win_id in resumed_win_id:
+                logging.info(
+                    "The window %s is no longer inhibiting desktop idleness",
+                    hex_win_id,
+                )
+
+    def __del__(self):
+        self.release(force=True)
 
 
-# Adapted from http://stackoverflow.com/questions/26388088/python-gtk-signal-handler-not-working
-def InitSignal():
-    def signal_action(signal):
-        caffeine.release()
+# pylint: disable=unused-argument
+def run_garbage_collector(signum, frame):
+    """Run the garbage collector."""
+    gc.collect()
+    sys.exit(1)
+
+
+def main():
+    """The command-line interface."""
+    logging.basicConfig(
+        level=logging.INFO,
+        stream=sys.stdout,
+        format="[" + PROGRAM_NAME + "] %(message)s",
+    )
+
+    if not shutil.which(XDG_SCREENSAVER_CMD):
+        logging.error("Error: '%s': command not found", XDG_SCREENSAVER_CMD)
         sys.exit(1)
 
-    def idle_handler(*args):
-        GLib.idle_add(signal_action, priority=GLib.PRIORITY_HIGH)
+    setproctitle(PROGRAM_NAME)
+    parser = argparse.ArgumentParser(
+        prog=PROGRAM_NAME,
+        description='Prevent desktop idleness in full-screen mode',
+    )
+    parser.add_argument(
+        '-V', '--version', action='version',
+        version=(PROGRAM_NAME + ' ' +
+                 pkg_resources.require("caffeine-aw")[0].version)
+    )
+    parser.parse_args()
 
-    def handler(*args):
-        signal_action(args[0])
+    for sig in (signal.SIGINT, signal.SIGTERM, signal.SIGHUP):
+        signal.signal(sig, run_garbage_collector)
 
-    def install_glib_handler(sig):
-        # GLib.unix_signal_add was added in glib 2.36
-        GLib.unix_signal_add(GLib.PRIORITY_HIGH, sig, handler, sig)
+    logging.info("%s has started.", PROGRAM_NAME)
+    caffeine = Caffeine()
+    try:
+        caffeine.main()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        caffeine.release(force=True)
+        logging.info("%s has stopped.", PROGRAM_NAME)
 
-    for sig in [signal.SIGINT, signal.SIGTERM, signal.SIGHUP]:
-        signal.signal(sig, idle_handler)
-        GLib.idle_add(install_glib_handler, sig, priority=GLib.PRIORITY_HIGH)
 
-
-logging.basicConfig(level=logging.INFO, stream=sys.stdout,
-                    format="%(asctime)s %(name)s: %(message)s")
-
-# Handle command-line arguments
-setproctitle(PROGRAM_NAME)
-parser = argparse.ArgumentParser(prog=PROGRAM_NAME, description='Prevent desktop idleness in full-screen mode')
-parser.add_argument('-V', '--version', action='version', version=PROGRAM_NAME + ' ' + pkg_resources.require("caffeine-aw")[0].version)
-parser.parse_args()
-
-ewmh = EWMH()
-caffeine = Caffeine()
-InitSignal()
-Gtk.main()
+if __name__ == '__main__':
+    main()
