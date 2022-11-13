@@ -28,76 +28,87 @@ from gi.repository import GObject, Gtk, GLib
 
 from ewmh import EWMH
 
+
 PROGRAM_NAME = 'caffeine'
 
-# Handle command-line arguments
-parser = argparse.ArgumentParser(prog=PROGRAM_NAME, description='Prevent desktop idleness in full-screen mode')
-parser.add_argument('-V', '--version', action='version', version=PROGRAM_NAME + ' ' + pkg_resources.require("caffeine-aw")[0].version)
-parser.parse_args()
-
-ewmh = EWMH()
 
 class Caffeine(GObject.GObject):
     def __init__(self):
         GObject.GObject.__init__(self)
-        self.screenSaverWindowID = None
+        self.windows_inhibited = set()
+        self.windows_normal = {}
+        self.windows_fullscreen = {}
 
         # Add hook for full-screen check (same interval as mplayer's heartbeat command)
         # FIXME: add capability to xdg-screensaver to report timeout
-        # GLib.timeout_add_seconds(30, self._check_for_fullscreen)
         GLib.timeout_add_seconds(30, self._check_for_fullscreen_all_windows)
 
     def _check_for_fullscreen_all_windows(self):
         list_win = ewmh.getClientList()
-        inhibit = False
+
+        # Find full-screen windows
+        self.windows_fullscreen = {}
+        self.windows_normal = {}
         for win in list_win:
+            hex_win_id = hex(win.id)
+
             try:
-                inhibit = '_NET_WM_STATE_FULLSCREEN' in ewmh.getWmState(win, str=True)
-            except:
+                wm_state = ewmh.getWmState(win, str=True)
+                if '_NET_WM_STATE_FULLSCREEN' in wm_state:
+                    self.windows_fullscreen[hex_win_id] = (win, wm_state)
+                else:
+                    self.windows_normal[hex_win_id] = (win, wm_state)
+            # pylint: disable=broad-except
+            except Exception:
                 pass
 
-            if inhibit:
-                break
+        # Suspend windows
+        inhibited_win = set()
+        for hex_win_id in self.windows_fullscreen:
+            if hex_win_id in self.windows_inhibited:
+                continue
 
-        # If inhibition state has changed, take action
-        if (self.screenSaverWindowID != None) != inhibit:
-            if inhibit:
-                self.screenSaverWindowID = hex(win.id)
-                call(['xdg-screensaver', 'suspend', self.screenSaverWindowID])
-                logging.info(PROGRAM_NAME + " is inhibiting desktop idleness")
-            else:
-                self.release()
+            call(['xdg-screensaver', 'suspend', hex_win_id])
+            inhibited_win.add(hex_win_id)
 
-        # Return True so timeout is rerun
-        return True
+        if inhibited_win:
+            logging.info(
+                "%s is inhibiting desktop idleness (win id: %s)",
+                PROGRAM_NAME, ', '.join(sorted(inhibited_win))
+            )
 
-
-    def _check_for_fullscreen(self):
-        win = ewmh.getActiveWindow()
-        inhibit = False
-        if win != None:
-            try:
-                inhibit = '_NET_WM_STATE_FULLSCREEN' in ewmh.getWmState(win, str=True)
-            except:
-                pass
-
-        # If inhibition state has changed, take action
-        if (self.screenSaverWindowID != None) != inhibit:
-            if inhibit:
-                self.screenSaverWindowID = hex(win.id)
-                call(['xdg-screensaver', 'suspend', self.screenSaverWindowID])
-                logging.info(PROGRAM_NAME + " is inhibiting desktop idleness")
-            else:
-                self.release()
+        # Resume
+        self.windows_inhibited = self.windows_inhibited | inhibited_win
+        self.release()
 
         # Return True so timeout is rerun
         return True
 
     def release(self):
-        if self.screenSaverWindowID != None:
-            call(['xdg-screensaver', 'resume', self.screenSaverWindowID])
-            self.screenSaverWindowID = None
-            logging.info(PROGRAM_NAME + " is no longer inhibiting desktop idleness")
+        if not self.windows_inhibited:
+            return
+
+        all_windows = self.windows_normal | self.windows_fullscreen
+
+        resumed_win_id = set()
+        for hex_win_id in self.windows_inhibited:
+            if hex_win_id in all_windows and \
+                    hex_win_id not in self.windows_normal:
+                continue
+
+            if hex_win_id in all_windows:
+                call(['xdg-screensaver', 'resume', hex_win_id])
+
+            resumed_win_id.add(hex_win_id)
+
+        self.windows_inhibited -= resumed_win_id
+
+        if resumed_win_id:
+            logging.info(
+                "%s is no longer inhibiting desktop idleness (win id: %s)",
+                PROGRAM_NAME, ', '.join(sorted(resumed_win_id))
+            )
+
 
 # Adapted from http://stackoverflow.com/questions/26388088/python-gtk-signal-handler-not-working
 def InitSignal():
@@ -120,8 +131,15 @@ def InitSignal():
         GLib.idle_add(install_glib_handler, sig, priority=GLib.PRIORITY_HIGH)
 
 
-# Set up and run
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, stream=sys.stdout,
+                    format="%(asctime)s %(name)s: %(message)s")
+
+# Handle command-line arguments
+parser = argparse.ArgumentParser(prog=PROGRAM_NAME, description='Prevent desktop idleness in full-screen mode')
+parser.add_argument('-V', '--version', action='version', version=PROGRAM_NAME + ' ' + pkg_resources.require("caffeine-aw")[0].version)
+parser.parse_args()
+
+ewmh = EWMH()
 caffeine = Caffeine()
 InitSignal()
 Gtk.main()
