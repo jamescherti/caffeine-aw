@@ -163,7 +163,7 @@ class Caffeine:
 def run_garbage_collector(signum, frame):
     """Run the garbage collector."""
     gc.collect()
-    sys.exit(1)
+    sys.exit(0 if signum == signal.SIGINT else 1)
 
 
 def parse_args():
@@ -183,7 +183,7 @@ def parse_args():
 def main():
     """The command-line interface."""
     logging.basicConfig(
-        level=logging.DEBUG,
+        level=logging.INFO,
         stream=sys.stdout,
         format="[" + PROGRAM_NAME + "] %(message)s",
     )
