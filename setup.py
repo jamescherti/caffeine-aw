@@ -68,5 +68,8 @@ setup(name="caffeine-aw",
 
     scripts=["caffeine", "caffeinate", "caffeine-indicator"],
     py_modules=[], # Workaround for setuptools >= 61.0; see https://bugs.launchpad.net/caffeine/+bug/1981419
-    install_requires=["pygobject>=3.1.1,<4.0", "ewmh>=0.1.4", "setproctitle"],
+    install_requires=["ewmh>=0.1.4", "setproctitle"],
+    extras_require = {
+        'caffeine-indicator':  ["pygobject>=3.1.1,<4.0"]
+    }
     )
