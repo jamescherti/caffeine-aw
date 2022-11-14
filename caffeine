@@ -16,8 +16,10 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import argparse
+import fcntl
 import gc
 import logging
+import os
 import shutil
 import signal
 import sys
@@ -28,8 +30,52 @@ import pkg_resources  # type: ignore
 from ewmh import EWMH
 from setproctitle import setproctitle
 
+
 PROGRAM_NAME = "caffeine"
 XDG_SCREENSAVER_CMD = "xdg-screensaver"
+
+
+class SingleInstance:
+    def __init__(self, lockfile):
+        self.lockfile = lockfile
+        self.another_instance_running = False
+
+        try:
+            self.filed = open(self.lockfile, 'wb')
+        except OSError as err:
+            print(f"Error: {err}.", file=sys.stderr)
+            sys.exit(1)
+
+        try:
+            fcntl.lockf(self.filed, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except IOError:
+            self.another_instance_running = True
+
+        if self.another_instance_running:
+            print(f"Error: another instance of '{PROGRAM_NAME}' is running "
+                  f"(lock file: '{lockfile}').",
+                  file=sys.stderr)
+            sys.exit(1)
+
+    def delete_lockfile(self):
+        if hasattr(self, 'filed') and self.filed:
+            if not self.another_instance_running:
+                fcntl.lockf(self.filed, fcntl.LOCK_UN)
+
+            self.filed.close()
+            self.filed = None
+
+            if self.lockfile and not self.another_instance_running:
+                logging.debug("Delete: %s", self.lockfile)
+                try:
+                    os.unlink(self.lockfile)
+                except OSError:
+                    pass
+
+                self.lockfile = None
+
+    def __del__(self):
+        self.delete_lockfile()
 
 
 class Caffeine:
@@ -112,9 +158,6 @@ class Caffeine:
                     hex_win_id,
                 )
 
-    def __del__(self):
-        self.release(force=True)
-
 
 # pylint: disable=unused-argument
 def run_garbage_collector(signum, frame):
@@ -123,19 +166,7 @@ def run_garbage_collector(signum, frame):
     sys.exit(1)
 
 
-def main():
-    """The command-line interface."""
-    logging.basicConfig(
-        level=logging.INFO,
-        stream=sys.stdout,
-        format="[" + PROGRAM_NAME + "] %(message)s",
-    )
-
-    if not shutil.which(XDG_SCREENSAVER_CMD):
-        logging.error("Error: '%s': command not found", XDG_SCREENSAVER_CMD)
-        sys.exit(1)
-
-    setproctitle(PROGRAM_NAME)
+def parse_args():
     parser = argparse.ArgumentParser(
         prog=PROGRAM_NAME,
         description='Prevent desktop idleness in full-screen mode',
@@ -146,17 +177,42 @@ def main():
                  pkg_resources.require("caffeine-aw")[0].version)
     )
     parser.parse_args()
+    return parser
+
+
+def main():
+    """The command-line interface."""
+    logging.basicConfig(
+        level=logging.DEBUG,
+        stream=sys.stdout,
+        format="[" + PROGRAM_NAME + "] %(message)s",
+    )
+
+    setproctitle(PROGRAM_NAME)
 
     for sig in (signal.SIGINT, signal.SIGTERM, signal.SIGHUP):
         signal.signal(sig, run_garbage_collector)
 
-    logging.info("%s has started.", PROGRAM_NAME)
+    if not shutil.which(XDG_SCREENSAVER_CMD):
+        logging.error("Error: '%s': command not found", XDG_SCREENSAVER_CMD)
+        sys.exit(1)
+
+    parse_args()
+
+    # Single instance
+    lockfile = os.path.expanduser("~/.caffeine-aw.lock")
+
+    single_instance = SingleInstance(lockfile=lockfile)
+
     caffeine = Caffeine()
+    logging.info("%s has started.", PROGRAM_NAME)
+
     try:
         caffeine.main()
     except KeyboardInterrupt:
         pass
     finally:
+        single_instance.delete_lockfile()
         caffeine.release(force=True)
         logging.info("%s has stopped.", PROGRAM_NAME)
 
