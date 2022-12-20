@@ -24,7 +24,7 @@ import shutil
 import signal
 import sys
 import time
-from subprocess import call
+from subprocess import CalledProcessError, check_call, call, check_output
 
 import pkg_resources  # type: ignore
 from ewmh import EWMH
@@ -33,6 +33,10 @@ from setproctitle import setproctitle
 
 PROGRAM_NAME = "caffeine"
 XDG_SCREENSAVER_CMD = "xdg-screensaver"
+
+
+class CaffeineError(Exception):
+    pass
 
 
 class SingleInstance:
@@ -78,20 +82,14 @@ class SingleInstance:
         self.delete_lockfile()
 
 
-class Caffeine:
+class CaffeineXdgScreensaver:
     def __init__(self):
         self.ewmh = EWMH()
         self.windows_inhibited = set()
         self.windows_normal = {}
         self.windows_fullscreen = {}
 
-    def main(self):
-        while True:
-            self._check_for_fullscreen_all_windows()
-            # 30s: same interval as mplayer's heartbeat command
-            time.sleep(30)
-
-    def _check_for_fullscreen_all_windows(self):
+    def check(self):
         list_win = self.ewmh.getClientList()
 
         # Find full-screen windows
@@ -159,6 +157,67 @@ class Caffeine:
                 )
 
 
+class CaffeineXFCE:
+
+    XFCONF_QUERY_BIN = "xfconf-query"
+
+    def __init__(self):
+        if not shutil.which(self.XFCONF_QUERY_BIN):
+            raise CaffeineError(f"{self.XFCONF_QUERY_BIN}: command not found")
+
+        self.ewmh = EWMH()
+
+        self._presentation_mode_enabled = False
+        if self._is_presentation_mode_enabled():
+            self._set_presentation_mode(False)
+
+    def check(self):
+        presentation_mode_enabled = False
+        for win in self.ewmh.getClientList():
+            try:
+                wm_state = self.ewmh.getWmState(win, str=True)
+                if '_NET_WM_STATE_FULLSCREEN' in wm_state:
+                    presentation_mode_enabled = True
+                    break
+            # pylint: disable=broad-except
+            except Exception:
+                pass
+
+        if presentation_mode_enabled != self._presentation_mode_enabled:
+            self._set_presentation_mode(presentation_mode_enabled)
+
+    # pylint: disable=unused-argument
+    def release(self, force=False):
+        self._set_presentation_mode(False)
+
+    def _is_presentation_mode_enabled(self):
+        cmd = ["xfconf-query", "-c", "xfce4-power-manager",
+               "-p", "/xfce4-power-manager/presentation-mode"]
+        try:
+            output = check_output(cmd)
+        except CalledProcessError as err:
+            logging.error("[WARNING] 'xfconf-query' failed: %s", str(err))
+            return False
+
+        try:
+            first_line = output.splitlines()[0]
+        except IndexError:
+            return False
+
+        return bool(first_line.strip() == b"true")
+
+    def _set_presentation_mode(self, enable: bool):
+        cmd = ["xfconf-query", "--create", "-c", "xfce4-power-manager",
+               "-p", "/xfce4-power-manager/presentation-mode",
+               "--type", "bool", "--set", "true" if enable else "false"]
+        try:
+            check_call(cmd)
+            self._presentation_mode_enabled = enable
+            logging.info("XFCE: presentation mode: %s", str(enable))
+        except CalledProcessError as err:
+            logging.error("[WARNING] 'xfconf-query' failed: %s", str(err))
+
+
 # pylint: disable=unused-argument
 def run_garbage_collector(signum, frame):
     """Run the garbage collector."""
@@ -204,11 +263,26 @@ def main():
 
     single_instance = SingleInstance(lockfile=lockfile)
 
-    caffeine = Caffeine()
+    current_desktop = os.environ.get("XDG_CURRENT_DESKTOP", "")
+    try:
+        if current_desktop == "XFCE":
+            logging.info("Method: XFCE (Presentation Mode)")
+            caffeine = CaffeineXFCE()
+        else:
+            logging.info("Method: XDG Screensaver")
+            caffeine = CaffeineXdgScreensaver()
+    except CaffeineError as err:
+        logging.error("Error: %s", str(err))
+        sys.exit(1)
+
     logging.info("%s has started.", PROGRAM_NAME)
 
     try:
-        caffeine.main()
+        while True:
+            caffeine.check()
+
+            # 30s: same interval as mplayer's heartbeat command
+            time.sleep(30)
     except KeyboardInterrupt:
         pass
     finally:

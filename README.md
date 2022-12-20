@@ -11,6 +11,7 @@ Here are some of the enhancements in **Caffeine-aw**:
 * The process name is set to 'caffeine', 'caffeine-indicator', and 'caffeinate'.
 * **Caffeine-aw** no longer inhibits desktop idleness when it is terminated.
 * Only one instance of **Caffeine-aw** can run at a time.
+* XFCE Desktop: Toggle 'XFCE Presentation Mode' on and off.
 
 ## What is Caffeine-aw?
 
