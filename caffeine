@@ -244,7 +244,7 @@ def main():
     logging.basicConfig(
         level=logging.INFO,
         stream=sys.stdout,
-        format="[" + PROGRAM_NAME + "] %(message)s",
+        format="%(asctime)s " + PROGRAM_NAME + ": %(message)s",
     )
 
     setproctitle(PROGRAM_NAME)
