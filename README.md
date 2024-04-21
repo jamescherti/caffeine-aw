@@ -22,9 +22,3 @@ Also provided are an indicator, caffeine-indicator, that gives a manual toggle, 
 ```sh
 sudo pip install git+https://github.com/jamescherti/caffeine-aw
 ```
-
-## License
-
-Caffeine is distributed under the GNU General Public License, either version 3, or (at your option) any later version. See COPYING.
-
-The Caffeine SVG icons are Copyright (C) 2009 Tommy Brunn, and distributed under the terms of the GNU Lesser General Public License, either version 3, or (at your option) any later version. See COPYING.LESSER.
