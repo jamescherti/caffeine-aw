@@ -22,3 +22,7 @@ Also provided are an indicator, caffeine-indicator, that gives a manual toggle, 
 ```sh
 sudo pip install git+https://github.com/jamescherti/caffeine-aw
 ```
+
+## Maintainer
+
+- [James Cherti](https://www.jamescherti.com/)
