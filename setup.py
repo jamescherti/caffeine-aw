@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
-from setuptools import setup
 import os
-from os.path import join, abspath, dirname, exists
-from pathlib import Path
-import sys
 import shutil
 import subprocess
+import sys
+from os.path import abspath, dirname, exists, join
+from pathlib import Path
+
+from setuptools import setup
 
 # Read README.md
 this_directory = Path(__file__).parent
@@ -57,7 +58,7 @@ shutil.copy(desktop_file, autostart_dir)
 data_files.append(tuple(("/" + autostart_dir, [join(autostart_dir, desktop_name)])))
 
 setup(name="caffeine-aw",
-    version="2.9.12",
+    version="2.9.13",
     description="Keep your computer awake, even when the full-screen window is not focused!",
     license="GPLv3",
     author="Caffeine-aw authors",
