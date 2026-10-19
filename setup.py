@@ -3,8 +3,7 @@
 import os
 import shutil
 import subprocess
-import sys
-from os.path import abspath, dirname, exists, join
+from os.path import exists, join
 from pathlib import Path
 
 from setuptools import setup
@@ -14,7 +13,7 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 # Update the translations
-PO_DIR = 'translations'
+PO_DIR = "translations"
 if not exists(PO_DIR):
     os.makedirs(PO_DIR)
 subprocess.check_call(["xgettext", "-o", join(PO_DIR, "caffeine-indicator.pot"), "--language=python", "--from-code=UTF-8", "caffeine-indicator"])
@@ -23,19 +22,19 @@ def compile_catalog(po_dir, prg_name):
     po_files = []
     for dirpath, dirnames, filenames in os.walk(po_dir):
         for file in filenames:
-            if file.split('.')[-1] == "po":
+            if file.split(".")[-1] == "po":
                 po_files.append(os.path.join(dirpath, file))
 
     for po in po_files:
-        lang = po.split('/')[-1]
+        lang = po.split("/")[-1]
         print("Compiling for Locale: "+"".join(lang.split(".")[:-1]))
-        lang = lang.split('-')[-1]
-        lang = lang.split('.')[0]
+        lang = lang.split("-")[-1]
+        lang = lang.split(".")[0]
         lang = lang.strip()
         if not lang:
             continue
 
-        lang_lc_dir = os.path.join('share', 'locale', lang, 'LC_MESSAGES')
+        lang_lc_dir = os.path.join("share", "locale", lang, "LC_MESSAGES")
         if not os.path.isdir(lang_lc_dir):
             os.makedirs(lang_lc_dir)
 
@@ -71,6 +70,6 @@ setup(name="caffeine-aw",
     py_modules=[], # Workaround for setuptools >= 61.0; see https://bugs.launchpad.net/caffeine/+bug/1981419
     install_requires=["ewmh>=0.1.4", "setproctitle"],
     extras_require = {
-        'caffeine-indicator':  ["pygobject>=3.1.1,<4.0"]
-    }
+        "caffeine-indicator":  ["pygobject>=3.1.1,<4.0"],
+    },
     )
