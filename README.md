@@ -1,6 +1,6 @@
 # Caffeine-aw - Keep your computer awake, even when the full-screen window is not focused!
 
-- Author: James Cherti <[https://www.jamescherti.com/](https://www.jamescherti.com/)>
+- Maintainer: James Cherti <[https://www.jamescherti.com/](https://www.jamescherti.com/)>
 - License: GPL
 - Caffeine-aw repository: https://github.com/jamescherti/caffeine-aw
 
